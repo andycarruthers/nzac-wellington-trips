@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="container">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+  </header>
+  <div class="term-list">
+    {{ range .Pages }}
+    <a href="{{ .RelPermalink }}" class="term-item">
+      <span class="term-name">{{ .Title }}</span>
+      <span class="term-count">{{ len .Pages }} report{{ if gt (len .Pages) 1 }}s{{ end }}</span>
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

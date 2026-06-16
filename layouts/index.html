@@ -1,0 +1,39 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="container">
+    <h1>Wellington Section<br>Trip Reports</h1>
+    <p class="hero-sub">Adventures from the New Zealand Alpine Club Wellington Section &mdash; two decades of climbs, traverses, and epics.</p>
+  </div>
+</section>
+
+<section class="recent-trips container">
+  <h2>Recent Reports</h2>
+  <div class="trip-grid">
+    {{ range first 12 (where site.RegularPages "Section" "trips") }}
+    <article class="trip-card">
+      {{ if .Params.cover }}
+      <a href="{{ .RelPermalink }}" class="card-image">
+        <img src="{{ .Params.cover }}" alt="{{ .Title }}" loading="lazy">
+      </a>
+      {{ else }}
+      <a href="{{ .RelPermalink }}" class="card-image card-image--placeholder">
+        <span>&#9651;</span>
+      </a>
+      {{ end }}
+      <div class="card-body">
+        <div class="card-meta">
+          <time>{{ .Date.Format "2 Jan 2006" }}</time>
+          {{ with .Params.region }}<span class="region">{{ . }}</span>{{ end }}
+        </div>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        {{ with .Params.author }}<p class="card-author">by {{ . }}</p>{{ end }}
+        <p class="card-excerpt">{{ .Summary | truncate 120 }}</p>
+      </div>
+    </article>
+    {{ end }}
+  </div>
+  <div class="view-all">
+    <a href="/trips/" class="btn">All Trip Reports &rarr;</a>
+  </div>
+</section>
+{{ end }}

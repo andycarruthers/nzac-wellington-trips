@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="container">
+  <header class="page-header">
+    <p class="breadcrumb"><a href="/{{ .Type }}/">{{ .Type | title }}</a></p>
+    <h1>{{ .Title }}</h1>
+  </header>
+  <div class="trip-grid">
+    {{ range .Pages }}
+    <article class="trip-card">
+      {{ if .Params.cover }}
+      <a href="{{ .RelPermalink }}" class="card-image">
+        <img src="{{ .Params.cover }}" alt="{{ .Title }}" loading="lazy">
+      </a>
+      {{ else }}
+      <a href="{{ .RelPermalink }}" class="card-image card-image--placeholder">
+        <span>&#9651;</span>
+      </a>
+      {{ end }}
+      <div class="card-body">
+        <div class="card-meta">
+          <time>{{ .Date.Format "2 Jan 2006" }}</time>
+        </div>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        {{ with .Params.author }}<p class="card-author">by {{ . }}</p>{{ end }}
+      </div>
+    </article>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

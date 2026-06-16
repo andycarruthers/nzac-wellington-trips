@@ -1,0 +1,126 @@
+/* ── Reset & base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --c-bg: #fafaf8;
+  --c-surface: #ffffff;
+  --c-text: #1a1a1a;
+  --c-muted: #6b6b6b;
+  --c-border: #e2e2de;
+  --c-accent: #2d5a3d;   /* alpine green */
+  --c-accent-light: #e8f0eb;
+  --c-highlight: #c8a84b; /* mountain gold */
+  --font-body: 'Lora', Georgia, serif;
+  --font-ui: 'Inter', system-ui, sans-serif;
+  --max-w: 1200px;
+  --radius: 6px;
+}
+
+html { font-size: 16px; scroll-behavior: smooth; }
+body { background: var(--c-bg); color: var(--c-text); font-family: var(--font-body); line-height: 1.7; }
+
+a { color: var(--c-accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container { max-width: var(--max-w); margin: 0 auto; padding: 0 1.5rem; }
+
+/* ── Header ── */
+.site-header { background: var(--c-accent); color: #fff; padding: 0.9rem 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,.15); }
+.site-header .container { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.site-logo { display: flex; align-items: center; gap: 0.5rem; color: #fff; font-family: var(--font-ui); font-weight: 600; font-size: 1.05rem; text-decoration: none; }
+.logo-mark { font-size: 1.3rem; color: var(--c-highlight); }
+.site-nav { display: flex; gap: 1.5rem; }
+.site-nav a { color: rgba(255,255,255,.85); font-family: var(--font-ui); font-size: 0.9rem; font-weight: 500; text-decoration: none; }
+.site-nav a:hover { color: #fff; }
+
+/* ── Hero ── */
+.hero { background: linear-gradient(135deg, var(--c-accent) 0%, #1a3d28 100%); color: #fff; padding: 5rem 0 4rem; }
+.hero h1 { font-family: var(--font-body); font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.2; margin-bottom: 1rem; }
+.hero-sub { font-family: var(--font-ui); font-size: 1.1rem; color: rgba(255,255,255,.8); max-width: 560px; }
+
+/* ── Trip grid ── */
+.recent-trips { padding: 3rem 0; }
+.recent-trips h2 { font-size: 1.6rem; margin-bottom: 1.5rem; color: var(--c-accent); }
+
+.trip-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+
+.trip-card { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; transition: box-shadow .2s, transform .2s; }
+.trip-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,.1); transform: translateY(-2px); }
+
+.card-image { display: block; aspect-ratio: 16/9; overflow: hidden; background: var(--c-accent-light); }
+.card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s; }
+.card-image:hover img { transform: scale(1.03); }
+.card-image--placeholder { display: flex; align-items: center; justify-content: center; color: var(--c-accent); font-size: 2.5rem; opacity: .4; }
+
+.card-body { padding: 1rem 1.2rem 1.2rem; flex: 1; display: flex; flex-direction: column; }
+.card-meta { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.4rem; }
+.card-meta time { font-family: var(--font-ui); font-size: 0.8rem; color: var(--c-muted); }
+.region { background: var(--c-accent-light); color: var(--c-accent); font-family: var(--font-ui); font-size: 0.75rem; font-weight: 600; padding: 0.15rem 0.5rem; border-radius: 99px; }
+.card-body h3 { font-size: 1.05rem; line-height: 1.3; margin-bottom: 0.25rem; }
+.card-body h3 a { color: var(--c-text); }
+.card-body h3 a:hover { color: var(--c-accent); text-decoration: none; }
+.card-author { font-family: var(--font-ui); font-size: 0.82rem; color: var(--c-muted); margin-bottom: 0.5rem; }
+.card-excerpt { font-size: 0.9rem; color: var(--c-muted); line-height: 1.5; flex: 1; }
+
+.view-all { text-align: center; margin-top: 2.5rem; }
+
+/* ── Buttons ── */
+.btn { display: inline-block; background: var(--c-accent); color: #fff; font-family: var(--font-ui); font-weight: 600; font-size: 0.9rem; padding: 0.65rem 1.4rem; border-radius: var(--radius); text-decoration: none; transition: background .2s; }
+.btn:hover { background: #1a3d28; text-decoration: none; }
+.btn--outline { background: transparent; border: 2px solid var(--c-accent); color: var(--c-accent); }
+.btn--outline:hover { background: var(--c-accent); color: #fff; }
+
+/* ── Page header ── */
+.page-header { padding: 2.5rem 0 1.5rem; border-bottom: 1px solid var(--c-border); margin-bottom: 2rem; }
+.page-header h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); color: var(--c-accent); }
+.page-desc { font-family: var(--font-ui); color: var(--c-muted); margin-top: 0.5rem; }
+
+/* ── Filter bar ── */
+.filter-bar { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; font-family: var(--font-ui); font-size: 0.9rem; }
+.filter-label { color: var(--c-muted); font-weight: 500; }
+.filter-bar a { background: var(--c-surface); border: 1px solid var(--c-border); padding: 0.3rem 0.8rem; border-radius: 99px; color: var(--c-text); transition: border-color .15s, color .15s; }
+.filter-bar a:hover { border-color: var(--c-accent); color: var(--c-accent); text-decoration: none; }
+
+/* ── Trip report single ── */
+.trip-report { padding: 2rem 0 4rem; max-width: 760px; }
+.report-cover { margin-bottom: 1.5rem; border-radius: var(--radius); overflow: hidden; }
+.report-cover img { width: 100%; height: auto; display: block; }
+.report-meta { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.75rem; font-family: var(--font-ui); font-size: 0.85rem; color: var(--c-muted); }
+.region-tag { background: var(--c-accent-light); color: var(--c-accent); padding: 0.15rem 0.6rem; border-radius: 99px; font-weight: 600; font-size: 0.8rem; text-decoration: none; }
+.report-header h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); line-height: 1.25; margin-bottom: 0.5rem; }
+.report-author { font-family: var(--font-ui); color: var(--c-muted); margin-bottom: 0.75rem; }
+.participants { font-family: var(--font-ui); font-size: 0.88rem; color: var(--c-muted); background: var(--c-accent-light); padding: 0.6rem 1rem; border-radius: var(--radius); margin-bottom: 2rem; }
+
+.report-body { font-size: 1.05rem; line-height: 1.8; }
+.report-body p { margin-bottom: 1.2em; }
+.report-body h2, .report-body h3 { margin: 1.8em 0 0.6em; color: var(--c-accent); }
+.report-body img { max-width: 100%; height: auto; border-radius: var(--radius); margin: 1.5rem 0; }
+.report-body blockquote { border-left: 3px solid var(--c-highlight); padding-left: 1rem; color: var(--c-muted); margin: 1.5rem 0; font-style: italic; }
+
+.report-footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--c-border); display: flex; flex-direction: column; gap: 0.8rem; align-items: flex-start; }
+.tag-list { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.tag { background: var(--c-surface); border: 1px solid var(--c-border); color: var(--c-muted); font-family: var(--font-ui); font-size: 0.8rem; padding: 0.2rem 0.6rem; border-radius: 99px; }
+.tag:hover { border-color: var(--c-accent); color: var(--c-accent); text-decoration: none; }
+.source-note { font-family: var(--font-ui); font-size: 0.8rem; color: var(--c-muted); font-style: italic; }
+
+/* ── Taxonomy ── */
+.term-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.75rem; }
+.term-item { display: flex; justify-content: space-between; align-items: center; background: var(--c-surface); border: 1px solid var(--c-border); padding: 0.8rem 1rem; border-radius: var(--radius); color: var(--c-text); font-family: var(--font-ui); }
+.term-item:hover { border-color: var(--c-accent); text-decoration: none; }
+.term-name { font-weight: 500; }
+.term-count { font-size: 0.8rem; color: var(--c-muted); }
+
+/* ── Breadcrumb ── */
+.breadcrumb { font-family: var(--font-ui); font-size: 0.85rem; color: var(--c-muted); margin-bottom: 0.25rem; }
+
+/* ── Footer ── */
+.site-footer { background: var(--c-text); color: rgba(255,255,255,.6); text-align: center; padding: 2rem 0; margin-top: 4rem; font-family: var(--font-ui); font-size: 0.85rem; }
+.site-footer p + p { margin-top: 0.3rem; }
+.footer-note { font-size: 0.78rem; opacity: 0.7; }
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .site-nav { display: none; }
+  .trip-grid { grid-template-columns: 1fr; }
+  .filter-bar { flex-wrap: wrap; }
+}

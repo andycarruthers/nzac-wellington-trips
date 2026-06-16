@@ -1,0 +1,44 @@
+{{ define "main" }}
+<article class="trip-report container">
+  <header class="report-header">
+    {{ if .Params.cover }}
+    <div class="report-cover">
+      <img src="{{ .Params.cover }}" alt="{{ .Title }}">
+    </div>
+    {{ end }}
+    <div class="report-meta">
+      <time>{{ .Date.Format "2 January 2006" }}</time>
+      {{ with .Params.region }}
+      <a href="/locations/{{ . | urlize }}/" class="region-tag">{{ . }}</a>
+      {{ end }}
+    </div>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.author }}
+    <p class="report-author">Written by <a href="/authors/{{ . | urlize }}/">{{ . }}</a></p>
+    {{ end }}
+    {{ with .Params.participants }}
+    <div class="participants">
+      <strong>Trip participants:</strong> {{ delimit . ", " }}
+    </div>
+    {{ end }}
+  </header>
+
+  <div class="report-body">
+    {{ .Content }}
+  </div>
+
+  <footer class="report-footer">
+    {{ with .Params.tags }}
+    <div class="tag-list">
+      {{ range . }}
+      <a href="/tags/{{ . | urlize }}/" class="tag">{{ . }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+    {{ with .Params.source }}
+    <p class="source-note">Source: {{ . }}</p>
+    {{ end }}
+    <a href="/trips/" class="btn btn--outline">&larr; All Trip Reports</a>
+  </footer>
+</article>
+{{ end }}

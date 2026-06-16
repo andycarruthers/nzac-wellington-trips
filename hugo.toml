@@ -1,0 +1,21 @@
+baseURL = "/"
+languageCode = "en-nz"
+title = "NZAC Wellington — Trip Reports"
+
+[params]
+  description = "Trip reports from the Wellington Section of the New Zealand Alpine Club"
+  siteName = "NZAC Wellington"
+
+[taxonomies]
+  tag = "tags"
+  location = "locations"
+  author = "authors"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+  home = ["HTML"]
+  section = ["HTML"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
