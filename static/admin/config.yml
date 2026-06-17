@@ -1,0 +1,63 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: static/images/trips
+public_folder: /images/trips
+
+collections:
+  - name: trips
+    label: Trip Reports
+    folder: content/trips
+    create: true
+    slug: "{{slug}}"
+    preview_path: trips/{{slug}}
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime, format: YYYY-MM-DD, date_format: DD/MM/YYYY, time_format: false }
+      - { label: Draft, name: draft, widget: boolean, default: false }
+      - label: Author
+        name: author
+        widget: string
+        required: false
+      - label: Authors
+        name: authors
+        widget: list
+        required: false
+        field: { label: Name, name: name, widget: string }
+      - label: Location
+        name: location
+        widget: string
+        required: false
+      - label: Locations
+        name: locations
+        widget: list
+        required: false
+        field: { label: Location, name: location, widget: string }
+      - label: Tags
+        name: tags
+        widget: select
+        multiple: true
+        required: false
+        options:
+          - Alpine
+          - Tramping
+          - Skiing
+          - Climbing
+          - Rock Climbing
+          - Kayaking
+          - Mountain Biking
+          - Cycle Touring
+      - label: Cover Image
+        name: cover
+        widget: image
+        required: false
+      - label: Source URL
+        name: source_url
+        widget: string
+        required: false
+      - label: Source
+        name: source
+        widget: string
+        required: false
+      - { label: Body, name: body, widget: markdown }
