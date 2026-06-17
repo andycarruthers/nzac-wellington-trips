@@ -2,6 +2,7 @@
 title: "Centennial beckoned last week…"
 date: 2007-12-01
 author: "Trip Participants"
+authors: ["Trip Participants"]
 location: "European Alps"
 locations: ["European Alps"]
 tags: ["Alpine"]

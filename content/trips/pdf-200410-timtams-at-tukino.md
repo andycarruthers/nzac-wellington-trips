@@ -2,6 +2,7 @@
 title: "TimTams at Tukino"
 date: 2004-10-01
 author: "Mike Peat"
+authors: ["Mike Peat"]
 location: "Mount Cook"
 locations: ["Mount Cook"]
 tags: ["Alpine", "Ski"]

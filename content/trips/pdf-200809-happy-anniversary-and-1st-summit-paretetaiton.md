@@ -2,6 +2,7 @@
 title: "Happy Anniversary and 1st Summit - Paretetaitonga (2751m) 6th September 2008"
 date: 2008-09-01
 author: "Bridie Allen"
+authors: ["Bridie Allen"]
 location: "Taranaki"
 locations: ["Taranaki"]
 tags: ["Alpine", "Ski"]

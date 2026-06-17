@@ -3,6 +3,7 @@ title: "French Trip to Mt Murchison"
 cover: "/images/trips/Vertigo_200806_Jun-p4-x24.jpeg"
 date: 2008-06-01
 author: "Simon Romanos"
+authors: ["Simon Romanos"]
 location: "European Alps"
 locations: ["European Alps"]
 tags: ["Alpine"]

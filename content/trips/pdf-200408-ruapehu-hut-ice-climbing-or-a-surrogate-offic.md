@@ -2,6 +2,7 @@
 title: "Ruapehu Hut: Ice climbing or a surrogate office?"
 date: 2004-08-01
 author: "Mike Peat"
+authors: ["Mike Peat"]
 location: "Ruapehu"
 locations: ["Ruapehu"]
 tags: ["Alpine", "Rock Climbing"]

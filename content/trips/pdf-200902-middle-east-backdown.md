@@ -2,6 +2,7 @@
 title: "Middle East Backdown"
 date: 2009-02-01
 author: "John Nankervis"
+authors: ["John Nankervis"]
 location: "Overseas"
 locations: ["Overseas"]
 tags: ["Ski Touring", "Alpine"]

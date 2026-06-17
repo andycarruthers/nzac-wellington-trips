@@ -2,6 +2,7 @@
 title: "Tearing Up the Tasman"
 date: 2006-04-01
 author: "Mike Peat"
+authors: ["Mike Peat"]
 location: "Mount Cook"
 locations: ["Mount Cook"]
 tags: ["Alpine"]

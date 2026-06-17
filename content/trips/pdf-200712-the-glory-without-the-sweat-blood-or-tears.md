@@ -2,6 +2,7 @@
 title: "The glory without the sweat, blood or tears"
 date: 2007-12-01
 author: "Lou Thornley"
+authors: ["Lou Thornley"]
 location: "European Alps"
 locations: ["European Alps"]
 tags: ["Alpine"]

@@ -2,6 +2,7 @@
 title: "Transalpining in the Ötztal Alps"
 date: 2008-08-01
 author: "Richard Davies"
+authors: ["Richard Davies"]
 location: "European Alps"
 locations: ["European Alps"]
 tags: ["Alpine"]

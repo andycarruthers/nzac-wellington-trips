@@ -2,6 +2,7 @@
 title: "EVER WONDER WHERE MEREWYN WENT?"
 date: 2007-05-01
 author: "Merewyn Ellis"
+authors: ["Merewyn Ellis"]
 location: "Canada"
 locations: ["Canada"]
 tags: ["Alpine"]

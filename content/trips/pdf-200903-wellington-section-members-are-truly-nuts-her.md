@@ -2,6 +2,7 @@
 title: "Wellington Section members are truly nuts…  here is the proof!"
 date: 2009-03-01
 author: "Richard Davies"
+authors: ["Richard Davies"]
 location: "Tararua"
 locations: ["Tararua"]
 tags: ["Alpine"]

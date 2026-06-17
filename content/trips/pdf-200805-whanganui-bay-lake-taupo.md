@@ -2,6 +2,7 @@
 title: "Whanganui Bay, Lake Taupo"
 date: 2008-05-01
 author: "Gill James"
+authors: ["Gill James"]
 location: "Lake Taupo"
 locations: ["Lake Taupo"]
 tags: ["Alpine"]

@@ -2,6 +2,7 @@
 title: "Summer Rock 2013 – What's it all about? (Wharepapa South)"
 date: 2013-03-19
 author: "Katy Teasdale"
+authors: ["Katy Teasdale"]
 cover: "/images/trips/Summer1.jpg"
 source_url: "https://web.archive.org/web/20130505172652/http://www.nzalpine.wellington.net.nz/2013/03/trip-report-summer-rock-2013-by-katy-teasdale/"
 source: "NZAC Wellington website (via Wayback Machine)"

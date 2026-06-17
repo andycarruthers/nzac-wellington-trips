@@ -2,6 +2,7 @@
 title: "Wharepapa South Rock Climbing"
 date: 2012-12-16
 author: "Bridget Janse"
+authors: ["Bridget Janse"]
 participants:
   - "Kim Farrar"
   - "Rob Dudley"

@@ -2,6 +2,7 @@
 title: "FREE PIES AND VEHICLE GYMNASTICS"
 date: 2003-11-01
 author: "Sean Kelly"
+authors: ["Sean Kelly"]
 location: "Canterbury"
 locations: ["Canterbury"]
 tags: ["Alpine"]

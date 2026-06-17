@@ -2,6 +2,7 @@
 title: "Possible new route on Hopeless 26-28 October 2007"
 date: 2007-10-28
 author: "Ron Stutter"
+authors: ["Ron Stutter"]
 location: "Nelson Lakes"
 locations: ["Nelson Lakes"]
 tags: ["Alpine"]

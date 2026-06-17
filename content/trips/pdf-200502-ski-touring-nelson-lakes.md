@@ -2,6 +2,7 @@
 title: "Ski Touring - Nelson Lakes"
 date: 2005-02-01
 author: "John Nankervis"
+authors: ["John Nankervis"]
 location: "Fiordland"
 locations: ["Fiordland"]
 tags: ["Ski Touring"]

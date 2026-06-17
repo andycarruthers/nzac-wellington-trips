@@ -1,0 +1,12 @@
+# All trip-report post URLs discovered from the Wayback category page
+# Source: https://web.archive.org/web/*/http://www.nzalpine.wellington.net.nz/category/trip-reports/
+
+https://web.archive.org/web/20130505172652/http://www.nzalpine.wellington.net.nz/2013/03/trip-report-summer-rock-2013-by-katy-teasdale/
+https://web.archive.org/web/20130505172652/http://www.nzalpine.wellington.net.nz/2013/03/club-trip-whanganui-bay-rock-festival-23-24-march/
+https://web.archive.org/web/20120929101042/http://www.nzalpine.wellington.net.nz/2012/06/lendenfeld-peak-3194m-and-mt-haast-3114m-kevin-patterson-and-tim-luszczak/
+https://web.archive.org/web/20130505172652/http://www.nzalpine.wellington.net.nz/2011/11/trip-report-tapuae-o-uenuku/
+https://web.archive.org/web/20120929101042/http://www.nzalpine.wellington.net.nz/2011/11/trip-report-%e2%80%9clit-up%e2%80%9d-on-cathedral-peak-yosemite/
+https://web.archive.org/web/20120929101042/http://www.nzalpine.wellington.net.nz/2011/10/trip-report-nzac-wellington-aic-2011-reflections-from-an-assistant-instructor/
+https://web.archive.org/web/20120929101042/http://www.nzalpine.wellington.net.nz/2011/10/trip-report-backcountry-avalanche-course-september-2011/
+https://web.archive.org/web/20120929101042/http://www.nzalpine.wellington.net.nz/2011/10/trip-report-be-influenced/
+https://web.archive.org/web/20120929101042/http://www.nzalpine.wellington.net.nz/2011/10/trip-report-robert%e2%80%99s-ridge-backcountry-ski-trip-aug-19-21-on-a-scale-from-1-10/

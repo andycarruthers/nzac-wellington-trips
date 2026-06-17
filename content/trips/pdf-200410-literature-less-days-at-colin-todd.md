@@ -2,6 +2,7 @@
 title: "Literature-less days at Colin Todd"
 date: 2004-10-01
 author: "Don French"
+authors: ["Don French"]
 location: "Mount Aspiring"
 locations: ["Mount Aspiring"]
 tags: ["Alpine"]

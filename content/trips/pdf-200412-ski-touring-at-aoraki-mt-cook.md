@@ -2,6 +2,7 @@
 title: "Ski Touring at Aoraki Mt Cook"
 date: 2004-12-01
 author: "Mike Peat"
+authors: ["Mike Peat"]
 location: "Mount Cook"
 locations: ["Mount Cook"]
 tags: ["Ski Touring"]

@@ -2,6 +2,7 @@
 title: "The French invade Murchison"
 date: 2003-12-01
 author: "Don French"
+authors: ["Don French"]
 location: "Mount Cook"
 locations: ["Mount Cook"]
 tags: ["Alpine"]

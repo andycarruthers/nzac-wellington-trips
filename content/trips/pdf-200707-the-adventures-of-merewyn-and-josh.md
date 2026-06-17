@@ -2,6 +2,7 @@
 title: "The adventures of Merewyn and Josh"
 date: 2007-07-01
 author: "Merewyn Ellis"
+authors: ["Merewyn Ellis"]
 tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200707 Jul"
 draft: false

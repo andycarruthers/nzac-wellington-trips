@@ -3,6 +3,7 @@ title: "Alpine Piking and Sneaky Hut Bagging in the Easter Break"
 cover: "/images/trips/Vertigo_200906_Jun-p4-x21.jpeg"
 date: 2009-06-01
 author: "Lorraine Johns"
+authors: ["Lorraine Johns"]
 location: "Mount Cook"
 locations: ["Mount Cook"]
 tags: ["Alpine", "Rock Climbing", "Tramping"]

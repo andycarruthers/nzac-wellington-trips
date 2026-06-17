@@ -2,6 +2,7 @@
 title: "Mt Tapuae-o-unuku"
 date: 2008-07-01
 author: "Bill Fry"
+authors: ["Bill Fry"]
 location: "Kaikoura / Inland Kaikōura"
 locations: ["Kaikoura / Inland Kaikōura"]
 tags: ["Alpine"]

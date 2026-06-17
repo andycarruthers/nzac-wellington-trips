@@ -2,6 +2,7 @@
 title: "Everything But The Mountain (QB week)"
 date: 2004-08-01
 author: "Kevin Patterson"
+authors: ["Kevin Patterson"]
 location: "Nelson Lakes"
 locations: ["Nelson Lakes"]
 tags: ["Alpine", "Ski"]

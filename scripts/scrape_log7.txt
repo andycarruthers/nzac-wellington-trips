@@ -1,0 +1,1035 @@
+﻿Processing 170 PDF(s) from C:\ClaudeCode\nzac-wellington-trips\scripts\vertigo_pdfs
+
+[NZAC Vertigo 2017_09.pdf]
+  10 pages, 29 images extracted, 423 text blocks
+  1 trip-report section(s) found
+    -> Section trip, Mount Wakefield
+  Wrote 1 file(s)
+
+[NZAC Vertigo 2017_10.pdf]
+  8 pages, 22 images extracted, 288 text blocks
+  1 trip-report section(s) found
+    -> [SKIP duplicate] Section trip, Mount Wakefield
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2017_11.pdf]
+  10 pages, 21 images extracted, 428 text blocks
+  1 trip-report section(s) found
+    -> [SKIP duplicate] Section trip, Mount Wakefield
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2018_01.pdf]
+  9 pages, 16 images extracted, 306 text blocks
+  1 trip-report section(s) found
+    -> [SKIP duplicate] Section trip, Mount Wakefield
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2018_02.pdf]
+  11 pages, 24 images extracted, 472 text blocks
+  1 trip-report section(s) found
+    -> [SKIP duplicate] Section trip, Mount Wakefield
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2018_03.pdf]
+  9 pages, 29 images extracted, 274 text blocks
+  1 trip-report section(s) found
+    -> [SKIP duplicate] Section trip, Mount Wakefield
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2018_04.pdf]
+  11 pages, 26 images extracted, 448 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2018_05.pdf]
+  10 pages, 21 images extracted, 392 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2018_06.pdf]
+  11 pages, 27 images extracted, 425 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2018_07.pdf]
+  10 pages, 23 images extracted, 507 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2018_08.pdf]
+  9 pages, 22 images extracted, 423 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2018_09.pdf]
+  9 pages, 23 images extracted, 297 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2018_10.pdf]
+  11 pages, 29 images extracted, 548 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2018_11.pdf]
+  11 pages, 30 images extracted, 419 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2019_02.pdf]
+  11 pages, 24 images extracted, 388 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2019_03.pdf]
+  11 pages, 32 images extracted, 382 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2019_04.pdf]
+  9 pages, 22 images extracted, 302 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2019_05.pdf]
+  10 pages, 23 images extracted, 368 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2019_06.pdf]
+  12 pages, 25 images extracted, 558 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2019_07.pdf]
+  13 pages, 25 images extracted, 771 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2019_08.pdf]
+  10 pages, 17 images extracted, 341 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2019_09.pdf]
+  13 pages, 29 images extracted, 625 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2019_10.pdf]
+  14 pages, 24 images extracted, 542 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2019_11.pdf]
+  12 pages, 24 images extracted, 395 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2020_02.pdf]
+  13 pages, 26 images extracted, 417 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2020_03.pdf]
+  9 pages, 19 images extracted, 402 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2020_04.pdf]
+  8 pages, 19 images extracted, 331 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2020_05.pdf]
+  12 pages, 20 images extracted, 463 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2020_06 and 2020_07.pdf]
+  11 pages, 16 images extracted, 503 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[NZAC Vertigo 2020_08.pdf]
+  14 pages, 26 images extracted, 449 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200102_Feb.pdf]
+  5 pages, 0 images extracted, 208 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200105_May.pdf]
+  8 pages, 0 images extracted, 383 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200108_Aug.pdf]
+  7 pages, 0 images extracted, 306 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200110_Oct.pdf]
+  7 pages, 0 images extracted, 294 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200209_Sep.pdf]
+  11 pages, 0 images extracted, 336 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200210_Oct.pdf]
+  7 pages, 0 images extracted, 274 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200211_Nov.pdf]
+  8 pages, 3 images extracted, 311 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200212_Dec.pdf]
+  8 pages, 1 images extracted, 230 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200302_Feb.pdf]
+  8 pages, 0 images extracted, 236 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200303_Mar.pdf]
+  12 pages, 1 images extracted, 450 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200304_Apr.pdf]
+  6 pages, 0 images extracted, 206 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200305_May.pdf]
+  12 pages, 2 images extracted, 378 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200306_Jun.pdf]
+  12 pages, 1 images extracted, 511 text blocks
+  5 trip-report section(s) found
+    -> Never mind Mt Pollux, here�s the story
+    -> Kangchenjunga Attempt: In October/November last year Colin and
+    -> Canada � Selkirks, & well, Piste in Tahoe:  Johns Wild and
+    -> Mulheron on enforced diet, takes �lightening� trip
+    -> Awesome in Horsham, happily in Arapiles, & camps in the
+  Wrote 5 file(s)
+
+[Vertigo_200307_Jul.pdf]
+  11 pages, 3 images extracted, 570 text blocks
+  1 trip-report section(s) found
+    -> And this just off the wires� Mt Tappy Trip report � Her Majesty�s Birt
+  Wrote 1 file(s)
+
+[Vertigo_200308_Aug.pdf]
+  11 pages, 2 images extracted, 522 text blocks
+  3 trip-report section(s) found
+    -> Andrei and Nicki get Thai�ed up and Krabi on rock holiday
+    -> Alpine course Instructor Weekend of fun
+    -> Knockin� on Evans� door
+  Wrote 3 file(s)
+
+[Vertigo_200309_Sep.pdf]
+  11 pages, 4 images extracted, 462 text blocks
+  2 trip-report section(s) found
+    -> Re. Peat, Pinnacle performance
+    -> Wellingtons Waterfront
+  Wrote 2 file(s)
+
+[Vertigo_200310_Oct.pdf]
+  10 pages, 4 images extracted, 392 text blocks
+  3 trip-report section(s) found
+    -> Weird scenes in the underworld
+    -> Cordillera Blanca
+    -> NZAJ gets the best stories!
+  Wrote 3 file(s)
+
+[Vertigo_200311_Nov.pdf]
+  10 pages, 2 images extracted, 430 text blocks
+  3 trip-report section(s) found
+    -> RUAPEHU ALPINE STYLE
+    -> FREE PIES AND VEHICLE GYMNASTICS
+    -> TO GIRDLESTONE OR NOT TO GIRDLESTONE
+  Wrote 3 file(s)
+
+[Vertigo_200312_Dec.pdf]
+  11 pages, 3 images extracted, 461 text blocks
+  6 trip-report section(s) found
+    -> The French invade Murchison
+    -> Volcanoes and Revolutions
+    -> Labour Weekend - Mt Adams
+    -> POTATOES, SMALL MEN AND IGNIMBRITE
+    -> Do something with your summer!
+    -> Interested in Instructing?
+  Wrote 6 file(s)
+
+[Vertigo_200402_Feb.pdf]
+  15 pages, 6 images extracted, 557 text blocks
+  4 trip-report section(s) found
+    -> OVERSEAS NEWS! Yunnan-Tibet Gorge Country (Oct/Nov 2003)
+    -> Labour Weekend � Mt Dixon (or maybe not�)
+    -> Tasman Saddle November 30 to December 7 2003
+    -> Successful NZAC CLIMBING CAMP!
+  Wrote 4 file(s)
+
+[Vertigo_200403_Mar.pdf]
+  11 pages, 3 images extracted, 508 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200404_Apr.pdf]
+  11 pages, 3 images extracted, 346 text blocks
+  2 trip-report section(s) found
+    -> Duggan to the Darrans
+    -> More Crumbs from Nank
+  Wrote 2 file(s)
+
+[Vertigo_200405_May.pdf]
+  11 pages, 8 images extracted, 364 text blocks
+  2 trip-report section(s) found
+    -> And more Easter Bunnies
+    -> Tararua Biscuits
+  Wrote 2 file(s)
+
+[Vertigo_200406_Jun.pdf]
+  15 pages, 3 images extracted, 608 text blocks
+  3 trip-report section(s) found
+    -> IT�S FINALLY COMING! JOE SIMPSON�S TOUCHING THE VOID
+    -> [SKIP duplicate] Wellingtons Waterfront
+    -> ARTHURS PASS CELEBRATIONS
+  Wrote 2 file(s)
+
+[Vertigo_200407_Jul.pdf]
+  15 pages, 2 images extracted, 629 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200408_Aug.pdf]
+  11 pages, 2 images extracted, 488 text blocks
+  3 trip-report section(s) found
+    -> Everything But The Mountain (QB week)
+    -> Ruapehu Hut: Ice climbing or a surrogate office?
+    -> Easter in the Garden of Eden
+  Wrote 3 file(s)
+
+[Vertigo_200409_Sep.pdf]
+  11 pages, 3 images extracted, 451 text blocks
+  4 trip-report section(s) found
+    -> Pleasant (Objectiveless) Days at Ruapehu
+    -> Mitre via Tufa Spur
+    -> Wellington NZAC at the Junior World Champs!
+    -> Rock Top Technique Course
+  Wrote 4 file(s)
+
+[Vertigo_200410_Oct.pdf]
+  7 pages, 2 images extracted, 307 text blocks
+  4 trip-report section(s) found
+    -> Literature-less days at Colin Todd
+    -> TimTams at Tukino
+    -> L�alpinisme au Presidente
+    -> Budding Journo�s!
+  Wrote 4 file(s)
+
+[Vertigo_200411_Nov.pdf]
+  11 pages, 8 images extracted, 344 text blocks
+  2 trip-report section(s) found
+    -> Lost mountaineers
+    -> [SKIP duplicate] Wellingtons Waterfront
+  Wrote 1 file(s)
+
+[Vertigo_200412_Dec.pdf]
+  11 pages, 2 images extracted, 479 text blocks
+  8 trip-report section(s) found
+    -> Ski Touring at Aoraki Mt Cook
+    -> Ten take on Tapi
+    -> From Arapiles to the Arrowsmiths
+    -> [SKIP duplicate] Wellingtons Waterfront
+    -> Other Section Member Happenings
+    -> Also in Arapiles!
+    -> Watch this space! Climbing film coming
+    -> Massages in the Bay!
+  Wrote 7 file(s)
+
+[Vertigo_200502_Feb.pdf]
+  11 pages, 3 images extracted, 453 text blocks
+  10 trip-report section(s) found
+    -> Plan I or 9th Time Lucky?
+    -> A France contribution�.
+    -> And a French contribution�.
+    -> The Importance of Not Being Ernest!
+    -> Ski Touring - Nelson Lakes
+    -> And the weather does its thing�.
+    -> Pete�s Post (did you all see him on TV talking to Sir Ed?!)
+    -> Mike Peat: �It's with sadness that I have to report that my friend Nik
+    -> The Paramount Theatre
+    -> Baring Head Rock Hop
+  Wrote 10 file(s)
+
+[Vertigo_200503_Mar.pdf]
+  11 pages, 11 images extracted, 455 text blocks
+  8 trip-report section(s) found
+    -> Hanging out in Fox!
+    -> The legend that is Brian Wilkins
+    -> Sefton from the Douglas
+    -> News from the Palmie crowd
+    -> Terry Crippen/Pete McGregor
+    -> Monday nights show your members card and climb for $5.
+    -> [SKIP duplicate] Interested in instructing?
+    -> Tararua Lovers Community (?? Not my name for it � Ed.)
+  Wrote 7 file(s)
+
+[Vertigo_200504_Apr.pdf]
+  11 pages, 4 images extracted, 423 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200505_May.pdf]
+  13 pages, 5 images extracted, 474 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200506_Jun.pdf]
+  11 pages, 4 images extracted, 540 text blocks
+  1 trip-report section(s) found
+    -> Waipara, Bonar, Matukituki Traverse
+  Wrote 1 file(s)
+
+[Vertigo_200507_Jul.pdf]
+  11 pages, 4 images extracted, 403 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200508_Aug.pdf]
+  11 pages, 5 images extracted, 382 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200509_Sep.pdf]
+  15 pages, 4 images extracted, 551 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200510_Oct.pdf]
+  15 pages, 4 images extracted, 527 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200511_Nov.pdf]
+  15 pages, 3 images extracted, 490 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200602_Feb.pdf]
+  7 pages, 6 images extracted, 220 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200603_Mar.pdf]
+  6 pages, 6 images extracted, 203 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200604_Apr.pdf]
+  11 pages, 5 images extracted, 451 text blocks
+  8 trip-report section(s) found
+    -> Tearing Up the Tasman
+    -> Selkirks. In February an inter-section team skied in Canada. First wee
+    -> Tibet. In September/October last year a team with a considerable avera
+    -> Fine Weather 5 Cross Ball Pass
+    -> Section General News
+    -> Magic Mountain (Peoples Choice Award)
+    -> Thankyou from The Persson Family
+    -> A BIG thanks...
+  Wrote 8 file(s)
+
+[Vertigo_200605_May.pdf]
+  11 pages, 9 images extracted, 397 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200606_Jun.pdf]
+  11 pages, 7 images extracted, 400 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200607_Jul.pdf]
+  7 pages, 6 images extracted, 263 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200608_Aug.pdf]
+  7 pages, 6 images extracted, 248 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200609_Sep.pdf]
+  7 pages, 6 images extracted, 278 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200610_Oct.pdf]
+  11 pages, 5 images extracted, 390 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200611_Nov.pdf]
+  7 pages, 5 images extracted, 276 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200612_Dec.pdf]
+  7 pages, 5 images extracted, 279 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200702_Feb.pdf]
+  11 pages, 7 images extracted, 402 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200703_Mar.pdf]
+  11 pages, 8 images extracted, 418 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200704_Apr.pdf]
+  12 pages, 3 images extracted, 489 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200705_May.pdf]
+  23 pages, 10 images extracted, 703 text blocks
+  11 trip-report section(s) found
+    -> CLIMBING IN PARADISE?
+    -> TEN DAYS IN FIORDLAND
+    -> EVER WONDER WHERE MEREWYN WENT?
+    -> THE PINNACLES IN SUMMER
+    -> A NEW ROUTE TO THE CABLE CAR
+    -> DENY THE EFFECTS OF GLOBAL WARMING?
+    -> AND MORE FROM MIKE��
+    -> A GHOST AT RUAPEHU HUT?
+    -> HIMALAYAN EXPEDITION: MANASLU 2007
+    -> VERTIGO GOES INTERNATIONAL�
+    -> Wgtn Section Photo Competition 2007 � Enter Now!
+  Wrote 11 file(s)
+
+[Vertigo_200706_Jun.pdf]
+  15 pages, 4 images extracted, 424 text blocks
+  4 trip-report section(s) found
+    -> Same old same old
+    -> SKI MOUNTAINEERING IN THE AXIS OF GOOD
+    -> NON NZAC GUIDEBOOK PRICE REVIEW
+    -> ROCK-CLIMBING GRADING FOR DUMMIES
+  Wrote 4 file(s)
+
+[Vertigo_200707_Jul.pdf]
+  15 pages, 5 images extracted, 432 text blocks
+  2 trip-report section(s) found
+    -> The adventures of Merewyn and Josh
+    -> MORE FROM MIKE! Mt Buffalo
+  Wrote 2 file(s)
+
+[Vertigo_200708_Aug.pdf]
+  15 pages, 13 images extracted, 418 text blocks
+  2 trip-report section(s) found
+    -> Latest from Mike O�Brien: Moonarie
+    -> NZAC Wellington Section Photo Competition 2007 - Results
+  Wrote 2 file(s)
+
+[Vertigo_200709_Sep.pdf]
+  11 pages, 3 images extracted, 307 text blocks
+  1 trip-report section(s) found
+    -> CANTERBURY MOUNTAINEERING CLUB/MACPAC MOUNTAINEER OF THE YEAR AWARD
+  Wrote 1 file(s)
+
+[Vertigo_200710_Oct.pdf]
+  15 pages, 6 images extracted, 443 text blocks
+  9 trip-report section(s) found
+    -> Caro and Matt are still climbing!
+    -> Scottie freezes his piglets�
+    -> For whom the bell tolled�
+    -> Grands Cojones in the Bugaboos
+    -> He�s turning into an Aussie�..
+    -> Did I mention the wind? (those Palmie members don�t
+    -> And the last word goes to Nank
+    -> [SKIP duplicate] Wellingtons Waterfront
+    -> OVER 70'S TRAVEL INSURANCE
+  Wrote 8 file(s)
+
+[Vertigo_200711_Nov.pdf]
+  11 pages, 5 images extracted, 375 text blocks
+  7 trip-report section(s) found
+    -> Chamonix Adventures July �07
+    -> Taranaki 21-23 September 07
+    -> Woodhead, Mark Yeo and Trey Guinn.
+    -> Andrew�s Adventures
+    -> Andrew Finnigan
+    -> Taranaki Climbing Camp
+    -> [SKIP duplicate] Wellingtons Waterfront
+  Wrote 6 file(s)
+
+[Vertigo_200712_Dec.pdf]
+  10 pages, 4 images extracted, 307 text blocks
+  6 trip-report section(s) found
+    -> Centennial beckoned last week�
+    -> The glory without the sweat, blood or tears
+    -> Possible new route on Hopeless 26-28 October 2007
+    -> Girdlestone 17 November 2007
+    -> [SKIP duplicate] Taranaki Climbing Camp
+    -> [SKIP duplicate] Wellingtons Waterfront
+  Wrote 4 file(s)
+
+[Vertigo_200802_Feb.pdf]
+  11 pages, 4 images extracted, 373 text blocks
+  1 trip-report section(s) found
+    -> Wellington 2008 financial year and AGM
+  Wrote 1 file(s)
+
+[Vertigo_200803_Mar.pdf]
+  14 pages, 6 images extracted, 388 text blocks
+  5 trip-report section(s) found
+    -> From Mike O�Brien (sounds like NZ this summer)
+    -> Hamilton (the mountain�)
+    -> Arthurs Pass � Franklin and Phills
+    -> From Richard Davies�
+    -> Last but not least � Taranaki rock (Paul Grimwood)
+  Wrote 5 file(s)
+
+[Vertigo_200805_May.pdf]
+  12 pages, 7 images extracted, 408 text blocks
+  4 trip-report section(s) found
+    -> A Garden of Eden Crossing
+    -> Spending Easter in the Garden
+    -> Trip to Wharepapa South
+    -> Whanganui Bay, Lake Taupo
+  Wrote 4 file(s)
+
+[Vertigo_200806_Jun.pdf]
+  15 pages, 16 images extracted, 404 text blocks
+  2 trip-report section(s) found
+    -> Summer 2008 by Don French
+    -> French Trip to Mt Murchison
+  Wrote 2 file(s)
+
+[Vertigo_200807_Jul.pdf]
+  12 pages, 11 images extracted, 335 text blocks
+  2 trip-report section(s) found
+    -> Mt Tapuae-o-unuku
+    -> Crumbs from the Summer
+  Wrote 2 file(s)
+
+[Vertigo_200808_Aug.pdf]
+  12 pages, 10 images extracted, 311 text blocks
+  2 trip-report section(s) found
+    -> Kawakawa Bay Rockclimbing Trip Report
+    -> Transalpining in the �tztal Alps
+  Wrote 2 file(s)
+
+[Vertigo_200809_Sep.pdf]
+  12 pages, 9 images extracted, 323 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200810_Oct.pdf]
+  15 pages, 12 images extracted, 436 text blocks
+  2 trip-report section(s) found
+    -> A Trip for the 'Leave Challenged'
+    -> Happy Anniversary and 1st Summit - Paretetaitonga (2751m) 6th Septembe
+  Wrote 2 file(s)
+
+[Vertigo_200811_Nov.pdf]
+  11 pages, 13 images extracted, 320 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200812_Dec.pdf]
+  15 pages, 14 images extracted, 533 text blocks
+  3 trip-report section(s) found
+    -> Three skiers, two glaciers, one September
+    -> Sonia and Trev havin a well earned brew, Tasman Saddle hut
+    -> Rock Activities at Titahi Bay
+  Wrote 3 file(s)
+
+[Vertigo_200902_Feb.pdf]
+  15 pages, 14 images extracted, 502 text blocks
+  7 trip-report section(s) found
+    -> Just prior to, and over xmas, Richard Davies and Quentin Duthie from t
+    -> Cozette Burn that is described in Moirs.
+    -> Upper Tasman Glacier
+    -> Garden of Eden � November 2008
+    -> Middle East Backdown
+    -> Ski Touring on Ruapehu
+    -> Combine Harvesting
+  Wrote 7 file(s)
+
+[Vertigo_200903_Mar.pdf]
+  14 pages, 13 images extracted, 351 text blocks
+  5 trip-report section(s) found
+    -> Payne�s Ford Trip Report - 22-25 Jan09
+    -> Whanganui Bay Trip Report - 5-7Dec08
+    -> Steve Minchin - My two days of climbing was characterised by a tendenc
+    -> Kevin Patterson - I learnt some excellent trad placements following Ia
+    -> Wellington Section members are truly nuts�  here is the proof!
+  Wrote 5 file(s)
+
+[Vertigo_200904_Apr.pdf]
+  13 pages, 15 images extracted, 277 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200906_Jun.pdf]
+  20 pages, 12 images extracted, 477 text blocks
+  5 trip-report section(s) found
+    -> Cappuccino Traverse
+    -> Hokkaido:  Late January an evergreen Welly Section team (Harry Keys, K
+    -> Alpine Piking and Sneaky Hut Bagging in the Easter Break
+    -> Easter Bunnies in the Arrowsmiths - 9th to 13th April 2009
+    -> Mt Cook over Easter
+  Wrote 5 file(s)
+
+[Vertigo_200907_Jul.pdf]
+  19 pages, 20 images extracted, 513 text blocks
+  3 trip-report section(s) found
+    -> Still, it soon warmed up, and after an hour of sun and we were away. L
+    -> Monday Wall to check out the climbs there while waiting for the sun to
+    -> Kuiti and beckoning us to �Come Sample the Steepness!� a detour was ma
+  Wrote 3 file(s)
+
+[Vertigo_200908_Aug.pdf]
+  19 pages, 21 images extracted, 371 text blocks
+  1 trip-report section(s) found
+    -> Mt Ruapehu South Girdlestone and Tahurangi, 3rd � 5th July
+  Wrote 1 file(s)
+
+[Vertigo_200909_Sep.pdf]
+  19 pages, 14 images extracted, 482 text blocks
+  2 trip-report section(s) found
+    -> Cathedral Rocks
+    -> Paretetaitonga, Dome, Cathedral Rocks, Te Heu Heu (South Face)
+  Wrote 2 file(s)
+
+[Vertigo_200910_Oct.pdf]
+  21 pages, 16 images extracted, 536 text blocks
+  1 trip-report section(s) found
+    -> Trip report by Scott Taylor
+  Wrote 1 file(s)
+
+[Vertigo_200911_Nov.pdf]
+  19 pages, 18 images extracted, 451 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_200912_Dec.pdf]
+  19 pages, 14 images extracted, 453 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201001_Jan.pdf]
+  23 pages, 22 images extracted, 506 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201002_Feb.pdf]
+  19 pages, 15 images extracted, 467 text blocks
+  1 trip-report section(s) found
+    -> Mt Aspiring � January 2010
+  Wrote 1 file(s)
+
+[Vertigo_201004_Apr.pdf]
+  23 pages, 16 images extracted, 607 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201005_May.pdf]
+  19 pages, 15 images extracted, 424 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201006_Jun.pdf]
+  18 pages, 16 images extracted, 409 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201007_July.pdf]
+  19 pages, 15 images extracted, 516 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201008_Aug.pdf]
+  15 pages, 13 images extracted, 354 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201009_Sep.pdf]
+  31 pages, 17 images extracted, 966 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201010_Oct.pdf]
+  11 pages, 10 images extracted, 279 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201011_Nov.pdf]
+  15 pages, 13 images extracted, 419 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201012_Dec.pdf]
+  13 pages, 11 images extracted, 335 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201102_Feb.pdf]
+  15 pages, 14 images extracted, 308 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201103_Mar.pdf]
+  11 pages, 9 images extracted, 286 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201104_Apr.pdf]
+  16 pages, 16 images extracted, 825 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201105_May.pdf]
+  18 pages, 16 images extracted, 704 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201106_Jun.pdf]
+  15 pages, 10 images extracted, 776 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201107_Jul.pdf]
+  20 pages, 25 images extracted, 721 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201108_Aug.pdf]
+  16 pages, 10 images extracted, 798 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201109_Sept.pdf]
+  22 pages, 12 images extracted, 1044 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201110_Oct.pdf]
+  12 pages, 12 images extracted, 548 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201111_Nov.pdf]
+  17 pages, 18 images extracted, 802 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201112_Dec.pdf]
+  16 pages, 10 images extracted, 718 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201202_Feb.pdf]
+  19 pages, 17 images extracted, 680 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201203_March.pdf]
+  17 pages, 13 images extracted, 803 text blocks
+  1 trip-report section(s) found
+    -> Mount Arrowsmith � November 2011
+  Wrote 1 file(s)
+
+[Vertigo_201204_April.pdf]
+  11 pages, 11 images extracted, 341 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201205_May.pdf]
+  23 pages, 18 images extracted, 907 text blocks
+  1 trip-report section(s) found
+    -> October-November had broken and we were
+  Wrote 1 file(s)
+
+[Vertigo_201206_June.pdf]
+  15 pages, 13 images extracted, 500 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201302_Feb.pdf]
+  13 pages, 12 images extracted, 324 text blocks
+  1 trip-report section(s) found
+    -> Mount Hopeless, Nelson Lakes, 19-21 January 2013
+  Wrote 1 file(s)
+
+[Vertigo_201304_April.pdf]
+  16 pages, 9 images extracted, 394 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201401_Jan.pdf]
+  16 pages, 15 images extracted, 379 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201402_Feb.pdf]
+  19 pages, 10 images extracted, 506 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201403_March.pdf]
+  19 pages, 16 images extracted, 460 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201404_April.pdf]
+  22 pages, 34 images extracted, 582 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201405_May.pdf]
+  18 pages, 17 images extracted, 365 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201406_June.pdf]
+  15 pages, 11 images extracted, 307 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201407_Jul.pdf]
+  20 pages, 17 images extracted, 447 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201408_Aug.pdf]
+  23 pages, 16 images extracted, 439 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201409_Sept.pdf]
+  13 pages, 12 images extracted, 233 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201410_Oct.pdf]
+  18 pages, 22 images extracted, 243 text blocks
+  1 trip-report section(s) found
+    -> Trip Report
+  Wrote 1 file(s)
+
+[Vertigo_201412_Dec.pdf]
+  12 pages, 21 images extracted, 154 text blocks
+  2 trip-report section(s) found
+    -> [SKIP duplicate] Trip Report
+    -> Nelson-Marlborough section also joined this expedition and set off sho
+  Wrote 1 file(s)
+
+[Vertigo_201509_Sept.pdf]
+  20 pages, 15 images extracted, 368 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201510_Oct.pdf]
+  19 pages, 16 images extracted, 302 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201511_Nov.pdf]
+  29 pages, 24 images extracted, 633 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201601_Jan.pdf]
+  11 pages, 9 images extracted, 223 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201602_Feb.pdf]
+  18 pages, 31 images extracted, 416 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201603_March.pdf]
+  11 pages, 7 images extracted, 215 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201604_April.pdf]
+  24 pages, 17 images extracted, 458 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201605_May.pdf]
+  25 pages, 19 images extracted, 534 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201606_June.pdf]
+  17 pages, 15 images extracted, 344 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201607_Jul.pdf]
+  17 pages, 7 images extracted, 387 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201608_Aug.pdf]
+  24 pages, 23 images extracted, 538 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201609_Sept.pdf]
+  19 pages, 14 images extracted, 342 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201610_Oct.pdf]
+  27 pages, 19 images extracted, 852 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201611_Nov.pdf]
+  26 pages, 22 images extracted, 579 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201701_Jan.pdf]
+  30 pages, 30 images extracted, 729 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201702_Feb.pdf]
+  19 pages, 15 images extracted, 416 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201703_March.pdf]
+  13 pages, 8 images extracted, 272 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+[Vertigo_201704_April.pdf]
+  27 pages, 32 images extracted, 644 text blocks
+  0 trip-report section(s) found
+  Wrote 0 file(s)
+
+Done. 168 trip-report files written to C:\ClaudeCode\nzac-wellington-trips\content\trips

@@ -2,6 +2,7 @@
 title: "OVERSEAS NEWS! Yunnan-Tibet Gorge Country (Oct/Nov 2003)"
 date: 2003-11-01
 author: "John Nank"
+authors: ["John Nank"]
 location: "Himalaya"
 locations: ["Himalaya"]
 tags: ["Alpine"]

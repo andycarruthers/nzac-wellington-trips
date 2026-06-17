@@ -2,6 +2,7 @@
 title: "Climb of Mt. Hopeless — 19–21 November 2021"
 date: 2021-11-21
 author: "Nina Sawicki"
+authors: ["Nina Sawicki"]
 cover: "/images/trips/eee11432-b81c-4b9e-c98c-252b427ced38-jpg"
 source_url: "https://us17.campaign-archive.com/?u=a8e8f7d42fa80601c5eed2fbb&id=6f50ee9930"
 source: "Vertigo Newsletter (Mailchimp archive)"

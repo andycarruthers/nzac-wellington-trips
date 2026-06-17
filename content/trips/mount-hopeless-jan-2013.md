@@ -2,6 +2,7 @@
 title: "Mount Hopeless, Nelson Lakes"
 date: 2013-01-21
 author: "Dan Pringle"
+authors: ["Dan Pringle"]
 participants:
   - "Colin Rolfe"
   - "Mark Hearfield"

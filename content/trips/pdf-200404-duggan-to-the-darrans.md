@@ -2,6 +2,7 @@
 title: "Duggan to the Darrans"
 date: 2004-04-01
 author: "Eric Duggan"
+authors: ["Eric Duggan"]
 location: "European Alps"
 locations: ["European Alps"]
 tags: ["Rock Climbing"]

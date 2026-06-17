@@ -2,6 +2,7 @@
 title: "Labour Weekend – Mt Dixon (or maybe not…)"
 date: 2004-02-01
 author: "Kate Smith"
+authors: ["Kate Smith"]
 location: "Mount Cook"
 locations: ["Mount Cook"]
 tags: ["Alpine"]

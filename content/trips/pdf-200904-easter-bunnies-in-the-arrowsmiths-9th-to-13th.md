@@ -3,6 +3,7 @@ title: "Easter Bunnies in the Arrowsmiths - 9th to 13th April 2009"
 cover: "/images/trips/Vertigo_200906_Jun-p8-x31.jpeg"
 date: 2009-04-01
 author: "Terry Crippen"
+authors: ["Terry Crippen"]
 location: "Canterbury"
 locations: ["Canterbury"]
 tags: ["Alpine"]

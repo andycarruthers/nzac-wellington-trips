@@ -2,6 +2,7 @@
 title: "Chamonix Adventures July ‘07"
 date: 2007-11-01
 author: "Dan Thomas"
+authors: ["Dan Thomas"]
 location: "European Alps"
 locations: ["European Alps"]
 tags: ["Alpine", "Rock Climbing"]

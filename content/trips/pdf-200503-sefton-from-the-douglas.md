@@ -2,6 +2,7 @@
 title: "Sefton from the Douglas"
 date: 2005-03-01
 author: "John Nankervis"
+authors: ["John Nankervis"]
 location: "Westland"
 locations: ["Westland"]
 tags: ["Alpine"]

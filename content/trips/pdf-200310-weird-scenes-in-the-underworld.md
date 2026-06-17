@@ -2,6 +2,7 @@
 title: "Weird scenes in the underworld"
 date: 2003-10-01
 author: "Mike Peat"
+authors: ["Mike Peat"]
 location: "Wellington"
 locations: ["Wellington"]
 tags: ["Alpine"]

@@ -2,6 +2,7 @@
 title: "Labour Weekend - Mt Adams"
 date: 2003-12-01
 author: "Caroline Duggan"
+authors: ["Caroline Duggan"]
 location: "Canterbury"
 locations: ["Canterbury"]
 tags: ["Alpine"]

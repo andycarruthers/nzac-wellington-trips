@@ -3,6 +3,7 @@ title: "Tararua Biscuits"
 cover: "/images/trips/Vertigo_200405_May-p6-x25.png"
 date: 2004-05-01
 author: "Our Website"
+authors: ["Our Website"]
 location: "Himalaya"
 locations: ["Himalaya"]
 tags: ["Alpine", "Tramping"]

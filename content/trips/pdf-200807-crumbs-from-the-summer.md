@@ -2,6 +2,7 @@
 title: "Crumbs from the Summer"
 date: 2008-07-01
 author: "John Nankervis"
+authors: ["John Nankervis"]
 location: "Fiordland"
 locations: ["Fiordland"]
 tags: ["Alpine"]

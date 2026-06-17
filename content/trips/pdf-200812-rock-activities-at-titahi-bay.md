@@ -2,6 +2,7 @@
 title: "Rock Activities at Titahi Bay"
 date: 2008-12-01
 author: "Steve Minchin"
+authors: ["Steve Minchin"]
 location: "Wellington"
 locations: ["Wellington"]
 tags: ["Rock Climbing"]

@@ -2,6 +2,7 @@
 title: "A France contribution…."
 date: 2005-02-01
 author: "Stephen France"
+authors: ["Stephen France"]
 location: "European Alps"
 locations: ["European Alps"]
 tags: ["Alpine"]

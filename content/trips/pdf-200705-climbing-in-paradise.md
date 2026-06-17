@@ -2,6 +2,7 @@
 title: "CLIMBING IN PARADISE?"
 date: 2007-05-01
 author: "Simone Chiaretta"
+authors: ["Simone Chiaretta"]
 location: "Asia"
 locations: ["Asia"]
 tags: ["Rock Climbing"]

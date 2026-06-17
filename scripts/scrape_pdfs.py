@@ -924,6 +924,7 @@ def to_hugo_markdown(post):
         lines.append(f'date: {post["date"]}')
     if post.get("author"):
         lines.append(f'author: "{q(post["author"])}"')
+        lines.append(f'authors: ["{q(post["author"])}"]')
     if post.get("location"):
         lines.append(f'location: "{q(post["location"])}"')
         lines.append(f'locations: ["{q(post["location"])}"]')

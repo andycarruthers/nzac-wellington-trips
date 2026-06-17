@@ -3,6 +3,7 @@ title: "Garden of Eden – November 2008"
 cover: "/images/trips/Vertigo_200902_Feb-p4-x51.jpeg"
 date: 2008-11-01
 author: "Hayden Cox"
+authors: ["Hayden Cox"]
 location: "Canterbury"
 locations: ["Canterbury"]
 tags: ["Alpine"]

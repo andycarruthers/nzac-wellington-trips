@@ -2,6 +2,7 @@
 title: "Trip Report – Tapuae-o-Uenuku"
 date: 2011-11-15
 author: "Wiebke Heise"
+authors: ["Wiebke Heise"]
 cover: "/images/trips/image002.jpg"
 source_url: "https://web.archive.org/web/20130505172652/http://www.nzalpine.wellington.net.nz/2011/11/trip-report-tapuae-o-uenuku/"
 source: "NZAC Wellington website (via Wayback Machine)"

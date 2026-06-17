@@ -3,6 +3,7 @@ title: "Trip report by Scott Taylor"
 cover: "/images/trips/Vertigo_200910_Oct-p6-x60.jpeg"
 date: 2009-10-01
 author: "Scott Taylor"
+authors: ["Scott Taylor"]
 location: "European Alps"
 locations: ["European Alps"]
 tags: ["Ski Touring", "Tramping"]

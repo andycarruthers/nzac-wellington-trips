@@ -2,6 +2,7 @@
 title: "A Garden of Eden Crossing"
 date: 2008-05-01
 author: "Terry Crippen"
+authors: ["Terry Crippen"]
 location: "Canterbury"
 locations: ["Canterbury"]
 tags: ["Alpine"]

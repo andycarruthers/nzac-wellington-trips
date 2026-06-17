@@ -2,6 +2,7 @@
 title: "And more Easter Bunnies"
 date: 2004-05-01
 author: "Mike Peat"
+authors: ["Mike Peat"]
 location: "Ruapehu"
 locations: ["Ruapehu"]
 tags: ["Alpine", "Rock Climbing"]
