@@ -44,9 +44,62 @@ h2md.body_width = 0
 
 # Heading patterns that indicate a trip report section
 TRIP_HEADING_RE = re.compile(
-    r"trip\s+report|section\s+trip|climb|alpine|tramp|hike|traverse|summit|peak",
+    r"trip\s+report|section\s+trip|climb|alpine|tramp|hike|traverse|summit|peak"
+    r"|ski\s+tour|backcountry|mountaineer|bivouac|route|ascent|descent|expedition"
+    r"|nelson\s+lakes|fiordland|ruapehu|aoraki|tasman|cook|kahurangi|arthur.s\s+pass",
     re.I,
 )
+
+# ---------------------------------------------------------------------------
+# Location / tag inference (mirrors scrape_pdfs.py)
+# ---------------------------------------------------------------------------
+
+_LOCATION_RULES = [
+    (r"\bHimalaya|Nepal|Tibet\b", "Himalaya"),
+    (r"\bPatagonia\b", "Patagonia"),
+    (r"\bAlaска|Alaska\b", "Alaska"),
+    (r"\bAlps\b.*\b(?:Swiss|France|Italy|Austria|European)\b|\bEuropean\s+Alps\b", "European Alps"),
+    (r"\bFiordland|Darran|Milford\b", "Fiordland"),
+    (r"\bMt\.?\s+Cook|Aoraki|Tasman\s+Glacier\b", "Mount Cook"),
+    (r"\bNelson\s+Lakes|Travers|St\.\s+Arnaud\b", "Nelson Lakes"),
+    (r"\bArthur.s\s+Pass|Otira|Waimakariri\b", "Arthur's Pass"),
+    (r"\bRuapehu|Tahurangi\b", "Ruapehu"),
+    (r"\bTongariro\b", "Tongariro"),
+    (r"\bKahurangi|Heaphy\b", "Kahurangi"),
+    (r"\bAoraki|Mt\.?\s+Cook\b", "Mount Cook"),
+    (r"\bWestland|Fox\s+Glacier|Franz\s+Josef\b", "Westland"),
+    (r"\bArapiles|Australia\b", "Australia"),
+    (r"\bAntarctica\b", "Antarctica"),
+    (r"\bBaring\s+Head|Wellington|Wharepapa\b", "Wellington"),
+    (r"\bHawke.s\s+Bay|Kaweka\b", "Hawke's Bay"),
+    (r"\bTararua\b", "Tararua"),
+    (r"\bMarlborough|Kaikoura\b", "Marlborough"),
+    (r"\bOtago|Mt\.?\s+Aspiring|Wanaka\b", "Otago"),
+    (r"\bQueenstown|Remarkables\b", "Queenstown"),
+]
+
+_TAG_RULES = [
+    (r"\bski\s+tour(?:ing)?|skinning|backcountry\s+ski\b", "Ski Touring"),
+    (r"\bice\s+climb|crampon|neve|crevasse\b", "Alpine"),
+    (r"\balpine|mountaineer(?:ing)?|bivouac\b", "Alpine"),
+    (r"\brock\s+climb|crag|trad\s+climb|bouldering\b", "Rock Climbing"),
+    (r"\brock\s+hop|Arapiles|Wharepapa\b", "Rock Climbing"),
+    (r"\btramping|hut\s+bag|bush\s+bash\b", "Tramping"),
+    (r"\bski\s+field|ski\s+hill|piste\b", "Ski"),
+]
+
+def _infer_location(text):
+    for pattern, location in _LOCATION_RULES:
+        if re.search(pattern, text, re.I):
+            return location
+    return ""
+
+def _infer_tags(text):
+    seen = set(); tags = []
+    for pattern, tag in _TAG_RULES:
+        if tag not in seen and re.search(pattern, text, re.I):
+            tags.append(tag); seen.add(tag)
+    return tags or ["Alpine"]
 
 # ---------------------------------------------------------------------------
 # Fetch with redirect following
@@ -67,83 +120,208 @@ def fetch_final_url(url):
 # Extract trip reports from a newsletter
 # ---------------------------------------------------------------------------
 
+_MAJOR_SECTION_RE = re.compile(
+    r"^(?:Section\s+(?:Contacts?|News|Notices?)|"
+    r"Coming\s+Trips|From\s+the\s+(?:Editor|Chair)|"
+    r"Chair.s?\s+(?:Report|Update)|AGM|Notices?|Sponsors?|Calendar|"
+    r"Photo\s+(?:Comp|Competition)|Club\s+(?:Night|Meeting)|"
+    r"Events?|Instruction|Courses?|Newsletter|Powered\s+by)$",
+    re.I,
+)
+
+
+def _block_ancestor(element):
+    """Walk up to find the top-level Mailchimp mcnTextBlock / mcnImageCardBlock ancestor."""
+    cur = element
+    for _ in range(12):
+        cur = cur.parent
+        if cur is None:
+            return None
+        cls = cur.get("class", [])
+        if any("mcn" in c and "Block" in c for c in cls):
+            return cur
+    return None
+
+
+def _find_with_siblings(element):
+    """Walk up from element until we find an ancestor that has next siblings."""
+    cur = element
+    for _ in range(15):
+        sibs = [s for s in cur.find_next_siblings() if hasattr(s, "name") and s.name]
+        if sibs:
+            return cur, sibs
+        cur = cur.parent
+        if cur is None:
+            break
+    return None, []
+
+
+def _extract_block_content(block):
+    """
+    From a Mailchimp content block, extract title, author, images, body_html.
+    Trip report blocks use bold <strong> for title, no <h> tags.
+    """
+    # Clean up any inline style attributes to avoid noisy markdown
+    for tag in block.find_all(True):
+        if tag.has_attr("style"):
+            del tag["style"]
+
+    text_content = block.find("td", class_="mcnTextContent")
+    if not text_content:
+        text_content = block
+
+    full_text = text_content.get_text(separator="\n", strip=True)
+    lines = [l.strip() for l in full_text.splitlines() if l.strip()]
+
+    if not lines or len(full_text) < 30:
+        return None
+
+    # Title: first <h> tag, or first <strong> if no heading
+    title = ""
+    for h in text_content.find_all(["h1", "h2", "h3", "h4", "h5"]):
+        t = h.get_text(strip=True)
+        if t and len(t) > 4 and not _MAJOR_SECTION_RE.match(t):
+            title = t
+            break
+    if not title:
+        strong_tags = text_content.find_all("strong")
+        for s in strong_tags:
+            t = s.get_text(strip=True)
+            # Skip short labels and ones that look like "By Name" or dates
+            if t and len(t) > 8 and not re.match(r"^(?:By |Words? by |\d)", t, re.I):
+                title = t
+                break
+    if not title and lines:
+        title = lines[0]
+
+    # Author
+    author = ""
+    for line in lines[:6]:
+        m = re.match(r"^(?:[Ww]ords?\s+by|[Bb]y)\s+([A-Z][A-Za-z']+(?:\s+[A-Z][A-Za-z']+){1,2})", line)
+        if m:
+            author = m.group(1)
+            break
+
+    # Images
+    images = []
+    for img in block.find_all("img"):
+        src = img.get("src", "")
+        if src and not src.endswith(".gif") and "mcsf" not in src and "mailchimp" not in src.lower():
+            alt = img.get("alt", "")
+            images.append({"src": src, "alt": alt})
+            fname = slugify(src.split("/")[-1].split("?")[0]) or "image"
+            img["src"] = f"/images/trips/{fname}"
+
+    body_html = str(text_content)
+    body_md = h2md.handle(body_html)
+    body_md = re.sub(r"\n{3,}", "\n\n", body_md).strip()
+
+    return {
+        "title":     title,
+        "author":    author,
+        "images":    images,
+        "body_md":   body_md,
+    }
+
+
 def extract_trip_sections(html, source_url):
     """
     Parse a Mailchimp campaign HTML and return a list of trip-report dicts.
-    Each dict: {title, date, author, body_html, images, source_url}
+
+    Mailchimp newsletters use a table-based layout: each section (Chair's Report,
+    Trip Reports, Notices …) is a top-level <table class="mcnTextBlock"> element.
+    Trip report content blocks follow the "Trip Reports" heading block as siblings.
     """
     soup = BeautifulSoup(html, "html.parser")
-
-    # Remove Mailchimp header/footer boilerplate
-    for sel in [
-        ".mcnPreviewText", "#templateHeader", "#templateFooter",
-        ".mcnDividerBlock", "#bodyCell",  # keep inner content
-    ]:
-        pass  # we'll work with the full soup and filter by content
-
-    # Mailchimp campaigns use table-based layout.
-    # Strategy: find all heading elements, check if they look like trip reports,
-    # then collect following content until the next heading of the same level.
-
     reports = []
-    headings = soup.find_all(re.compile(r"h[1-6]"))
 
-    for heading in headings:
-        heading_text = heading.get_text(strip=True)
-        if not TRIP_HEADING_RE.search(heading_text):
-            continue
+    # ── Strategy 1: find the "Trip Reports" section marker and collect siblings ──
+    trip_marker_block = None
+    for h in soup.find_all(["h1", "h2", "h3", "h4"]):
+        t = h.get_text(strip=True)
+        if re.match(r"^Trip\s+Reports?$", t, re.I):
+            block = _block_ancestor(h)
+            if block:
+                trip_marker_block = block
+            break
 
-        print(f"    Found trip section: {heading_text[:60]}")
+    if trip_marker_block:
+        marker_el, sibling_blocks = _find_with_siblings(trip_marker_block)
+        content_blocks = []
+        for sib in sibling_blocks:
+            # Stop at next major section heading
+            stopped = False
+            for h in sib.find_all(["h1", "h2", "h3", "h4"]):
+                if _MAJOR_SECTION_RE.match(h.get_text(strip=True)):
+                    stopped = True
+                    break
+            if stopped:
+                break
+            sib_cls = sib.get("class", [])
+            if any("mcnTextBlock" in c or "mcnImageCardBlock" in c for c in sib_cls):
+                content_blocks.append(sib)
 
-        # Collect content nodes until the next heading of same/higher level
-        h_level = int(heading.name[1])
-        content_nodes = []
-        for sibling in heading.find_next_siblings():
-            if sibling.name and re.match(r"h[1-6]", sibling.name):
-                sib_level = int(sibling.name[1])
-                if sib_level <= h_level:
-                    break  # next section at same or higher level
-            content_nodes.append(sibling)
+        # Each mcnTextBlock sibling is a trip report (image blocks attach to the next text block)
+        pending_images = []
+        for block in content_blocks:
+            sib_cls = block.get("class", [])
+            if any("mcnImageCardBlock" in c for c in sib_cls):
+                # Collect images to attach to the next text block
+                for img in block.find_all("img"):
+                    src = img.get("src", "")
+                    if src and not src.endswith(".gif") and "mcsf" not in src:
+                        pending_images.append({"src": src, "alt": img.get("alt", "")})
+                continue
 
-        if not content_nodes:
-            continue
+            data = _extract_block_content(block)
+            if not data or len(data["body_md"]) < 40:
+                continue
 
-        # Extract author from first paragraph if it matches "by Name" or "- Name"
-        author = ""
-        if content_nodes:
-            first_p = content_nodes[0].get_text(strip=True) if hasattr(content_nodes[0], 'get_text') else ""
-            m = re.match(r"^[Bb]y\s+([\w\s]+?)(?:\.|,|$)", first_p)
-            if m:
-                author = m.group(1).strip()
+            data["images"] = pending_images + data["images"]
+            pending_images = []
 
-        # Build body HTML
-        body_html = str(heading) + "".join(str(n) for n in content_nodes)
+            full_text = data["title"] + " " + data["body_md"]
+            print(f"    Trip report: {data['title'][:70]}")
+            reports.append({
+                "title":      data["title"],
+                "date":       "",
+                "author":     data["author"],
+                "location":   _infer_location(full_text),
+                "tags":       _infer_tags(full_text),
+                "body_md":    data["body_md"],
+                "images":     data["images"],
+                "source_url": source_url,
+            })
 
-        # Extract images
-        images = []
-        body_soup = BeautifulSoup(body_html, "html.parser")
-        for img in body_soup.find_all("img"):
-            src = img.get("src", "")
-            if src and not src.endswith(".gif") and "mcsf" not in src:
-                alt = img.get("alt", "")
-                images.append({"src": src, "alt": alt})
-                # Rewrite src to local path
-                fname = slugify(src.split("/")[-1].split("?")[0]) or "image"
-                img["src"] = f"/images/trips/{fname}"
-
-        # Rebuild body_html after image rewriting
-        body_html = str(body_soup)
-        body_md = h2md.handle(body_html)
-        body_md = re.sub(r"\n{3,}", "\n\n", body_md).strip()
-
-        reports.append({
-            "title":      heading_text,
-            "date":       "",
-            "author":     author,
-            "body_md":    body_md,
-            "images":     images,
-            "source_url": source_url,
-        })
+    # ── Strategy 2: headings that directly match trip activity patterns ──
+    # (for newsletters without a "Trip Reports" section header)
+    if not reports:
+        for h in soup.find_all(["h1", "h2", "h3", "h4"]):
+            t = h.get_text(strip=True)
+            if len(t) < 5 or not TRIP_HEADING_RE.search(t):
+                continue
+            if _MAJOR_SECTION_RE.match(t):
+                continue
+            # Find the block ancestor and collect its content
+            block = _block_ancestor(h)
+            if not block:
+                continue
+            data = _extract_block_content(block)
+            if not data or len(data["body_md"]) < 40:
+                continue
+            full_text = t + " " + data["body_md"]
+            data["title"] = t  # use heading as title
+            print(f"    Trip report: {t[:70]}")
+            reports.append({
+                "title":      t,
+                "date":       "",
+                "author":     data["author"],
+                "location":   _infer_location(full_text),
+                "tags":       _infer_tags(full_text),
+                "body_md":    data["body_md"],
+                "images":     data["images"],
+                "source_url": source_url,
+            })
 
     return reports
 
@@ -177,6 +355,13 @@ def to_hugo_markdown(post):
         lines.append(f'date: {post["date"]}')
     if post["author"]:
         lines.append(f'author: "{q(post["author"])}"')
+        lines.append(f'authors: ["{q(post["author"])}"]')
+    if post.get("location"):
+        lines.append(f'location: "{q(post["location"])}"')
+        lines.append(f'locations: ["{q(post["location"])}"]')
+    if post.get("tags"):
+        tag_list = ", ".join(f'"{t}"' for t in post["tags"])
+        lines.append(f'tags: [{tag_list}]')
     if post.get("images"):
         fname = slugify(post["images"][0]["src"].split("/")[-1].split("?")[0]) or "cover"
         lines.append(f'cover: "/images/trips/{fname}"')
