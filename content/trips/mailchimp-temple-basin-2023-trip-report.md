@@ -1,5 +1,6 @@
 ---
 title: "Temple Basin 2023 Trip Report"
+date: 2023-10-27
 location: "Nelson Lakes"
 locations: ["Nelson Lakes"]
 tags: ["Ski Touring", "Alpine"]

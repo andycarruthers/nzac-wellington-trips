@@ -1,5 +1,6 @@
 ---
 title: "Taranaki & Aoraki Trips"
+date: 2022-12-14
 location: "Mount Cook"
 locations: ["Mount Cook"]
 tags: ["Alpine"]

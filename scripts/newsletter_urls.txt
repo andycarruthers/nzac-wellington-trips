@@ -1,111 +1,340 @@
-# Vertigo newsletter archive URLs (folder 6db033c956)
-# These are the monthly Vertigo newsletters likely to contain trip reports
-# Date | Subject | URL
-# 2020-09-16 | Get your September Vertigo
-http://eepurl.com/hdpMY5
-# 2020-10-15 | Get your October Vertigo
-http://eepurl.com/hf2TW9
-# 2020-11-12 | Get your November Vertigo
-http://eepurl.com/hivnYn
-# 2020-11-19 | Get your November Vertigo (resend)
-http://eepurl.com/hjgH6X
-# 2021-02-19 | Get your February Vertigo
-http://eepurl.com/hqkMFH
-# 2021-02-20 | Get your February Vertigo (resend)
-http://eepurl.com/hq9F2n
-# 2021-03-29 | Get your March Vertigo
-http://eepurl.com/hunhmH
-# 2021-04-02 | Get your March Vertigo (resend)
-http://eepurl.com/huSL95
-# 2021-04-30 | Get your April Vertigo
-http://eepurl.com/hw4dAD
-# 2021-05-28 | Get your May Vertigo
-http://eepurl.com/hzjnBb
-# 2021-06-04 | Get your May Vertigo (resend)
-http://eepurl.com/hAqOjv
-# 2021-06-29 | Winter is Coming
-http://eepurl.com/hAC7Cb
-# 2021-07-28 | The snow has arrived
-http://eepurl.com/hExQSX
-# 2021-08-23 | Khumbu Book launch
-http://eepurl.com/hGwUrH
-# 2021-10-03 | Photo Comp Results
-http://eepurl.com/hJRPyv
-# 2021-11-08 | Nelson Lakes Snow Trip and Tukino Ski Tour Meet
-http://eepurl.com/hMJd09
-# 2021-11-29 | Summer Rock and The 100 Peak Challenge
-http://eepurl.com/hOyV9b
-# 2022-02-15 | Tukino and Temple Basin events, Tasman Glacier photo essay
-http://eepurl.com/hUBs09
-# 2022-03-21 | Snow Craft 2022, Ringatoto spring climb
-http://eepurl.com/hXmLL5
-# 2022-05-24 | Banff, Ella Range and Haast Pass
-http://eepurl.com/h1YROX
-# 2022-07-13 | Alpine Trips, Temple Basin Meet and Film Night
-http://eepurl.com/h6lloj
-# 2022-07-16 | Alpine Trips, Temple Basin Meet and Film Night (resend)
-http://eepurl.com/h6Nncb
-# 2022-09-11 | Alpine Trips
-http://eepurl.com/h-uCpz
-# 2022-11-10 | Here are the results of the Alpine photo comp
-http://eepurl.com/ic3mEz
-# 2022-11-12 | Here are the results of the Alpine photo comp (resend)
-http://eepurl.com/idxJKn
-# 2022-12-14 | Alpine Trips and Summer Rock
-http://eepurl.com/ifn5s1
-# 2023-03-16 | Reel Rock and Mayan Smith-Gobat's stories
-http://eepurl.com/imJfcs
-# 2023-04-15 | vertigo April 2023
-http://eepurl.com/ioPldA
-# 2023-06-28 | Winter's here, so time to brush up on avalanche safety
-http://eepurl.com/irLlNs
-# 2023-05-24 | Winter Alpine Trips
-http://eepurl.com/irLlTE
-# 2023-07-28 | Section evening - Buy, Sell and Exchange
-http://eepurl.com/iwfQgs
-# 2023-08-24 | Photo comp 2023, two great talks, adventure movies
-http://eepurl.com/iyghqY
-# 2023-09-21 | Sign up for Trad Rock, the photocomp, adventure movies
-http://eepurl.com/iz5CT-/
-# 2023-10-27 | Coming up in November - the Photocomp and Lydia Bradey
-http://eepurl.com/iCw4-g
-# 2023-12-15 | Meri Kerihimete: Sign up for Summer Rock, Photo-Comp winners
-http://eepurl.com/iFZbaM
-# 2024-03-04 | Summer Climbing and More
-http://eepurl.com/iKzQF-/
-# 2024-03-29 | Holly Beckham climbs Everest, Reel Rock, Snowcraft
-http://eepurl.com/iMPgSM
-# 2024-04-29 | Winter trip planning, and a Summer rock wrap
-http://eepurl.com/iOWfcI
-# 2024-05-28 | Banff is here - book your tickets
-http://eepurl.com/iPTehs
-# 2024-07-01 | Winter Avalanche Awareness Talk
-http://eepurl.com/iSX6UE
-# 2024-07-30 | Upcoming Adventures at the Alpine Club
-http://eepurl.com/iUMXwo
-# 2024-08-28 | Cold Weather Survival
-http://eepurl.com/iXSmto
-# 2024-09-29 | Photo Comp, Canadian Big Wall, Taranaki, Cass Valley
-http://eepurl.com/iZ2ok-/
-# 2024-10-31 | Alpine Photos on Show
-http://eepurl.com/i2lnbs
-# 2024-12-02 | Photocomp winners! And a Christmasy get together
-http://eepurl.com/i428w2
-# 2025-02-11 | Rock and Pizza
-http://eepurl.com/i9AiTI
-# 2025-02-27 | Adventure Talks and Pizza
-http://eepurl.com/i-QFVk
-# 2025-04-29 | Your Pathway from Base to Peak, Snowcraft, Banff
-http://eepurl.com/jc-oG6
-# 2025-06-04 | June Section evening, Banff, First Aid and Navigation
-http://eepurl.com/jgezKM
-# 2025-06-30 | July Section evening, the Welly Clubs Quiz
-http://eepurl.com/jh8RXA
-# 2025-09-01 | September Section evening: Avalanche Awareness
-http://eepurl.com/jkvSjY
-# 2025-09-29 | October Section evening: Three Terrific Talks
-http://eepurl.com/jol0Bs
-# 2025-10-31 | Entries open for the Wellington Section Photocomp
-http://eepurl.com/jqJKGM
-# 2026-06-01 | Banff! Winter Trips! Avalanche Awareness! Outdoor First Aid
-http://eepurl.com/jC34CY
+# All NZAC Wellington Mailchimp campaigns
+# Format: YYYY-MM-DD URL
+# Lines starting with # are comments.
+
+# Get your September Vertigo ❄ [Vertigo]
+2020-09-16 http://eepurl.com/hdpMY5
+# Confirming change of date
+2020-09-18 http://eepurl.com/hdKfQn
+# Tickets still available for tonight's Banff film festival 🌌
+2020-09-22 http://eepurl.com/hd9N9n
+# Get your October Vertigo ❄ [Vertigo]
+2020-10-15 http://eepurl.com/hf2TW9
+# Get your November Vertigo ❄ [Vertigo]
+2020-11-12 http://eepurl.com/hivnYn
+# Get your November Vertigo ❄ [Vertigo]
+2020-11-19 http://eepurl.com/hjgH6X
+# 2021 NZAC Volunteer Instructor Training
+2020-12-19 http://eepurl.com/hl4AKj
+# Invitation: Section Night with Les Molloy ⭐
+2021-02-04 http://eepurl.com/hpJqD1
+# Invitation: Section Night with Les Molloy ⭐
+2021-02-09 http://eepurl.com/hqcx2f
+# Date Change | Invitation: Section Night with Les Molloy ⭐
+2021-02-15 http://eepurl.com/hqC1tj
+# Get your February Vertigo ❄ [Vertigo]
+2021-02-19 http://eepurl.com/hqkMFH
+# Get your February Vertigo ❄ [Vertigo]
+2021-02-20 http://eepurl.com/hq9F2n
+# Reel Rock March 10th 7pm Penthouse 🌐
+2021-03-04 http://eepurl.com/hr-jeT
+# Invitation: Section Night with Bob McKerrow ⭐
+2021-03-16 http://eepurl.com/htlEeT
+# Get your March Vertigo ❄ [Vertigo]
+2021-03-29 http://eepurl.com/hunhmH
+# Get your March Vertigo ❄ [Vertigo]
+2021-04-02 http://eepurl.com/huSL95
+# Invitation: Section Night with Les Molloy ⭐
+2021-04-13 http://eepurl.com/hvKdTn
+# Get your April Vertigo ❄ [Vertigo]
+2021-04-30 http://eepurl.com/hw4dAD
+# Invitation: Section Night "Volunteer of the Year" ⭐
+2021-05-12 http://eepurl.com/hyjVVX
+# Get your May Vertigo ❄ [Vertigo]
+2021-05-28 http://eepurl.com/hzjnBb
+# Get your May Vertigo ❄ [Vertigo]
+2021-06-04 http://eepurl.com/hAqOjv
+# Invitation: Avalanche Awareness Seminar ⭐
+2021-06-15 http://eepurl.com/hBdSpH
+# Winter is Coming...😃 [Vertigo]
+2021-06-29 http://eepurl.com/hAC7Cb
+# Invitation: Section Night "Stay safe in the Mountains" ⭐
+2021-07-18 http://eepurl.com/hD2vN1
+# The snow has arrived ❄ [Vertigo]
+2021-07-28 http://eepurl.com/hExQSX
+# Can you help co leading a snow trip?
+2021-08-05 http://eepurl.com/hFmaZX
+# Do you enjoy Alpine photography? Photo Comp Tuesday night 6pm 😄
+2021-08-16 http://eepurl.com/hF6oZX
+# Khumbu Book launch 😃 [Vertigo]
+2021-08-23 http://eepurl.com/hGwUrH
+# Peter Laurenson's book Khumbu, Wednesday night 6pm online 😄
+2021-09-13 http://eepurl.com/hIaqQn
+# AGM September 28th 6pm 💨
+2021-09-15 http://eepurl.com/hIntZT
+# AGM September 28th 6pm 💨 Reports
+2021-09-28 http://eepurl.com/hJo1g1
+# Photo Comp Results 😎 [Vertigo]
+2021-10-03 http://eepurl.com/hJRPyv
+# Les Molloy, The spectacular Karakoram Mountains of Pakistan, Tuesday night 6pm online 😄
+2021-10-17 http://eepurl.com/hK2gc1
+# Les Molloy, The spectacular Karakoram Mountains of Pakistan, Tuesday night 6pm online 😄 updated zoom link
+2021-10-18 http://eepurl.com/hK5uxP
+# Nelson Lakes Snow Trip and Tukino Ski Tour Meet [Vertigo]
+2021-11-08 http://eepurl.com/hMJd09
+# Don French The 100 Peaks Challenge Tuesday 6pm
+2021-11-15 http://eepurl.com/hNn7g1
+# Summer Rock and The 100 Peak Challenge [Vertigo]
+2021-11-29 http://eepurl.com/hOyV9b
+# 6 spots left in Summer Rock!
+2021-12-01 http://eepurl.com/hOSkav
+# Climbing meet night every Tuesday 6pm Fergs
+2021-12-11 http://eepurl.com/hPMv0z
+# Climbing Meet - Whakapapa and Meet-up at Fergs
+2022-01-17 http://eepurl.com/hSmLtv
+# Ski Touring Ball Pass, Thursday February 17th 6pm
+2022-02-09 http://eepurl.com/hUge6n
+# Tukino and Temple Basin events, Tasman Glacier photo essay [Vertigo]
+2022-02-15 http://eepurl.com/hUBs09
+# How to make your mountain trips safer, Thursday March 17th 6pm
+2022-03-12 http://eepurl.com/hW2cjf
+# Snow Craft 2022, Ringatoto spring climb [Vertigo]
+2022-03-21 http://eepurl.com/hXmLL5
+# Register for Snowcraft 2022
+2022-03-21 http://eepurl.com/hXIqhX
+# Navigation Course 7 spots left
+2022-03-31 http://eepurl.com/hYtSt9
+# Enchaining the Peaks Alastair McDowell
+2022-04-08 http://eepurl.com/hY_qY5
+# Climate change nuts and bolts: some thoughts from a geologist
+2022-05-01 http://eepurl.com/h0ZLpP
+# Tickets Banff film festival 🌌
+2022-05-12 http://eepurl.com/h1S8qj
+# Banff, Ella Range and Haast Pass [Vertigo]
+2022-05-24 http://eepurl.com/h1YROX
+# Avalanche talk
+2022-05-25 http://eepurl.com/h2RJa5
+# Event Cancelled: Avalanche talk
+2022-05-30 http://eepurl.com/h3b0Pv
+# Temple Basin Alpine Meet, reserve your place ❄
+2022-06-10 http://eepurl.com/h35MIP
+# Alpine Trips, reserve your place ❄
+2022-06-15 http://eepurl.com/h4rkhT
+# Avalanche talk
+2022-06-29 http://eepurl.com/h5vpnL
+# Alpine Trips, Temple Basin Meet and Film Night [Vertigo]
+2022-07-13 http://eepurl.com/h6lloj
+# Alpine Trips, Temple Basin Meet and Film Night [Vertigo]
+2022-07-16 http://eepurl.com/h6Nncb
+# Film night, the story of the Alpine Kids Southern Alps Traverse
+2022-07-19 http://eepurl.com/h6W9Uf
+# Weather forecasting for mountaineers: Thursday 6pm
+2022-07-31 http://eepurl.com/h7PO_H
+# Photo Comp: 2 weeks to get your photos in 😀
+2022-08-05 http://eepurl.com/h8bdoP
+# Come and see the Photo Comp entries and winners 😍
+2022-08-25 http://eepurl.com/h9xUMb
+# Alpine Trips [Vertigo]
+2022-09-11 http://eepurl.com/h-uCpz
+# The future of Alpine Club – AGM update 🌟
+2022-09-15 http://eepurl.com/h_cDXf
+# Alpine Club – AGM + Pizza and Alpine trip stories, Wednesday, Oct 5th 6pm
+2022-10-04 http://eepurl.com/iaxZFb
+# Uprising by Nic Low, Walking the Southern Alps: Friday Oct 14th 6pm
+2022-10-06 http://eepurl.com/iaI85z
+# Here are the results of the Alpine photo comp! [Vertigo]
+2022-11-10 http://eepurl.com/ic3mEz
+# Here are the results of the Alpine photo comp! [Vertigo]
+2022-11-12 http://eepurl.com/idxJKn
+# Tasman Saddle and Temple Basin Alpine trip talks Nov 23rd 6pm
+2022-11-21 http://eepurl.com/ieeqmb
+# Alpine Trips and Summer Rock :) [Vertigo]
+2022-12-14 http://eepurl.com/ifn5s1
+# Learn how to select the right gear Thursday, Feb 2nd 6 pm
+2023-01-29 http://eepurl.com/ijt9dX
+# Trad Rock Climbing course
+2023-01-31 http://eepurl.com/ijuF_z
+# Reel Rock 17 film tour Wellington
+2023-02-20 http://eepurl.com/ik9qWz
+# Register for Snowcraft 2023
+2023-03-02 http://eepurl.com/ilW8Mo
+# Mayan Smith-Gobat's stories from a life lived on the edge. April 14th 6 pm
+2023-03-12 http://eepurl.com/imIi7c
+# Reel Rock and Mayan Smith-Gobat's stories [Vertigo]
+2023-03-16 http://eepurl.com/imJfcs
+# Winter Alpine Trips: Wednesday March 22nd 6 pm
+2023-03-18 http://eepurl.com/im_3BA
+# vertigo April 2023 [Vertigo]
+2023-04-15 http://eepurl.com/ioPldA
+# Last Snowcraft spots | Navigation course | Section nights
+2023-04-21 http://eepurl.com/ipEjS-/
+# Four ways to support the Banff film festival 🌌
+2023-05-10 http://eepurl.com/iq27Ew
+# What's on at the Banff film festival 🌌
+2023-05-21 http://eepurl.com/irJjx-/
+# Winter Alpine Trips [Vertigo]
+2023-05-24 http://eepurl.com/irLlTE
+# How to select the right winter gear | Thursday, June 1st 6 pm
+2023-05-29 http://eepurl.com/iscUv2
+# 📽️ Last chance to see Banff this year 🏔️
+2023-06-12 http://eepurl.com/ith5GI
+# Winter's here, so time to brush up on avalanche safety [Vertigo]
+2023-06-28 http://eepurl.com/irLlNs
+# Avalanche Awareness talk
+2023-07-02 http://eepurl.com/iuJNik
+# Section evening - Buy, Sell and Exchange [Vertigo]
+2023-07-28 http://eepurl.com/iwfQgs
+# Photo comp 2023, two great talks, adventure movies! [Vertigo]
+2023-08-24 http://eepurl.com/iyghqY
+# An Evening with Juan Zarama Perini: Explore Photography & Win 1 of 4 $50 Vouchers
+2023-09-03 http://eepurl.com/iy0dLY
+# Be inspired by our magnificent Tararua Ranges every day for a whole year
+2023-09-14 http://eepurl.com/izG9FY
+# 🧗Sign up for Trad Rock, the photocomp, adventure movies! [Vertigo]
+2023-09-21 http://eepurl.com/iz5CT-/
+# A guide to NZ's best mountain scrambles and snow climbs
+2023-10-02 http://eepurl.com/iAXll6
+# Discover the Thrilling Adventure "Tararua S-K" – Available Now for Rent or Purchase Online!
+2023-10-22 http://eepurl.com/iCimAI
+# Discover the Thrilling Adventure "Tararua S-K" – Available Now for Rent or Purchase Online!
+2023-10-24 http://eepurl.com/iCvf8U
+# Coming up in November - the Photocomp and Lydia Bradey [Vertigo]
+2023-10-27 http://eepurl.com/iCw4-g
+# AGM and Social get together 🥳
+2023-11-22 http://eepurl.com/iEARsA
+# Lydia Bradey live in Wellington
+2023-11-28 http://eepurl.com/iE1Ji6
+# Meri Kerihimete: Sign up for Summer Rock, Photo-Comp winners! [Vertigo]
+2023-12-15 http://eepurl.com/iFZbaM
+# 🌟 Kickstart Your Adventure: Join Us at NZAC Wellington's First Section Night of the Year!
+2024-01-30 http://eepurl.com/iI3lDA
+# 🌟 Free training for future Trip Leaders and Volunteer Instructors
+2024-02-16 http://eepurl.com/iKcwJA
+# Summer Climbing and More [Vertigo]
+2024-03-04 http://eepurl.com/iKzQF-/
+# 🌟 Change of plans for tonight's event
+2024-03-07 http://eepurl.com/iLzvWg
+# Reel Rock film screening Wellington
+2024-03-19 http://eepurl.com/iMpDUc
+# Register for Snowcraft 2024
+2024-03-24 http://eepurl.com/iMIGg6
+# ⛰️Holly Beckham climbs Everest, Reel Rock, Snowcraft [Vertigo]
+2024-03-29 http://eepurl.com/iMPgSM
+# 🌟 Holly Beckham: a Māori wahine's journey to Everest
+2024-03-29 http://eepurl.com/iM4JuE
+# 🧗‍♀️Reel Rock film screening tomorrow night
+2024-04-02 http://eepurl.com/iM4I-o
+# ⛰️Winter trip planning, and a Summer rock wrap [Vertigo]
+2024-04-29 http://eepurl.com/iOWfcI
+# Don French climbing Aotearoa’s ‘100 Peaks’
+2024-05-02 http://eepurl.com/iPhRo-/
+# Four ways to support the Banff film festival 🌌
+2024-05-14 http://eepurl.com/iPYD8s
+# ⛰️Banff is here - book your tickets [Vertigo]
+2024-05-28 http://eepurl.com/iPTehs
+# Avalanche Awareness talk postponed/Support the Banff film festival 🌌
+2024-06-03 http://eepurl.com/iRbe_E
+# Quiz night details! 🌌
+2024-06-09 http://eepurl.com/iRBnss
+# ⛰️Winter Avalanche Awareness Talk [Vertigo]
+2024-07-01 http://eepurl.com/iSX6UE
+# Be inspired by our magnificent alpine tops every day for a whole year
+2024-07-24 http://eepurl.com/iUjQnE
+# Upcoming Adventures at the Alpine Cub [Vertigo]
+2024-07-30 http://eepurl.com/iUMXwo
+# Grab your spot | Temple Basin Alpine Meet
+2024-08-21 http://eepurl.com/iXqx-c
+# Cold Weather Survival [Vertigo]
+2024-08-28 http://eepurl.com/iXSmto
+# Reminder: orders close Sept 20th Be inspired by our magnificent alpine tops every day for a whole year
+2024-09-08 http://eepurl.com/iYzw1g
+# Photo Comp, Canadian Big Wall, Taranaki, Cass Valley [Vertigo]
+2024-09-29 http://eepurl.com/iZ2ok-/
+# Trad Climbing course
+2024-10-15 http://eepurl.com/i1gCzc
+# Taranaki Maunga climbing conditions
+2024-10-15 http://eepurl.com/i1lwWU
+# Alpine Photo's on Show ⛰️ [Vertigo]
+2024-10-31 http://eepurl.com/i2lnbs
+# End of year drinks, nibbles and games 🥳
+2024-11-14 http://eepurl.com/i39nbQ
+# Summer Rock
+2024-11-20 http://eepurl.com/i4wRG2
+# Photocomp winners! And a Christmasy get together [Vertigo]
+2024-12-02 http://eepurl.com/i428w2
+# Rock and Pizza [Vertigo]
+2025-02-11 http://eepurl.com/i9AiTI
+# Adventure Talks and Pizza [Vertigo]
+2025-02-27 http://eepurl.com/i-QFVk
+# 100 PEAKS Nathan Longhurst
+2025-03-19 http://eepurl.com/jaxO7c
+# 100 PEAKS Nathan Longhurst
+2025-03-20 http://eepurl.com/jaD42w
+# Reel Rock film screening Wellington
+2025-03-26 http://eepurl.com/ja1fLo
+# Help Us Make Banff a Hit – Share, Print, Join the Adventure!
+2025-04-22 http://eepurl.com/jc8v9I
+# Register for Snowcraft
+2025-04-28 http://eepurl.com/jdqmLg
+# Your Pathway from Base to Peak, Snowcraft Registrations, Trip Leader and Volunteer Instructor Training, Banff! [Vertigo]
+2025-04-29 http://eepurl.com/jc-oG6
+# Mountain First Aid
+2025-05-26 http://eepurl.com/jfC2VE
+# June Section Evening: Andy Buchanan's 133 peak "panorama challenge"
+2025-05-28 http://eepurl.com/jfOt5A
+# June Section evening, Banff,  First Aid and Navigation courses, and save the date for this years Quiz! [Vertigo]
+2025-06-04 http://eepurl.com/jgezKM
+# Join us for an Alpine Trip this year
+2025-06-16 http://eepurl.com/jhdM2E
+# July Section evening, the Welly Clubs Quiz [Vertigo]
+2025-06-30 http://eepurl.com/jh8RXA
+# Welly Clubs Winter Quiz and Raffle | Tickets NOW LIVE!
+2025-07-01 http://eepurl.com/jh_8Us
+# Opportunity for Wellington: Board Vote
+2025-07-05 http://eepurl.com/jiAJjI
+# Moments of wonder and realisation in New Zealand wilderness
+2025-08-05 http://eepurl.com/jkjUwo
+# August Section Evening
+2025-08-05 http://eepurl.com/jkEdFU
+# September Section evening: Avalanche Awareness [Vertigo]
+2025-09-01 http://eepurl.com/jkvSjY
+# Mountain Film Festival Wellington Screenings
+2025-09-20 http://eepurl.com/jnNTyQ
+# October Section evening: Three Terrific Talks! [Vertigo]
+2025-09-29 http://eepurl.com/jol0Bs
+# Update from the Club
+2025-10-29 http://eepurl.com/jqHL6I
+# Entries open for the Wellington Section Photocomp!
+2025-10-30 http://eepurl.com/jqJFJo
+# Entries open for the Wellington Section Photocomp! [Vertigo]
+2025-10-31 http://eepurl.com/jqJKGM
+# Sign-ups for Summer Rock open at 7pm this evening
+2025-11-20 http://eepurl.com/jstpDU
+# December Section Evening - Photocomp winners
+2025-12-03 http://eepurl.com/jtlhu-/
+# February Social Evening, Rock Meets, Photocomp winners
+2026-02-03 http://eepurl.com/jytmL-/
+# Shelly and Paul Hersey's High Pathways Tour, Snowcraft Instructor Training, Rock Meets
+2026-03-02 http://eepurl.com/jAB1fI
+# Help Us Make Banff a Hit – Share, Print, Join the Adventure!
+2026-04-26 http://eepurl.com/jEpZJk
+# Help Us Make Banff a Hit – Share, Print, Join the Adventure!
+2026-04-27 http://eepurl.com/cNWVS9AxIM
+# Snowcraft Courses
+2026-05-18 http://eepurl.com/6gFdW-znqt
+# Snowcraft Courses Event tonight
+2026-05-20 http://eepurl.com/6ip-hVQxXP
+# Snowcraft Courses
+2026-05-24 http://eepurl.com/oYIYnkVAj_
+# Snowcraft Courses Event tonight
+2026-05-25 http://eepurl.com/QabUCq584L
+# Banff Film Festival 9 & 10 June: Secure Your Tickets Now!
+2026-06-01 http://eepurl.com/Ve8JXZ17iX
+# Banff! Winter Trips! Avalanche Awareness! Outdoor First Aid
+2026-06-01 http://eepurl.com/jC34CY
+# Banff Film Festival 9 & 10 June: Secure Your Tickets Now!
+2026-06-04 http://eepurl.com/bOKjP4Rtjp
+# Hear polar and mountain adventurer/photographer Colin Monteath on Wednesday 8 April
+2026-06-04 http://eepurl.com/y8OsIiIf5A
+# How to make your mountain trips safer, Thursday March 17th 6pm
+0000-01-01 http://eepurl.com/hW19p9
+# How to make your mountain trips safer, Thursday March 17th 6pm
+0000-01-01 http://eepurl.com/hW2cb5
+# Invitation: Avalanche Awareness Seminar ⭐
+0000-01-01 http://eepurl.com/h2RI3b
+# Banff, Ella Range and Haast Pass [Vertigo]
+0000-01-01 http://eepurl.com/h2SwZT
+# AGM October 5th 6pm TTC Hall💨
+0000-01-01 http://eepurl.com/h_cAzT
+# Mayan Smith-Gobat's stories from a life lived on the edge. April 14th 6 pm
+0000-01-01 http://eepurl.com/iscUl2

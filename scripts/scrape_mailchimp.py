@@ -194,12 +194,16 @@ def _extract_block_content(block):
     if not title and lines:
         title = lines[0]
 
-    # Author
+    # Author — check first 8 and last 4 lines for byline patterns
     author = ""
-    for line in lines[:6]:
-        m = re.match(r"^(?:[Ww]ords?\s+by|[Bb]y)\s+([A-Z][A-Za-z']+(?:\s+[A-Z][A-Za-z']+){1,2})", line)
+    _AUTHOR_RE = re.compile(
+        r"^(?:[Ww]ords?(?:\s+and\s+photos?)?\s+by|[Bb]y|[Ww]ritten\s+by|[Rr]eport\s+by|[Pp]hotos?\s+by)"
+        r"\s+([A-Z][A-Za-z'\-]+(?:\s+[A-Z][A-Za-z'\-]+){0,3})"
+    )
+    for line in lines[:8] + lines[-4:]:
+        m = _AUTHOR_RE.match(line.strip())
         if m:
-            author = m.group(1)
+            author = m.group(1).strip()
             break
 
     # Images
@@ -384,19 +388,27 @@ def main():
         sys.exit(1)
 
     urls_file = Path(sys.argv[1])
-    urls = [
-        u.strip() for u in urls_file.read_text().splitlines()
-        if u.strip() and not u.strip().startswith("#")
-    ]
-    print(f"Loaded {len(urls)} newsletter URLs")
+    # Each data line: "YYYY-MM-DD http://..." or just "http://..."
+    entries = []
+    for line in urls_file.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        parts = line.split(None, 1)
+        if len(parts) == 2 and re.match(r"\d{4}-\d{2}-\d{2}$", parts[0]):
+            date, url = parts
+        else:
+            date, url = "", parts[0]
+        entries.append((date, url))
+    print(f"Loaded {len(entries)} newsletter URLs")
 
     OUT_CONTENT.mkdir(parents=True, exist_ok=True)
     OUT_IMAGES.mkdir(parents=True, exist_ok=True)
 
     total_reports = 0
 
-    for i, url in enumerate(urls, 1):
-        print(f"\n[{i}/{len(urls)}] {url}")
+    for i, (date, url) in enumerate(entries, 1):
+        print(f"\n[{i}/{len(entries)}] {url}")
         final_url, html = fetch_final_url(url)
         if not html:
             continue
@@ -406,8 +418,25 @@ def main():
         print(f"  Found {len(reports)} trip report section(s)")
 
         for report in reports:
+            report["date"] = date  # use date from URL list
             slug = slugify(report["title"])[:60]
             out_file = OUT_CONTENT / f"mailchimp-{slug}.md"
+
+            # If file already exists, patch date if missing then skip
+            if out_file.exists():
+                existing = out_file.read_text(encoding="utf-8")
+                if date and "\ndate:" not in existing and date != "0000-01-01":
+                    patched = existing.replace(
+                        f'title: "{report["title"]}"',
+                        f'title: "{report["title"]}"\ndate: {date}',
+                        1,
+                    )
+                    if patched != existing:
+                        out_file.write_text(patched, encoding="utf-8")
+                        print(f"  Patched date ({date}): {out_file.name}")
+                else:
+                    print(f"  Skip (exists): {out_file.name}")
+                continue
 
             # Download images
             for img in report["images"]:

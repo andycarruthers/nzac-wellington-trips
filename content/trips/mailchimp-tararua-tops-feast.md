@@ -1,5 +1,6 @@
 ---
 title: "Tararua tops feast"
+date: 2021-02-19
 location: "Tararua"
 locations: ["Tararua"]
 tags: ["Alpine"]

@@ -1,5 +1,6 @@
 ---
 title: "CLIMB OF MT. HOPELESS —19–21 NOVEMBER 2021"
+date: 2021-11-29
 location: "Nelson Lakes"
 locations: ["Nelson Lakes"]
 tags: ["Alpine", "Tramping"]

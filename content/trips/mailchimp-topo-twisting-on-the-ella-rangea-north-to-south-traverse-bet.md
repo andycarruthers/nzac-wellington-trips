@@ -1,5 +1,6 @@
 ---
 title: "Topo twisting on the Ella RangeA north to south traverse between Mole Tops and McKellar StreamWords and pictures Peter Laurenson,www.occasionalclimber.co.nz"
+date: 2022-05-24
 location: "Nelson Lakes"
 locations: ["Nelson Lakes"]
 tags: ["Alpine"]

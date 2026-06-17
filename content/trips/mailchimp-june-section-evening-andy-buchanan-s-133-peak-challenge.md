@@ -1,5 +1,6 @@
 ---
 title: "June Section Evening: Andy Buchanan's 133 Peak Challenge"
+date: 2025-06-04
 location: "Mount Cook"
 locations: ["Mount Cook"]
 tags: ["Tramping"]

@@ -1,5 +1,6 @@
 ---
 title: "The 10th North Island Ski Touring Meet"
+date: 2020-10-15
 location: "Wellington"
 locations: ["Wellington"]
 tags: ["Ski Touring"]

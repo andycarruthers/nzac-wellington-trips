@@ -1,5 +1,6 @@
 ---
 title: "Fire & Ice"
+date: 2020-10-15
 tags: ["Ski Touring"]
 cover: "/images/trips/a7b86eb2-606d-47e8-b174-0e0107e04694-jpg"
 source_url: "https://us17.campaign-archive.com/?u=a8e8f7d42fa80601c5eed2fbb&id=9be2522214"

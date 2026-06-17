@@ -1,5 +1,6 @@
 ---
 title: "Mt Tapuae-o-Uenuku, Tappy Trip"
+date: 2020-11-12
 location: "Wellington"
 locations: ["Wellington"]
 tags: ["Alpine"]

@@ -1,5 +1,6 @@
 ---
 title: "Beyond the cliff top shelterA spring climb of Ringatoto and the east ridge of TahurangiWords and pictures Peter Laurenson,www.occasionalclimber.co.nz"
+date: 2022-03-21
 location: "Ruapehu"
 locations: ["Ruapehu"]
 tags: ["Alpine"]

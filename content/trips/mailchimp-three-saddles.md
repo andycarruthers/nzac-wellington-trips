@@ -1,5 +1,6 @@
 ---
 title: "Three saddles"
+date: 2020-09-16
 location: "Nelson Lakes"
 locations: ["Nelson Lakes"]
 tags: ["Alpine"]

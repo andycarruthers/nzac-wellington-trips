@@ -1,5 +1,6 @@
 ---
 title: "Photo essay: Exploring the head of Tasman Glacier, Peter Laurenson"
+date: 2022-02-15
 location: "Mount Cook"
 locations: ["Mount Cook"]
 tags: ["Alpine"]

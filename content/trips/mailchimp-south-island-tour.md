@@ -1,5 +1,6 @@
 ---
 title: "South Island Tour"
+date: 2021-03-29
 tags: ["Alpine"]
 cover: "/images/trips/ac503b1e-aa26-49c9-a1aa-076bedf28d01-jpg"
 source_url: "https://us17.campaign-archive.com/?u=a8e8f7d42fa80601c5eed2fbb&id=72d25225f8"

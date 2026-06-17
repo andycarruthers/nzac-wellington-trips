@@ -1,5 +1,6 @@
 ---
 title: "Fastpacking the Kaimanawa Kaweka Traverse"
+date: 2021-05-28
 location: "Nelson Lakes"
 locations: ["Nelson Lakes"]
 tags: ["Alpine", "Tramping"]

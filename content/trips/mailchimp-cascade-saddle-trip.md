@@ -1,5 +1,6 @@
 ---
 title: "Cascade Saddle, trip"
+date: 2021-02-19
 location: "Nelson Lakes"
 locations: ["Nelson Lakes"]
 tags: ["Alpine"]

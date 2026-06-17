@@ -1,5 +1,6 @@
 ---
 title: "A Cold Night Out"
+date: 2021-03-29
 tags: ["Alpine"]
 cover: "/images/trips/849833e2-af7d-4096-852e-31492e891c6b-png"
 source_url: "https://us17.campaign-archive.com/?u=a8e8f7d42fa80601c5eed2fbb&id=72d25225f8"

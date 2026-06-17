@@ -1,5 +1,6 @@
 ---
 title: "The crusty couloir"
+date: 2020-11-12
 tags: ["Alpine"]
 cover: "/images/trips/d6395b5a-e6bd-43b5-ad8f-dfd83bcffa89-jpg"
 source_url: "https://us17.campaign-archive.com/?u=a8e8f7d42fa80601c5eed2fbb&id=95a6dc05e6"
