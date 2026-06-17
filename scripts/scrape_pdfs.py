@@ -540,7 +540,7 @@ def extract_images_by_page(pdf_path):
 # Section splitting — font-aware approach
 # ---------------------------------------------------------------------------
 
-def split_into_sections(blocks):
+def split_into_sections(blocks, filename=""):
     """
     Split newsletter text into trip-report sections using font metadata.
 
@@ -560,6 +560,14 @@ def split_into_sections(blocks):
     # ---- Pass 1: font-aware approach ----------------------------------------
     sections = _split_font_aware(blocks, body_size, heading_threshold)
     if sections:
+        return sections
+
+    # ---- Pass 1b: visual/magazine format (2017+ NZAC Vertigo YYYY_MM PDFs) --
+    # Only run for the specific visual-format magazine files, not all PDFs.
+    is_visual_format = re.search(r"NZAC\s+Vertigo\s+\d{4}_\d{2}", filename, re.I)
+    if is_visual_format:
+        sections = _split_visual_format(blocks)
+    if is_visual_format and sections:
         return sections
 
     # ---- Pass 2: fallback — regex on plain text (older PDFs / bad fonts) ----
@@ -619,6 +627,117 @@ def _split_font_aware(blocks, body_size, heading_threshold):
 
     if current and len(" ".join(current["body"])) >= MIN_BODY_CHARS:
         sections.append(current)
+
+    return sections
+
+
+def _split_visual_format(blocks):
+    """
+    Extract trip reports from the visual/magazine format PDFs (NZAC Vertigo YYYY_MM, 2017+).
+
+    These use very large display fonts (>= 24pt Arial-Black) for trip titles,
+    with body text at ~12pt.  There is no explicit 'Section trips news' marker;
+    instead each trip page has the navigation bar in a small font and the title
+    in a large display font.
+
+    Detection: any block with font_size >= 24 that doesn't look like a page
+    number, issue number, or masthead is treated as a trip title.
+    """
+    DISPLAY_SIZE = 24  # minimum pt size to be a trip title
+    # Blocks that look like issue numbers, mastheads, ads, or section headers
+    NON_TITLE_RE = re.compile(
+        r"^(?:No\s+\d+|Wellington\s+Section|www\.|http"
+        r"|\d{4}\s*[-–]\s*\d{4}"              # year ranges like "2018-2019"
+        r"|Powered\s+by|Section\s+Contacts?|Club\s+on\s+a\s+[Pp]age"
+        r"|From\s+the\s+[Ee]ditor|Gear\s+Hire|Discounted\s+PLBs?"
+        r"|Accommodation\s+on|What\s+and\s+where|^When$"
+        r"|Book\s+your\s+ticket|Click\s+to|Click\s+here|Tickets?\s+limited"
+        r"|Now\s+on\s+sale|Last\s+chance|NOW\s+OPEN|OPEN\s+NOW"
+        r"|KIWISAVER|Annual\s+accounts?|Reel\s+Rock|^EDITION$"
+        r"|NZAC\s+instruction|^Photo$|\d{4}\s+PHOTO|The\s+\d{4}\s+competition"
+        r"|Don.t\s+miss|60\s+years\s+with|This\s+is\s+a\s+"
+        r"|a\s+booking|contenders\s+and\s+get"
+        r"|IT.S\s+EASY|\.{3}"                  # fragments starting with ...
+        r"|COVID-19|One\s+night\s+only"
+        r"|Next\s+section\s+night|Section\s+night|Section\s+evening"
+        r"|Trip\s+Reports?|Section\s+News|Library|Membership\s+that"
+        r"|Tukino\s+(?:Lodge|Working)|^SPECIAL$|TGR\s+SKI|SKI\s+MOVIE"
+        r"|speaker\s+-|Bouldering\s+in\s+the\s+Sun|rock\s+climbing\s+course"
+        r")|[!]{2,}",
+        re.I,
+    )
+    # Nav bar that appears at top/bottom of every page
+    NAV_RE = re.compile(r"Chair.s\s+Report.*Trip\s+Reports|Trip\s+Reports.*Section\s+Contacts", re.I)
+
+    # Filter out nav bars from blocks
+    content_blocks = [b for b in blocks if not NAV_RE.search(b["text"])]
+
+    # Find all large-font title blocks
+    title_indices = []
+    for i, blk in enumerate(content_blocks):
+        t = blk["text"].strip()
+        if not (blk["font_size"] >= DISPLAY_SIZE and len(t) >= 6):
+            continue
+        if re.match(r"^[\d\s]+$", t):
+            continue
+        if NON_TITLE_RE.search(t):
+            continue
+        if SKIP_RE.match(t):
+            continue
+        if MAJOR_SECTION_RE.match(t):
+            continue
+        # Skip fragments: starts lowercase, or ends with comma/unfinished clause
+        if t[0].islower():
+            continue
+        if re.search(r"[,;]\s*$", t):
+            continue
+        # Skip if it looks like a sentence fragment (very long, contains mid-sentence words)
+        if len(t) > 80 and re.search(r"\b(?:the|a|an|of|in|on|at|to|and|or|but)\s+\w+\s*$", t, re.I):
+            continue
+        title_indices.append(i)
+
+    if not title_indices:
+        return []
+
+    sections = []
+    for idx, title_i in enumerate(title_indices):
+        end_i = title_indices[idx + 1] if idx + 1 < len(title_indices) else len(content_blocks)
+        title_blk = content_blocks[title_i]
+        title = title_blk["text"].strip()
+
+        # Skip junk titles
+        if _is_junk_title(title):
+            continue
+
+        # Collect body lines between this title and next
+        body = []
+        for blk in content_blocks[title_i + 1:end_i]:
+            t = blk["text"].strip()
+            if not t:
+                continue
+            if re.match(r"^(?:Page\s+)?\d+\s*$", t):
+                continue
+            if MAJOR_SECTION_RE.match(t):
+                break
+            body.append(t)
+
+        if len(" ".join(body)) >= MIN_BODY_CHARS:
+            sections.append({
+                "heading":    title,
+                "body":       body,
+                "page_start": title_blk["page"],
+                "page_end":   content_blocks[end_i - 1]["page"] if end_i > title_i + 1 else title_blk["page"],
+            })
+
+    if not sections:
+        return sections
+
+    # If more than 10 sections are found, this is likely a compilation PDF with
+    # archive content embedded. Keep only those in the first third of the PDF.
+    if len(sections) > 10:
+        total_pages = max(s["page_end"] for s in sections)
+        cutoff = max(5, total_pages // 3)
+        sections = [s for s in sections if s["page_start"] <= cutoff]
 
     return sections
 
@@ -957,7 +1076,7 @@ def process_pdf(pdf_path, seen_headings=None):
     n_pages     = 1 + max((b["page"] for b in blocks), default=0)
     print(f"  {n_pages} pages, {img_count} images extracted, {len(blocks)} text blocks")
 
-    sections = split_into_sections(blocks)
+    sections = split_into_sections(blocks, filename=pdf_path.name)
     print(f"  {len(sections)} trip-report section(s) found")
 
     written = 0
@@ -1031,7 +1150,15 @@ def main():
 
     print(f"Processing {len(pdfs)} PDF(s) from {pdf_folder}")
     total = 0
+
+    # Preload seen_headings from any existing trip files so we don't rewrite them.
     seen_headings = set()
+    title_re = re.compile(r'^title:\s*"(.*)"', re.M)
+    for existing in OUT_CONTENT.glob("pdf-*.md"):
+        m = title_re.search(existing.read_text(encoding="utf-8"))
+        if m:
+            seen_headings.add(re.sub(r"\s+", " ", m.group(1).lower().strip()))
+
     for pdf in pdfs:
         try:
             total += process_pdf(pdf, seen_headings)
