@@ -1,8 +1,8 @@
 ---
 title: "Mount Travers: south-east ridge to summit"
 date: 2018-05-01
-author: "Words Scott Harper"
-authors: ["Words Scott Harper"]
+author: "Scott Harper"
+authors: ["Scott Harper"]
 location: "Canterbury"
 locations: ["Canterbury"]
 tags: ["Rock Climbing"]
