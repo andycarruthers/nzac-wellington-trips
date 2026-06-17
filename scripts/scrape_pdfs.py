@@ -103,10 +103,57 @@ SKIP_RE = re.compile(
     r"|[Pp]resident|[Ss]ecretary|[Tt]reasurer"
     # Photo caption prefixes
     r"|Above|Below|Left|Right|Top|Bottom|Inset|Caption|Clockwise"
-    r"|Photo\s+by|Photographed|Looking\s+(?:up|down|north|south|east|west)"
+    r"|Photo\s+by|Photographed"
+    r"|Looking\s+(?:up|down|north|south|east|west)"
+    r"|Ascending|Descending|Skinning|Approaching\s+(?:the|Mt|Mount|Camp)"
     # Ads, notices, non-trip content
     r"|Wanted|For\s+Sale|Selling|NEW\b|Advance\s+Notice"
     r"|Expedition\s+Fund|Powell\s+Hut|Beautiful\s+World"
+    r"|Our\s+[Ww]ebsite|Cheap\s+(?:climbing|flights)"
+    r"|And\s+the\s+winner|The\s+winner|Quiz\s+No|The\s+answer\s+to"
+    r"|NZAC\s+National|National\s+(?:Instruction|Office)|NZAJ\b"
+    r"|Head\s+Office|National\s+office"
+    # Film festivals and awards
+    r"|(?:The\s+)?Banff\b|Film\s+Festival|Best\s+film|Grand\s+Prize|Peoples\s+Choice"
+    r"|Sur\s+le|Parralelo|Proszac"
+    # Funding and admin notices
+    r"|Distahgil|Distaghil|Expedition\s+Fund|Sar\s+Fund"
+    r"|Employment\s+opport|AGM\b|Annual\s+General|Financial\s+Year"
+    r"|(?:Wellington\s+)?Section\s+(?:new\s+)?[Gg]ear\s+[Pp]urchase"
+    r"|Books?\s+for\s+sale|Old\s+Annual|Discounted\s+Publications"
+    r"|Alpine\s+Instruction|(?:AIC\s+20\d\d)|Summer\s+Rock\s+20"
+    r"|(?:Multi.?[Pp]itch\s+)?Alpine\s+Rock\s+Course"
+    r"|High\s+Alpine\s+Skills\s+Course|Instructor\s+Development"
+    r"|Outdoor\s+First\s+Aid|Avalanche\s+Stage"
+    r"|Scarpa\s+20\d\d|Travel\s+[Ii]nsurance|Guidebook"
+    r"|Photo\s+Competition|Photo\s+competition"
+    r"|National\s+Instruction|NZAC\s+Technique"
+    # Club notices
+    r"|Please\s+send|Thanks?\s+for\s+all|Cheap\s+flights"
+    r"|Watch\s+out\s+for|This\s+just\s+off"
+    r"|Change\s+in\s+(?:Section|Club)|Section\s+(?:Night|Contacts)"
+    r"|News\s+from\s+(?:Head|National|the\s+May)"
+    r"|Editor.s\s+note|In\s+other\s+news"
+    r"|Note\s+-\s+|NZAC\s+Bulletin|NZAC\s+bulletin"
+    r"|Mountaineering\s+Exemptions?|Mountain\s+Safety"
+    r"|Workshop\s+for|Don.t\s+miss\s+(?:this|out)"
+    r"|Only\s+\d+\s+seats?|Tickets?:\s*\$"
+    r"|(?:From\s+)?National\s+Office|Head\s+Office|FROM\s+NATIONAL"
+    r"|Ph\s+\d{2}\s+\d{7}|Fax\s+\d{2}"   # phone numbers
+    r"|(?:The\s+)?Avalanche\s+Transceiver\s+Trust"
+    r"|Junior\s+World\s+Champs|Photo\s+Competition"
+    r"|Taranaki\s+Alpine\s+Club\s+\d+th\s+Jubilee"
+    r"|Carriage\s+of\s+Stoves|Bevan\s+Col\s+air\s+access"
+    r"|Memorial\s+[Pp]laques?|Titahi\s+Bay\s+Rebolting"
+    r"|And\s+[Hh]ere\s+[Aa]re\s+the\s+[Cc]lub|Club\s+[Tt]rips?"
+    r"|Southern\s+Hemisphere\s+Alpine\s+Conference"
+    r"|[Ss]ection\s+[Nn]ight|April\s+Section\s+Night"
+    r"|Interested\s+in\s+[Ii]nstruct|Do\s+something\s+with"
+    r"|Other\s+Section\s+Member|Pete.s\s+[Pp]ost"
+    r"|The\s+legend\s+that|Lost\s+mountaineers"
+    r"|Deny\s+the\s+effects|Vertigo\s+[Gg]oes\s+[Ii]nternational"
+    r"|And\s+more\s+from\s+[Mm]ike|And\s+the\s+last\s+word"
+    r"|Caro\s+and\s+Matt\s+are|He.s\s+turning\s+into"
     r")",
     re.I,
 )
@@ -126,6 +173,94 @@ SECTION_BREAK_RE = re.compile(
     r")\b",
     re.I,
 )
+
+
+# Full-title junk filter — applied after extraction to catch patterns that
+# can't be caught by a prefix-only regex (e.g. "IT'S FINALLY COMING! JOE SIMPSON'S…")
+_TITLE_JUNK_RE = re.compile(
+    r"banff\b|film\s+festival|film\s+coming|climbing\s+film"
+    r"|photo\s+comp|photo\s+competition"
+    r"|touching\s+the\s+void|joe\s+simpson"
+    r"|distahgil|distaghil"
+    r"|financial\s+year|annual\s+general|\bagm\b"
+    r"|travel\s+insurance|over\s+70.s"
+    r"|books?\s+for\s+sale|discounted\s+pub|national\s+office"
+    r"|mountaineer\s+of\s+the\s+year\s+award"
+    r"|section\s+general\s+news"
+    r"|big\s+thanks|thankyou\s+from|thank\s+you\s+from"
+    r"|peoples\s+choice\s+award|grand\s+prize\s+winner"
+    r"|mont\s+blanc\s+centre\s+for|wellington\s+waterfront"
+    r"|show\s+your\s+members\s+card|members\s+card\s+and\s+climb"
+    r"|paramount\s+theatre"
+    r"|guidebook\s+price\s+review|non\s+nzac\s+guidebook"
+    r"|rock.climbing\s+grading\s+for\s+dummies"
+    r"|mountaineering\s+exemptions"
+    r"|arthurs\s+pass\s+celebrations"
+    r"|just\s+prior\s+to.*xmas|prior\s+to.*xmas",
+    re.I,
+)
+
+# Mid-sentence artifact titles: start with article/preposition then sentence fragment
+_TITLE_MIDSENT_RE = re.compile(
+    r"""^(?:
+        # starts with "Still," / "Kuiti and" / "Monday Wall" type fragments
+        Still\s*,
+        |Kuiti\s+and\b
+        |Monday\s+Wall\b
+        |Cozette\s+Burn\b
+        |October.November\s+had\b
+        |Nelson.Marlborough\s+section\s+also\b
+        |Hokkaido:\s+Late
+        # Just a name or phone-number line
+        |^[\w\s\.]+,\s+[\w\s\.]+\.$   # "Woodhead, Mark Yeo and Trey Guinn."
+        |^Ph\s+\d
+        |^\d{2}\s+\d{4}
+    )""",
+    re.VERBOSE | re.I,
+)
+
+
+def _is_junk_title(title):
+    """Return True if the title is clearly not a trip report."""
+    t = title.strip()
+    # Contains $ signs (prices) or phone numbers
+    if re.search(r"\$\d|\bPh\s+\d{2}", t):
+        return True
+    # Full title junk patterns
+    if _TITLE_JUNK_RE.search(t):
+        return True
+    # Mid-sentence fragments (truncated at end)
+    if re.search(r"\s+(?:and|the|in the|was|were|of|to|at|on|from|with|for|don.t|doesn.t|also|about|us at)$", t, re.I):
+        return True
+    # Title is a sentence that starts with "Still," or similar continuation words
+    if re.match(r"^(?:Still\s*,|Kuiti\s+and\b|Monday\s+Wall\b|Cozette\s+Burn\b)", t, re.I):
+        return True
+    # "Word. In ..." or "Word: In ..." — single-word header followed by sentence (PDF artefact)
+    if re.match(r"^[A-Z][a-z]+[.:]\s+(?:In|At|On|The|Late|Early|During)\s+[A-Z]", t):
+        return True
+    # "Name - I learnt..." or "Name - My two days..." (attribution line, not heading)
+    if re.match(r"^[A-Z][a-z]+ [A-Z][a-z]+ -\s+(?:I |My |We )", t):
+        return True
+    # "havin a well earned brew" type captions (past participle phrase)
+    if re.search(r"\bhavin\b|\bhaving\s+a\s+well\s+earned\b", t, re.I):
+        return True
+    # Course / competition / admin titles that slip through
+    if re.search(r"\bTechnique\s+Course\b|\bJunior\s+World\s+Champs\b", t, re.I):
+        return True
+    # Just a person's name — firstname must be a recognisable first name
+    _FIRST_NAMES = r"Andrew|Caroline|Peter|Mike|Scott|Mark|Sarah|Kate|James|John|David|Paul|Kevin|Chris|Tom|Sam|Nick|Rob|Tim|Alan|Don|Dave|Jenny|Nicky|Matt|Simon|Brad|Craig|Ian|Grant|Murray|Steve|Richard|Brian|Tony|Lisa|Rachel|Anna|Emma|Karen|Helen|Amy"
+    if re.match(r"^(?:" + _FIRST_NAMES + r")\s+[A-Z][a-zA-Z']+\.?$", t):
+        return True
+    # "Name (attribution note)" — e.g. "Caroline Duggan (All quotes verbatim from the group)"
+    if re.match(r"^[A-Z][a-z]+ [A-Z][a-z]+ \(", t):
+        return True
+    # Multiple names on one line (e.g. "Woodhead, Mark Yeo and Trey Guinn.")
+    if re.match(r"^[A-Z][a-z]+,\s+[A-Z][a-z]", t) and re.search(r"\band\s+[A-Z][a-z]+\b", t):
+        return True
+    # "Firstname Lastname/Firstname Lastname" — two names with slash
+    if re.match(r"^[A-Z][a-zA-Z']+ [A-Z][a-zA-Z']+/[A-Z][a-zA-Z']+ [A-Z][a-zA-Z']+$", t):
+        return True
+    return False
 
 
 # ---------------------------------------------------------------------------
@@ -305,14 +440,71 @@ def _download_individual_files():
             print(f"    FAILED: {e}")
 
 
+# Matches the "Section trips news" header that starts the trip-report block
+TRIPS_SECTION_RE = re.compile(
+    r"Section\s+trips?\s+news|Trip\s+reports?\s*(?:section|news)|Trips\s+section"
+    r"|Section\s+trip\s+reports?",
+    re.I,
+)
+
+# Major section headers that end the trip-report block
+MAJOR_SECTION_RE = re.compile(
+    r"^(?:Coming\s+trips?|Upcoming\s+trips?|Notices?|Club\s+night|Section\s+night"
+    r"|Instruction|Courses?|Equipment|Gear|Advertisem|Sponsors?|Contacts?"
+    r"|For\s+Sale|CLASSIFIEDS?|Members?\s+area|Events?"
+    # Older newsletter section headers
+    r"|Wellington\s+Section\s+Trips?"   # upcoming trips table
+    r"|Other\s+Trips?"                  # "Other Trips" catch-all in coming trips
+    r"|Chairperson|Chair(?:persons?)?\s+(?:Quiz|Report)"
+    r"|Contributions\s+please|MOVED\s+HOUSE|HANGDOG"
+    r"|Comp\s+results?|Competition\s+results?"
+    r")\b",
+    re.I,
+)
+
+
 # ---------------------------------------------------------------------------
-# PDF text + image extraction
+# PDF text + image extraction (font-aware)
 # ---------------------------------------------------------------------------
 
-def extract_pages(pdf_path):
-    """Return list of (page_num, text) tuples."""
+def extract_blocks_with_fonts(pdf_path):
+    """
+    Return list of {text, is_bold, font_size, page} for every non-empty line.
+    Uses get_text("dict") to preserve font metadata.
+    """
     doc = fitz.open(str(pdf_path))
-    return [(i, page.get_text("text")) for i, page in enumerate(doc)]
+    blocks = []
+    for page_num, page in enumerate(doc):
+        page_dict = page.get_text("dict")
+        for blk in page_dict.get("blocks", []):
+            if blk.get("type") != 0:   # type 0 = text
+                continue
+            for line in blk.get("lines", []):
+                spans = line.get("spans", [])
+                if not spans:
+                    continue
+                text = "".join(s["text"] for s in spans).strip()
+                if not text:
+                    continue
+                # Bold: flag bit 4 (16) set in any span
+                is_bold = any(s.get("flags", 0) & 16 for s in spans)
+                font_size = max((s.get("size", 0) for s in spans), default=0)
+                blocks.append({
+                    "text":      text,
+                    "is_bold":   is_bold,
+                    "font_size": round(font_size, 1),
+                    "page":      page_num,
+                })
+    return blocks
+
+
+def _body_font_size(blocks):
+    """Modal (most common) font size across all blocks — the body text size."""
+    from collections import Counter
+    sizes = [b["font_size"] for b in blocks if b["font_size"] > 4]
+    if not sizes:
+        return 10.0
+    return Counter(sizes).most_common(1)[0][0]
 
 
 def extract_images_by_page(pdf_path):
@@ -345,53 +537,85 @@ def extract_images_by_page(pdf_path):
 
 
 # ---------------------------------------------------------------------------
-# Section splitting — two-pass approach
+# Section splitting — font-aware approach
 # ---------------------------------------------------------------------------
 
-def split_into_sections(pages):
+def split_into_sections(blocks):
     """
-    Split newsletter text into candidate trip-report sections.
+    Split newsletter text into trip-report sections using font metadata.
 
-    Pass 1: Identify heading lines.
-    Pass 2: Group body lines under each heading.
+    Strategy:
+    1. Find the "Section trips news" header (marks start of trip-report block).
+    2. Within that block, treat bold/large-font lines as individual trip headings.
+    3. Stop at the next major section header (Coming trips, Notices, etc.).
+
+    Falls back to the regex-based "Trip Report – Location" approach for PDFs
+    that don't contain a trips-section header at all.
 
     Returns list of dicts: {heading, body, page_start, page_end}
     """
-    # Flatten lines with page metadata
-    tagged_lines = []
-    for page_num, text in pages:
-        for line in text.splitlines():
-            s = line.strip()
-            if s:
-                tagged_lines.append((page_num, s))
+    body_size = _body_font_size(blocks)
+    heading_threshold = body_size * 1.05   # slightly larger or bold = heading
+
+    # ---- Pass 1: font-aware approach ----------------------------------------
+    sections = _split_font_aware(blocks, body_size, heading_threshold)
+    if sections:
+        return sections
+
+    # ---- Pass 2: fallback — regex on plain text (older PDFs / bad fonts) ----
+    return _split_regex_fallback(blocks)
+
+
+def _split_font_aware(blocks, body_size, heading_threshold):
+    """Extract trips from inside the 'Section trips news' block."""
+    # Find start of trips section
+    trips_start = None
+    for i, blk in enumerate(blocks):
+        if TRIPS_SECTION_RE.search(blk["text"]):
+            trips_start = i + 1
+            break
+    if trips_start is None:
+        return []
 
     sections = []
     current = None
 
-    for page_num, line in tagged_lines:
-        # Major newsletter sections end trip-report content
-        if current is not None and SECTION_BREAK_RE.match(line):
-            if len(" ".join(current["body"])) >= MIN_BODY_CHARS:
-                sections.append(current)
-            current = None
+    for blk in blocks[trips_start:]:
+        text = blk["text"]
+
+        # Skip page-number artifacts
+        if re.match(r"^(?:Page\s+)?\d+\s*$", text):
             continue
 
-        # Is this line a trip-report heading?
-        if _is_heading(line):
+        # End of trips block: next major section header
+        if MAJOR_SECTION_RE.match(text) and (blk["is_bold"] or blk["font_size"] >= heading_threshold):
+            break
+
+        # Is this line a trip heading? (bold, or larger than body text)
+        is_subheading = (
+            (blk["is_bold"] or blk["font_size"] >= heading_threshold)
+            and 15 <= len(text) <= 160            # filter short labels like "Details"
+            and text[0].isupper()                 # must start with capital
+            and not re.match(r"^[\d\s\W]+$", text)
+            # Filter mid-sentence bold text (personal pronoun / mid-narrative start)
+            and not re.match(r"^(?:I |We |My |He |She |It |They |Our |His |Her |Their )", text)
+            and not SKIP_RE.match(text)
+            and not SECTION_BREAK_RE.match(text)
+            and not MAJOR_SECTION_RE.match(text)
+        )
+
+        if is_subheading:
             if current and len(" ".join(current["body"])) >= MIN_BODY_CHARS:
                 sections.append(current)
             current = {
-                "heading":    line,
+                "heading":    text,
                 "body":       [],
-                "page_start": page_num,
-                "page_end":   page_num,
+                "page_start": blk["page"],
+                "page_end":   blk["page"],
             }
         elif current is not None:
-            # Skip bare page-number labels ("Page 6", "6", etc.)
-            if re.match(r"^(?:Page\s+)?\d+\s*$", line):
-                continue
-            current["body"].append(line)
-            current["page_end"] = page_num
+            current["body"].append(text)
+            current["page_end"] = blk["page"]
 
     if current and len(" ".join(current["body"])) >= MIN_BODY_CHARS:
         sections.append(current)
@@ -399,16 +623,53 @@ def split_into_sections(pages):
     return sections
 
 
-def _is_heading(line):
-    """True if line looks like a trip-report heading."""
+def _split_regex_fallback(blocks):
+    """
+    Fallback for PDFs without a 'Section trips news' header.
+    Uses the explicit-prefix and 'Location – Date' regex patterns.
+    """
+    sections = []
+    current = None
+
+    for blk in blocks:
+        text = blk["text"]
+
+        if re.match(r"^(?:Page\s+)?\d+\s*$", text):
+            continue
+
+        if current is not None and SECTION_BREAK_RE.match(text):
+            if len(" ".join(current["body"])) >= MIN_BODY_CHARS:
+                sections.append(current)
+            current = None
+            continue
+
+        if _is_heading_regex(text):
+            if current and len(" ".join(current["body"])) >= MIN_BODY_CHARS:
+                sections.append(current)
+            current = {
+                "heading":    text,
+                "body":       [],
+                "page_start": blk["page"],
+                "page_end":   blk["page"],
+            }
+        elif current is not None:
+            current["body"].append(text)
+            current["page_end"] = blk["page"]
+
+    if current and len(" ".join(current["body"])) >= MIN_BODY_CHARS:
+        sections.append(current)
+
+    return sections
+
+
+def _is_heading_regex(line):
+    """True if line matches the explicit trip-report heading patterns."""
     if len(line) < 8 or len(line) > 150:
         return False
     if SKIP_RE.match(line):
         return False
-    # Must not be all lowercase
     if line == line.lower():
         return False
-    # Must not be mostly numbers (page numbers, dates)
     if re.match(r"^[\d\s\W]+$", line):
         return False
     return bool(TRIP_HEADING_RE.match(line))
@@ -554,22 +815,39 @@ def to_hugo_markdown(post):
 # Process one PDF
 # ---------------------------------------------------------------------------
 
-def process_pdf(pdf_path):
+def process_pdf(pdf_path, seen_headings=None):
+    if seen_headings is None:
+        seen_headings = set()
+
     print(f"\n[{pdf_path.name}]")
     OUT_CONTENT.mkdir(parents=True, exist_ok=True)
     OUT_IMAGES.mkdir(parents=True, exist_ok=True)
 
-    pages       = extract_pages(pdf_path)
+    blocks      = extract_blocks_with_fonts(pdf_path)
     page_images = extract_images_by_page(pdf_path)
     img_count   = sum(len(v) for v in page_images.values())
-    print(f"  {len(pages)} pages, {img_count} images extracted")
+    n_pages     = 1 + max((b["page"] for b in blocks), default=0)
+    print(f"  {n_pages} pages, {img_count} images extracted, {len(blocks)} text blocks")
 
-    sections = split_into_sections(pages)
+    sections = split_into_sections(blocks)
     print(f"  {len(sections)} trip-report section(s) found")
 
     written = 0
     for section in sections:
         post = parse_section(section, pdf_path, page_images)
+
+        # Post-extraction junk filter
+        if _is_junk_title(post["title"]):
+            print(f"    -> [SKIP junk] {post['title'][:70]}")
+            continue
+
+        # Deduplicate: skip if we've seen the same heading from an earlier newsletter
+        heading_key = re.sub(r"\s+", " ", post["title"].lower().strip())
+        if heading_key in seen_headings:
+            print(f"    -> [SKIP duplicate] {post['title'][:70]}")
+            continue
+        seen_headings.add(heading_key)
+
         print(f"    -> {post['title'][:70]}")
 
         # Build slug: YYYYMM-location
@@ -625,9 +903,10 @@ def main():
 
     print(f"Processing {len(pdfs)} PDF(s) from {pdf_folder}")
     total = 0
+    seen_headings = set()
     for pdf in pdfs:
         try:
-            total += process_pdf(pdf)
+            total += process_pdf(pdf, seen_headings)
         except Exception as e:
             print(f"  ERROR: {e}")
 

@@ -582,25 +582,40 @@ def slug_from_url(url):
 # ---------------------------------------------------------------------------
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--url-file", default=None,
+        help="Text file of Wayback URLs to scrape (one per line, # = comment)"
+    )
+    args = parser.parse_args()
+
     OUT_CONTENT.mkdir(parents=True, exist_ok=True)
     OUT_IMAGES.mkdir(parents=True, exist_ok=True)
 
-    # Step 1: discover post URLs via CDX
-    post_records = cdx_get_post_urls()
-
-    # Step 2: if CDX found nothing useful, fall back to category page scraping
-    if not post_records:
-        print("CDX found no results, falling back to category page scraping...")
-        urls = scrape_category_pages()
+    if args.url_file:
+        # Read URLs directly from file — most reliable approach
+        lines = Path(args.url_file).read_text(encoding="utf-8").splitlines()
+        urls = [l.strip() for l in lines if l.strip() and not l.startswith("#")]
         post_records = [(None, u) for u in urls]
+        print(f"Loaded {len(post_records)} URLs from {args.url_file}")
+    else:
+        # Step 1: discover post URLs via CDX
+        post_records = cdx_get_post_urls()
 
-    if not post_records:
-        print("No posts found. Exiting.")
-        sys.exit(1)
+        # Step 2: if CDX found nothing useful, fall back to category page scraping
+        if not post_records:
+            print("CDX found no results, falling back to category page scraping...")
+            urls = scrape_category_pages()
+            post_records = [(None, u) for u in urls]
 
-    # scrape_category_pages returns full Wayback URLs; wrap as (None, url) tuples
-    if post_records and isinstance(post_records[0], str):
-        post_records = [(None, u) for u in post_records]
+        if not post_records:
+            print("No posts found. Exiting.")
+            sys.exit(1)
+
+        # scrape_category_pages returns full Wayback URLs; wrap as (None, url) tuples
+        if post_records and isinstance(post_records[0], str):
+            post_records = [(None, u) for u in post_records]
 
     print(f"\nProcessing {len(post_records)} posts...\n")
 

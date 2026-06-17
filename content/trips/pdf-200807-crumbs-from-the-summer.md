@@ -1,0 +1,8 @@
+---
+title: "Crumbs from the Summer"
+date: 2008-07-01
+source: "Vertigo Newsletter — Vertigo 200807 Jul"
+draft: false
+---
+
+Just after New Year Paul Maxim and John Nankervis climbed Ngatimamoe via the Northeast Ridge from a camp in Falls Creek. Good Darrans rock ?….hmmmm, not exactly. Cautionary tale: that's why it's in the Wick Mountains, not the Darrans. Later Paul and John turned back on the NW face  of Rob Roy in "late season conditions" (euphemism for getting seriously off route).  Earlier John with the extended Ellis whanau and John Cocks went climbing in the  North Wilkin and got turned back on climbs graded with very small numbers, they claim cos of global warming and glacial retreat. Later John joined up with young business partner, Phil Grover , to travel from Bainham to the Cobb including the high route on the spiky Dragons Teeth. Was this climbing ?…well it felt like it, so it was. Over an extended Easter two Johns, Wild and Nankervis, went on a pilgrimage  to Salt Lake City, to hear the Mormon Tabernacle Choir on Easter Sunday, to see the Utah Jazz play (NBA basketball) and to stock up on gear from the Black Diamond store. But while there they did sneak in some ski runs, including  a few days touring in the deep pow between the Little and Big Cottonwood Canyons. At Anzac weekend Federico Callegari and John Nankervis walked up the Travers valley and traversed Hopeless from north to south, Hopeless Creek to Cupola Basin. They insisted on carrying their three day swags over the top: some climbers never learn! John Nankervis
