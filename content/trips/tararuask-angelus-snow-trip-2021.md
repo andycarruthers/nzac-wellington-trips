@@ -1,6 +1,8 @@
 ---
 title: "Angelus Snow Trip"
 date: 2021-10-03
+author: "Andy Carruthers"
+authors: ["Andy Carruthers"]
 location: "Nelson Lakes"
 locations: ["Nelson Lakes"]
 tags: ["Alpine", "Tramping"]

@@ -1,6 +1,8 @@
 ---
 title: "Tongariro Full Moon"
 date: 2024-12-09
+author: "Andy Carruthers"
+authors: ["Andy Carruthers"]
 cover: "/images/trips/tongariro-full-moon-2024.jpg"
 location: "Tongariro"
 locations: ["Tongariro"]
