@@ -49,79 +49,233 @@ SESSION.headers["User-Agent"] = (
 # CDX: discover all trip-report post URLs
 # ---------------------------------------------------------------------------
 
+# Known good Wayback snapshots of the category listing to start from
+SEED_URLS = [
+    "https://web.archive.org/web/20130505172652/http://www.nzalpine.wellington.net.nz/category/trip-reports/",
+    "https://web.archive.org/web/20120601000000*/http://www.nzalpine.wellington.net.nz/category/trip-reports/",
+]
+
 def cdx_get_post_urls():
-    """Return list of (timestamp, original_url) for all trip-report posts."""
-    params = {
-        "url":      f"{ORIGIN}/trip-reports/*",   # catches /trip-reports/slug/
-        "output":   "json",
-        "fl":       "timestamp,original",
-        "filter":   "statuscode:200",
-        "collapse": "urlkey",                     # one result per unique URL
-        "matchType": "prefix",
-    }
-    print("Querying CDX API for trip report URLs...")
-    r = SESSION.get(CDX_API, params=params, timeout=30)
-    r.raise_for_status()
-    rows = r.json()
-    # First row is the header ["timestamp","original"]
-    if not rows or rows[0] != ["timestamp", "original"]:
-        print("Unexpected CDX response:", rows[:3])
-        return []
-    posts = []
-    for ts, url in rows[1:]:
-        # Skip category/tag/page index URLs — keep only single post slugs
-        path = urlparse(url).path.rstrip("/")
-        parts = [p for p in path.split("/") if p]
-        # WordPress single post: /year/month/slug or just /trip-reports/slug
-        if len(parts) >= 2 and "trip-reports" not in parts[-1]:
-            posts.append((ts, url))
-    print(f"Found {len(posts)} unique trip-report posts via CDX.")
-    return posts
+    """Return list of (timestamp, original_url) for all trip-report posts via CDX."""
+    # Try the whole domain — posts are at root level on this WordPress site
+    for url_pattern in [
+        f"{ORIGIN}/*",
+        f"www.nzalpine.wellington.net.nz/*",
+        f"nzalpine.wellington.net.nz/*",
+    ]:
+        params = {
+            "url":       url_pattern,
+            "output":    "json",
+            "fl":        "timestamp,original",
+            "filter":    ["statuscode:200", "mimetype:text/html"],
+            "collapse":  "urlkey",
+            "matchType": "prefix",
+            "limit":     "500",
+        }
+        print(f"Querying CDX API: {url_pattern}")
+        try:
+            r = SESSION.get(CDX_API, params=params, timeout=30)
+            r.raise_for_status()
+            rows = r.json()
+        except Exception as e:
+            print(f"  CDX error: {e}")
+            continue
+
+        if not rows or rows[0] != ["timestamp", "original"]:
+            print(f"  No results for {url_pattern}")
+            continue
+
+        posts = []
+        skip_patterns = re.compile(
+            r"/(category|tag|page|author|feed|wp-|xmlrpc|\?)"
+        )
+        for ts, url in rows[1:]:
+            path = urlparse(url).path.rstrip("/")
+            parts = [p for p in path.split("/") if p]
+            # Keep only single-post URLs (1-3 path segments, no index pages)
+            if parts and not skip_patterns.search(url) and len(parts) <= 4:
+                posts.append((ts, url))
+
+        print(f"  Found {len(posts)} candidate URLs")
+        if posts:
+            return posts
+
+    return []
 
 
 # Also try the category listing pages as a fallback / supplement
 def scrape_category_pages():
-    """Walk paginated category pages and collect post URLs."""
+    """Walk paginated category pages starting from known good Wayback snapshot."""
     found = {}
-    page = 1
-    while True:
-        if page == 1:
-            url = f"{ORIGIN}{CATEGORY_PATH}"
-        else:
-            url = f"{ORIGIN}{CATEGORY_PATH}page/{page}/"
 
-        wb_url = best_snapshot(url)
-        if not wb_url:
-            break
-        print(f"  Category page {page}: {wb_url}")
-        soup = fetch_soup(wb_url)
+    # Try multiple timestamps to maximise post discovery.
+    # Older seeds surface older posts; newer seeds surface newer ones.
+    seed_wayback_urls = [
+        "https://web.archive.org/web/20130505172652/http://www.nzalpine.wellington.net.nz/category/trip-reports/",
+        "https://web.archive.org/web/20121201000000/http://www.nzalpine.wellington.net.nz/category/trip-reports/",
+        "https://web.archive.org/web/20120101000000/http://www.nzalpine.wellington.net.nz/category/trip-reports/",
+        "https://web.archive.org/web/20111001000000/http://www.nzalpine.wellington.net.nz/category/trip-reports/",
+        "https://web.archive.org/web/20110101000000/http://www.nzalpine.wellington.net.nz/category/trip-reports/",
+        # Also try the blog root — some themes show all posts there
+        "https://web.archive.org/web/20130505172652/http://www.nzalpine.wellington.net.nz/",
+        "https://web.archive.org/web/20121201000000/http://www.nzalpine.wellington.net.nz/",
+    ]
+
+    for seed_url in seed_wayback_urls:
+        print(f"  Trying seed: {seed_url}")
+        soup = fetch_soup(seed_url)
         if soup is None:
-            break
+            print(f"    (no snapshot)")
+            time.sleep(REQUEST_DELAY)
+            continue
 
-        links = soup.select("h1.entry-title a, h2.entry-title a, .post-title a")
-        if not links:
-            # Try generic: any link whose href contains the origin + a year
-            links = [
-                a for a in soup.find_all("a", href=True)
-                if re.search(r"/20\d\d/", a["href"]) or
-                   (ORIGIN in a["href"] and "/trip" in a["href"])
-            ]
-        if not links:
-            break
+        links = collect_post_links(soup)
+        print(f"    Got {len(links)} links")
+        for href in links:
+            found[href] = True
 
-        for a in links:
-            href = a["href"]
-            if href not in found:
+        # Follow ALL pagination from this seed
+        page = 2
+        current_soup = soup
+        ts_match = re.search(r"/web/(\d+)/", seed_url)
+        ts = ts_match.group(1) if ts_match else "20130505172652"
+
+        while page <= 20:  # safety cap
+            # Look for "Older posts" / "Next" pagination link
+            next_link = None
+            for text_pat in [r"older\s+posts?", r"next\s+page", r"next\s+»", r"»"]:
+                next_link = current_soup.find("a", string=re.compile(text_pat, re.I))
+                if next_link:
+                    break
+            # Also try href containing /page/N/
+            if not next_link:
+                next_link = current_soup.find(
+                    "a", href=re.compile(
+                        r"/category/trip-reports/page/\d+/|"
+                        r"nzalpine\.wellington\.net\.nz/page/\d+/", re.I
+                    )
+                )
+            if not next_link:
+                break
+
+            next_href = next_link.get("href", "")
+            original_next = unwrap_wayback_url(next_href) if "archive.org" in next_href else next_href
+            # Make sure it's a full URL
+            if not original_next.startswith("http"):
+                original_next = ORIGIN + "/" + original_next.lstrip("/")
+            wb_next = f"{WAYBACK}/{ts}/{original_next}"
+            print(f"    Page {page}: {original_next}")
+            current_soup = fetch_soup(wb_next)
+            if current_soup is None:
+                break
+            new_links = collect_post_links(current_soup)
+            print(f"      Got {len(new_links)} links")
+            if not new_links:
+                break
+            for href in new_links:
                 found[href] = True
+            page += 1
+            time.sleep(REQUEST_DELAY)
 
-        # Check for next page
-        next_link = soup.find("a", string=re.compile(r"older|next", re.I))
-        if not next_link:
-            break
-        page += 1
         time.sleep(REQUEST_DELAY)
 
+    print(f"  Total unique post URLs discovered: {len(found)}")
     return list(found.keys())
+
+
+def collect_post_links(soup):
+    """
+    Extract trip-report post URLs from a Wayback-archived WordPress category page.
+    Strategy: remove nav/header/footer first, then scan the main content area only.
+    """
+    # --- Step 1: remove nav chrome so we don't pick up menu links ---
+    for sel in [
+        "nav", "header", "footer", "#nav", "#header", "#footer",
+        ".nav", ".menu", ".navigation", "#navigation",
+        "#access", "#colophon", "#site-navigation",
+        "[id*='menu']", "[class*='menu']",
+        ".widget", "#sidebar", "aside",
+        ".wm-ipp", "#wm-ipp",           # Wayback toolbar
+    ]:
+        for el in soup.select(sel):
+            el.decompose()
+
+    # --- Step 2: find the main content container ---
+    content = None
+    for sel in ["#content", "#main", "main", ".site-content",
+                "#primary", ".content-area", "#wrapper", "body"]:
+        content = soup.select_one(sel)
+        if content:
+            break
+    if content is None:
+        content = soup
+
+    # --- Step 3: collect all links from the content area ---
+    # Wayback rewrites internal links to full archive.org URLs
+    domain_re = re.compile(r"nzalpine\.wellington\.net\.nz", re.I)
+    skip_re   = re.compile(
+        r"/(category|tag|page|author|feed|wp-|xmlrpc|"
+        r"how-to-find-us|email-discussion|climbing-trips|instruction|"
+        r"rock-climbing|club-meetings|club-activities|loaning|newsletter|"
+        r"members-area|contacts|our-sponsors|webcams|photo-galleries|"
+        r"about|resources|join)/",
+        re.I,
+    )
+    # Must have a real slug path (not query strings)
+    has_slug = re.compile(r"/[a-z0-9][a-z0-9\-]{3,}/?$", re.I)
+
+    links = []
+
+    # First try: WordPress post-title heading links (most reliable)
+    for sel in [
+        "h1.entry-title a", "h2.entry-title a",
+        ".post-title a", ".entry-title a",
+        "article h2 a", ".hentry h2 a", "h2.post-title a",
+    ]:
+        els = content.select(sel)
+        if els:
+            for a in els:
+                href = a.get("href", "")
+                if domain_re.search(href) and not skip_re.search(href):
+                    links.append(href)
+            if links:
+                print(f"      found {len(links)} post links via '{sel}'")
+                return list(dict.fromkeys(links))
+
+    # Second try: any link in the content that looks like a dated post URL
+    # WordPress date-based: /2013/04/slug/ or /2012/12/some-trip/
+    dated_re = re.compile(
+        r"nzalpine\.wellington\.net\.nz/20\d\d/\d\d/[a-z0-9\-]+/?$", re.I
+    )
+    for a in content.find_all("a", href=True):
+        href = a["href"]
+        if dated_re.search(href):
+            links.append(href)
+
+    if links:
+        print(f"      found {len(links)} dated post links")
+        return list(dict.fromkeys(links))
+
+    # Third try: any content link matching slug pattern, excluding known static pages
+    for a in content.find_all("a", href=True):
+        href = a["href"]
+        if domain_re.search(href) and not skip_re.search(href) and has_slug.search(href):
+            if "?" not in href and "#" not in href:
+                links.append(href)
+
+    if links:
+        print(f"      found {len(links)} candidate links (broad fallback)")
+        return list(dict.fromkeys(links))
+
+    # Debug dump if still nothing
+    all_domain_links = [
+        a["href"] for a in soup.find_all("a", href=True)
+        if domain_re.search(a.get("href",""))
+    ]
+    print(f"      DEBUG: {len(all_domain_links)} domain links after nav strip:")
+    for h in all_domain_links[:25]:
+        print(f"        {h}")
+    return []
 
 
 # ---------------------------------------------------------------------------
@@ -202,30 +356,68 @@ def extract_post(soup, post_url):
     """
     soup = clean_wayback_html(soup)
 
-    # --- Title ---
-    title = ""
-    for sel in ["h1.entry-title", "h2.entry-title", ".post-title h1", "h1.post-title", "h1"]:
-        el = soup.select_one(sel)
-        if el:
-            title = el.get_text(strip=True)
+    # --- Find main post/article element first ---
+    post_el = None
+    for sel in [".post", "article.post", ".hentry", "article", "#post", ".type-post"]:
+        post_el = soup.select_one(sel)
+        if post_el:
             break
 
-    # --- Date ---
-    date_str = ""
-    for sel in ["time.entry-date", ".entry-date", ".post-date", "time[datetime]", ".date"]:
-        el = soup.select_one(sel)
+    # --- Title: look inside post element first, then page-wide ---
+    title = ""
+    search_root = post_el or soup
+    for sel in [
+        "h1.entry-title", "h2.entry-title", ".post-title",
+        "h1.post-title", "h2.post-title", ".entry-title",
+        "h1", "h2",
+    ]:
+        el = search_root.select_one(sel)
         if el:
-            date_str = el.get("datetime", el.get_text(strip=True))
-            break
-    date_iso = parse_date(date_str)
+            t = el.get_text(strip=True)
+            # Skip the generic site title
+            if t and "New Zealand Alpine Club" not in t and len(t) > 5:
+                title = t
+                break
+    # Fallback: derive from URL slug
+    if not title:
+        slug = urlparse(post_url).path.rstrip("/").split("/")[-1]
+        title = slug.replace("-", " ").replace("trip-report-", "").title()
+
+    # --- Date: try meta, post element classes, then URL ---
+    date_str = ""
+    for sel in [
+        "time.entry-date", "time.published", ".entry-date",
+        ".post-date", "time[datetime]", ".date", ".published",
+        "abbr.published", "span.date",
+    ]:
+        el = (post_el or soup).select_one(sel)
+        if el:
+            date_str = el.get("datetime", "") or el.get("title", "") or el.get_text(strip=True)
+            if date_str:
+                break
+    # Fallback: extract date from URL path e.g. /2013/03/slug/
+    if not date_str:
+        m = re.search(r"/(\d{4})/(\d{2})/", post_url)
+        if m:
+            date_str = f"{m.group(1)}-{m.group(2)}-01"
+    date_iso = parse_date(date_str) if date_str else ""
 
     # --- Author ---
     author = ""
-    for sel in [".author.vcard a", ".entry-author a", ".byline a", ".author"]:
-        el = soup.select_one(sel)
+    for sel in [".author.vcard a", ".entry-author a", ".byline a", ".author", ".by-author"]:
+        el = (post_el or soup).select_one(sel)
         if el:
-            author = el.get_text(strip=True)
-            break
+            a_text = el.get_text(strip=True)
+            if a_text and a_text != "admin":
+                author = a_text
+                break
+    # Fallback: look for "by <Name>" pattern in first few paragraphs
+    if not author and post_el:
+        for p in post_el.find_all("p")[:3]:
+            m = re.match(r"^[Bb]y\s+([A-Z][a-z]+(?: [A-Z][a-z]+){1,2})", p.get_text(strip=True))
+            if m:
+                author = m.group(1)
+                break
 
     # --- Tags ---
     tags = []
@@ -406,31 +598,54 @@ def main():
         print("No posts found. Exiting.")
         sys.exit(1)
 
+    # scrape_category_pages returns full Wayback URLs; wrap as (None, url) tuples
+    if post_records and isinstance(post_records[0], str):
+        post_records = [(None, u) for u in post_records]
+
     print(f"\nProcessing {len(post_records)} posts...\n")
 
     skipped = []
     processed = 0
 
     for i, (ts, original_url) in enumerate(post_records, 1):
-        slug = slug_from_url(original_url)
+        # original_url may already be a full Wayback URL (from scrape_category_pages)
+        if original_url.startswith("https://web.archive.org"):
+            wb_url = original_url
+            slug = slug_from_url(original_url)
+        else:
+            slug = slug_from_url(original_url)
+            wb_url = f"{WAYBACK}/{ts}/{original_url}" if ts else None
+
         out_file = OUT_CONTENT / f"{slug}.md"
 
         if out_file.exists():
             print(f"[{i}/{len(post_records)}] Skip (exists): {slug}")
             continue
 
-        print(f"[{i}/{len(post_records)}] Fetching: {original_url}")
+        print(f"[{i}/{len(post_records)}] Fetching: {wb_url or original_url}")
 
-        # Get best snapshot URL
-        wb_url = f"{WAYBACK}/{ts}/{original_url}" if ts else best_snapshot(original_url)
         if not wb_url:
-            print(f"  No snapshot found for {original_url}")
+            print(f"  No snapshot URL available, skipping")
             skipped.append(original_url)
             continue
 
         soup = fetch_soup(wb_url)
+
+        # If the primary timestamp fails, try nearby timestamps
         if soup is None:
-            print(f"  Failed to fetch {wb_url}")
+            original = unwrap_wayback_url(wb_url) if "archive.org" in wb_url else wb_url
+            for alt_ts in ["20121201000000", "20120601000000", "20120101000000",
+                           "20111201000000", "20111001000000", "20130101000000"]:
+                alt_url = f"{WAYBACK}/{alt_ts}/{original}"
+                print(f"  Retrying with timestamp {alt_ts}...")
+                soup = fetch_soup(alt_url)
+                if soup:
+                    wb_url = alt_url
+                    break
+                time.sleep(1)
+
+        if soup is None:
+            print(f"  Failed all timestamps for {wb_url}")
             skipped.append(original_url)
             continue
 

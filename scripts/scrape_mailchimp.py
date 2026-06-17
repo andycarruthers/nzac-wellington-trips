@@ -199,7 +199,10 @@ def main():
         sys.exit(1)
 
     urls_file = Path(sys.argv[1])
-    urls = [u.strip() for u in urls_file.read_text().splitlines() if u.strip()]
+    urls = [
+        u.strip() for u in urls_file.read_text().splitlines()
+        if u.strip() and not u.strip().startswith("#")
+    ]
     print(f"Loaded {len(urls)} newsletter URLs")
 
     OUT_CONTENT.mkdir(parents=True, exist_ok=True)

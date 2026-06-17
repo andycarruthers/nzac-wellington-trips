@@ -58,24 +58,37 @@ MONTH_MAP = {
 # They are usually ALL CAPS or Title Case, often on their own line,
 # 20–120 chars, and followed by an author or participant list.
 
+_MONTH = (
+    r"(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?"
+    r"|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)"
+)
+_YEAR = r"(?:19|20)\d{2}"
+_DATE_AFTER_DASH = (
+    # day-range + month:  "21-22 September"
+    r"(?:\d{1,2}[-–]\d{1,2}\s+" + _MONTH + r")"
+    r"|(?:\d{1,2}\s+" + _MONTH + r")"              # day + month
+    r"|(?:" + _MONTH + r"(?:\s+" + _YEAR + r")?)"  # month (+ optional year)
+    r"|(?:" + _YEAR + r"\b)"                        # bare year (1900-2099 only)
+)
+
 TRIP_HEADING_RE = re.compile(
     r"""^
     (?:
-        # Explicit "Trip Report" prefix
+        # Explicit "Trip Report" or "Trip report" prefix
         [Tt]rip\s+[Rr]eport\b.*
         |
-        # "Section Trip" prefix
-        [Ss]ection\s+[Tt]rip\b.*
+        # "Section trip, Location" or "Section Trip Report" (not bare "Section Trip News")
+        [Ss]ection\s+[Tt]rip\s+[Rr]eport\b.*
         |
-        # Named peak/location followed by a date or dash
+        [Ss]ection\s+[Tt]rip\s*[,:\–\-—]\s*\S.*
+        |
+        # Named location + dash + a date (month or year required after dash)
         (?:Mt\.?\s+|Mount\s+|Lake\s+)?
         [A-Z][A-Za-z'\-]{2,}
-        (?:\s+[A-Z][A-Za-z'\-]{2,}){0,4}
+        (?:\s+[A-Z][A-Za-z'\-]{2,}){0,3}
         \s*[–\-—]\s*
-        .{5,60}
-        |
-        # ALL CAPS heading that looks like a place name (≥3 words)
-        [A-Z]{2,}(?:\s+[A-Z]{2,}){2,}\b.*
+        (?:""" + _DATE_AFTER_DASH + r""")
+        .*
     )
     $""",
     re.VERBOSE,
@@ -88,12 +101,31 @@ SKIP_RE = re.compile(
     r"|Events?|Upcoming|Contacts?|Advertisem|Gear\s+Review|Book\s+Review"
     r"|Instruction|Course|Letter|Competition|Photo\s+Comp|Sponsors?"
     r"|[Pp]resident|[Ss]ecretary|[Tt]reasurer"
+    # Photo caption prefixes
+    r"|Above|Below|Left|Right|Top|Bottom|Inset|Caption|Clockwise"
+    r"|Photo\s+by|Photographed|Looking\s+(?:up|down|north|south|east|west)"
+    # Ads, notices, non-trip content
+    r"|Wanted|For\s+Sale|Selling|NEW\b|Advance\s+Notice"
+    r"|Expedition\s+Fund|Powell\s+Hut|Beautiful\s+World"
     r")",
     re.I,
 )
 
 # Minimum body length (chars) for a section to be worth keeping
-MIN_BODY_CHARS = 200
+MIN_BODY_CHARS = 300
+
+# Newsletter section headers that mark the END of trip-report content.
+# When one of these lines is encountered, close the current section.
+SECTION_BREAK_RE = re.compile(
+    r"^(?:"
+    r"UPCOMING|NOTICES?|CLASSIFIEDS?|COMING\s+TRIPS?"
+    r"|CLUB\s+CONTACTS?|SECTION\s+CONTACTS?"
+    r"|ADVERTISEM|FOR\s+SALE|GEAR\s+FOR\s+SALE"
+    r"|SPONSORS?|MEMBER\s+DISCOUNTS?"
+    r"|POSITION\s+NAME"   # start of contacts table
+    r")\b",
+    re.I,
+)
 
 
 # ---------------------------------------------------------------------------
@@ -337,6 +369,13 @@ def split_into_sections(pages):
     current = None
 
     for page_num, line in tagged_lines:
+        # Major newsletter sections end trip-report content
+        if current is not None and SECTION_BREAK_RE.match(line):
+            if len(" ".join(current["body"])) >= MIN_BODY_CHARS:
+                sections.append(current)
+            current = None
+            continue
+
         # Is this line a trip-report heading?
         if _is_heading(line):
             if current and len(" ".join(current["body"])) >= MIN_BODY_CHARS:
@@ -348,6 +387,9 @@ def split_into_sections(pages):
                 "page_end":   page_num,
             }
         elif current is not None:
+            # Skip bare page-number labels ("Page 6", "6", etc.)
+            if re.match(r"^(?:Page\s+)?\d+\s*$", line):
+                continue
             current["body"].append(line)
             current["page_end"] = page_num
 
@@ -405,7 +447,14 @@ def parse_section(section, pdf_path, page_images):
                 para = []
     if para:
         paragraphs.append(" ".join(para))
+    # Cap the body: newsletters run on forever after the trip content
+    MAX_BODY_CHARS = 6000
     body_md = "\n\n".join(paragraphs)
+    # Rejoin PDF print-layout soft hyphens: "how- ever" -> "however"
+    body_md = re.sub(r"(\w)- (\w)", r"\1\2", body_md)
+    if len(body_md) > MAX_BODY_CHARS:
+        # Truncate at the last paragraph boundary before the cap
+        body_md = body_md[:MAX_BODY_CHARS].rsplit("\n\n", 1)[0]
 
     # Inline images that belong to this section's page range
     section_imgs = []
@@ -435,6 +484,7 @@ def parse_section(section, pdf_path, page_images):
 
 
 def _parse_date(heading):
+    # "12-15 November 2011" or "12 November 2011"
     m = re.search(
         r"(\d{1,2})[–\-]?(\d{0,2})\s*"
         r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*"
@@ -449,14 +499,29 @@ def _parse_date(heading):
             return f"{yr}-{mon}-{int(day):02d}"
         except ValueError:
             return f"{yr}-{mon}-01"
-    m = re.search(r"\b(20\d{2}|199\d)\b", heading)
+    # "November 2011" — month name + year, no leading day
+    m = re.search(
+        r"\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*"
+        r"\s+((?:19|20)\d{2})\b",
+        heading, re.I
+    )
+    if m:
+        mon = MONTH_MAP[m.group(1).lower()[:3]]
+        return f"{m.group(2)}-{mon}-01"
+    # bare year
+    m = re.search(r"\b((?:19|20)\d{2})\b", heading)
     if m:
         return f"{m.group(1)}-01-01"
     return ""
 
 
 def _date_from_filename(pdf_path):
-    """Extract date from e.g. Vertigo_201302_Feb.pdf -> 2013-02-01"""
+    """Extract date from e.g. 'NZAC Vertigo 2019_06' or 'Vertigo_201302_Feb'"""
+    # Format: 4-digit year followed by optional separator then 2-digit month
+    m = re.search(r"(\d{4})[_\s](\d{2})\b", pdf_path.stem)
+    if m:
+        return f"{m.group(1)}-{m.group(2)}-01"
+    # Fallback: year + month concatenated e.g. 201302
     m = re.search(r"(\d{4})(\d{2})", pdf_path.stem)
     if m:
         return f"{m.group(1)}-{m.group(2)}-01"
@@ -505,7 +570,7 @@ def process_pdf(pdf_path):
     written = 0
     for section in sections:
         post = parse_section(section, pdf_path, page_images)
-        print(f"    → {post['title'][:70]}")
+        print(f"    -> {post['title'][:70]}")
 
         # Build slug: YYYYMM-location
         date_part = (post["date"] or "000000").replace("-", "")[:6]
