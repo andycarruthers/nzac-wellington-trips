@@ -1,0 +1,101 @@
+{{ define "main" }}
+<div class="container submit-page">
+  <header class="submit-header">
+    <h1>Submit a Trip Report</h1>
+    <p>Share your adventure with the Wellington Section. Fill in the details below and attach any photos — we'll review and publish it to the site.</p>
+  </header>
+
+  <form name="trip-report" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" class="submit-form">
+    <input type="hidden" name="form-name" value="trip-report">
+    <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+    <div class="form-section">
+      <h2>Your Details</h2>
+      <div class="form-group">
+        <label for="name">Your Name <span class="required">*</span></label>
+        <input type="text" id="name" name="name" required placeholder="e.g. Jane Smith">
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address <span class="required">*</span></label>
+        <input type="email" id="email" name="email" required placeholder="for any follow-up questions">
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h2>Trip Details</h2>
+      <div class="form-group">
+        <label for="title">Trip Title <span class="required">*</span></label>
+        <input type="text" id="title" name="title" required placeholder="e.g. Ruapehu Winter Ski Tour">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="date">Trip Date <span class="required">*</span></label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="location">Location <span class="required">*</span></label>
+          <input type="text" id="location" name="location" required placeholder="e.g. Ruapehu, Nelson Lakes">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="participants">Participants</label>
+        <input type="text" id="participants" name="participants" placeholder="Names of people on the trip">
+      </div>
+      <div class="form-group">
+        <label for="tags">Trip Type</label>
+        <div class="checkbox-group">
+          <label class="checkbox-label"><input type="checkbox" name="tags" value="Alpine"> Alpine</label>
+          <label class="checkbox-label"><input type="checkbox" name="tags" value="Tramping"> Tramping</label>
+          <label class="checkbox-label"><input type="checkbox" name="tags" value="Skiing"> Skiing</label>
+          <label class="checkbox-label"><input type="checkbox" name="tags" value="Climbing"> Climbing</label>
+          <label class="checkbox-label"><input type="checkbox" name="tags" value="Rock Climbing"> Rock Climbing</label>
+          <label class="checkbox-label"><input type="checkbox" name="tags" value="Kayaking"> Kayaking</label>
+          <label class="checkbox-label"><input type="checkbox" name="tags" value="Mountain Biking"> Mountain Biking</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h2>Your Report</h2>
+      <div class="form-group">
+        <label for="report">Trip Report <span class="required">*</span></label>
+        <textarea id="report" name="report" required rows="12" placeholder="Tell us about your trip — what happened, highlights, conditions, anything useful for others..."></textarea>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h2>Photos</h2>
+      <div class="form-group">
+        <label for="photos">Attach Photos <span class="optional">(optional, up to 10 files)</span></label>
+        <input type="file" id="photos" name="photos" accept="image/*" multiple>
+        <p class="field-hint">JPG or PNG. The first photo will be used as the cover image.</p>
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" class="btn btn--submit">Submit Trip Report</button>
+    </div>
+  </form>
+
+  <div class="submit-success" id="success-message" style="display:none">
+    <div class="success-icon">&#9651;</div>
+    <h2>Thanks — report received!</h2>
+    <p>We'll review it and get it published shortly.</p>
+    <a href="/trips/" class="btn btn--outline">&larr; Back to Trip Reports</a>
+  </div>
+</div>
+
+<script>
+  // Show success message if redirected back with ?success
+  if (window.location.search.includes('success')) {
+    document.querySelector('.submit-form').style.display = 'none';
+    document.getElementById('success-message').style.display = 'block';
+  }
+
+  // After submit redirect to same page with ?success
+  document.querySelector('.submit-form').addEventListener('submit', function(e) {
+    var action = window.location.pathname + '?success';
+    this.setAttribute('action', action);
+  });
+</script>
+{{ end }}
