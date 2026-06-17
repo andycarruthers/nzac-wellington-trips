@@ -1,6 +1,10 @@
 ---
 title: "Pleasant (Objectiveless) Days at Ruapehu"
 date: 2004-09-01
+author: "Mike Peat"
+location: "Coromandel"
+locations: ["Coromandel"]
+tags: ["Alpine", "Tramping", "Ski"]
 source: "Vertigo Newsletter — Vertigo 200409 Sep"
 draft: false
 ---

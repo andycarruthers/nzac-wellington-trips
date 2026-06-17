@@ -1,6 +1,9 @@
 ---
 title: "For whom the bell tolled…"
 date: 2007-10-01
+location: "Canada"
+locations: ["Canada"]
+tags: ["Alpine", "Ski"]
 source: "Vertigo Newsletter — Vertigo 200710 Oct"
 draft: false
 ---

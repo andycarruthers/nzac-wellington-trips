@@ -1,6 +1,9 @@
 ---
 title: "A NEW ROUTE TO THE CABLE CAR"
 date: 2007-05-01
+location: "Mount Cook"
+locations: ["Mount Cook"]
+tags: ["Alpine", "Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 200705 May"
 draft: false
 ---

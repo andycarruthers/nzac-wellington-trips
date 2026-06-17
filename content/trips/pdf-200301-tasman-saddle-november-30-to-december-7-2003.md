@@ -1,6 +1,9 @@
 ---
 title: "Tasman Saddle November 30 to December 7 2003"
 date: 2003-01-01
+location: "Mount Cook"
+locations: ["Mount Cook"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200402 Feb"
 draft: false
 ---

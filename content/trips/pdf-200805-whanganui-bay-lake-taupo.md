@@ -1,6 +1,10 @@
 ---
 title: "Whanganui Bay, Lake Taupo"
 date: 2008-05-01
+author: "Gill James"
+location: "Lake Taupo"
+locations: ["Lake Taupo"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200805 May"
 draft: false
 ---

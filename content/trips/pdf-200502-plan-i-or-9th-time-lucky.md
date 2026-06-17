@@ -1,6 +1,9 @@
 ---
 title: "Plan I or 9th Time Lucky?"
 date: 2005-02-01
+location: "Mount Aspiring"
+locations: ["Mount Aspiring"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200502 Feb"
 draft: false
 ---

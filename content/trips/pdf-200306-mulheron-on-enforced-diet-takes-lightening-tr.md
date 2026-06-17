@@ -1,6 +1,9 @@
 ---
 title: "Mulheron on enforced diet, takes “lightening” trip"
 date: 2003-06-01
+location: "Mount Aspiring"
+locations: ["Mount Aspiring"]
+tags: ["Alpine", "Tramping"]
 source: "Vertigo Newsletter — Vertigo 200306 Jun"
 draft: false
 ---

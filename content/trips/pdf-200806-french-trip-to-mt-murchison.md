@@ -1,6 +1,10 @@
 ---
 title: "French Trip to Mt Murchison"
 date: 2008-06-01
+author: "Simon Romanos"
+location: "European Alps"
+locations: ["European Alps"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200806 Jun"
 draft: false
 ---

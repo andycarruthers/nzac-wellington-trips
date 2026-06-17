@@ -1,6 +1,10 @@
 ---
 title: "Labour Weekend - Mt Adams"
 date: 2003-12-01
+author: "Caroline Duggan"
+location: "Canterbury"
+locations: ["Canterbury"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200312 Dec"
 draft: false
 ---

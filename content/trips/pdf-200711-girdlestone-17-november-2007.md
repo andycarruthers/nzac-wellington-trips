@@ -1,6 +1,9 @@
 ---
 title: "Girdlestone 17 November 2007"
 date: 2007-11-17
+location: "Fiordland"
+locations: ["Fiordland"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200712 Dec"
 draft: false
 ---

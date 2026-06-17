@@ -1,6 +1,10 @@
 ---
 title: "Chamonix Adventures July ‘07"
 date: 2007-11-01
+author: "Dan Thomas"
+location: "European Alps"
+locations: ["European Alps"]
+tags: ["Alpine", "Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 200711 Nov"
 draft: false
 ---

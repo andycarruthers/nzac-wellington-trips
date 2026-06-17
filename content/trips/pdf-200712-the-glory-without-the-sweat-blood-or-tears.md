@@ -1,6 +1,10 @@
 ---
 title: "The glory without the sweat, blood or tears"
 date: 2007-12-01
+author: "Lou Thornley"
+location: "European Alps"
+locations: ["European Alps"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200712 Dec"
 draft: false
 ---

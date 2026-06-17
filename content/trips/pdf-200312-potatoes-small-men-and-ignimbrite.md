@@ -1,6 +1,9 @@
 ---
 title: "POTATOES, SMALL MEN AND IGNIMBRITE"
 date: 2003-12-01
+location: "Waikato"
+locations: ["Waikato"]
+tags: ["Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 200312 Dec"
 draft: false
 ---

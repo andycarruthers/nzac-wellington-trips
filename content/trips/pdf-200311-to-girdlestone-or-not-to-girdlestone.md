@@ -1,6 +1,9 @@
 ---
 title: "TO GIRDLESTONE OR NOT TO GIRDLESTONE"
 date: 2003-11-01
+location: "Taranaki"
+locations: ["Taranaki"]
+tags: ["Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 200311 Nov"
 draft: false
 ---

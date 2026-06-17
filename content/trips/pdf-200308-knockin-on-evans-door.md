@@ -1,6 +1,9 @@
 ---
 title: "Knockin’ on Evans’ door"
 date: 2003-08-01
+location: "Mount Cook"
+locations: ["Mount Cook"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200308 Aug"
 draft: false
 ---

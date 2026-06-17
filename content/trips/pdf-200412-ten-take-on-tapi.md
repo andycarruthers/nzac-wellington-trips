@@ -1,6 +1,9 @@
 ---
 title: "Ten take on Tapi"
 date: 2004-12-01
+location: "Himalaya"
+locations: ["Himalaya"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200412 Dec"
 draft: false
 ---

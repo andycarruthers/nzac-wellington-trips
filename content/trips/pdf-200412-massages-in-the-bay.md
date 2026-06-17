@@ -1,6 +1,10 @@
 ---
 title: "Massages in the Bay!"
 date: 2004-12-01
+author: "Kiri Diamond"
+location: "Lake Taupo"
+locations: ["Lake Taupo"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200412 Dec"
 draft: false
 ---

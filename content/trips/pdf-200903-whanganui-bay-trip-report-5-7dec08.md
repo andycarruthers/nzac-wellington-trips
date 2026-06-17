@@ -1,6 +1,9 @@
 ---
 title: "Whanganui Bay Trip Report - 5-7Dec08"
 date: 2009-03-01
+location: "Lake Taupo"
+locations: ["Lake Taupo"]
+tags: ["Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 200903 Mar"
 draft: false
 ---

@@ -1,6 +1,8 @@
 ---
 title: "Volcanoes and Revolutions"
 date: 2003-12-01
+author: "Craig Anderson"
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200312 Dec"
 draft: false
 ---

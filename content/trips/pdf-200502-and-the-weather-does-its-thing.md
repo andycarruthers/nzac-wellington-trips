@@ -1,6 +1,9 @@
 ---
 title: "And the weather does its thing…."
 date: 2005-02-01
+location: "Mount Cook"
+locations: ["Mount Cook"]
+tags: ["Alpine", "Rock Climbing", "Tramping"]
 source: "Vertigo Newsletter — Vertigo 200502 Feb"
 draft: false
 ---

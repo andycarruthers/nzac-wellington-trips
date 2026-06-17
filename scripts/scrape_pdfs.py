@@ -679,14 +679,126 @@ def _is_heading_regex(line):
 # Section parsing
 # ---------------------------------------------------------------------------
 
+# ---------------------------------------------------------------------------
+# Location and tag detection
+# ---------------------------------------------------------------------------
+
+# Maps keyword patterns to canonical location name (first match wins)
+_LOCATION_RULES = [
+    # Overseas
+    (r"\bHimalaya|Karakoram|Nepal|Tibet|Pakistan|India|Bhutan\b", "Himalaya"),
+    (r"\bKangchenjunga|Manaslu|Annapurna|Everest|Dhaulagiri\b", "Himalaya"),
+    (r"\bChamonix|Mont\s+Blanc|Alps\b|Aiguille|France\b", "European Alps"),
+    (r"\bBugaboo|Selkirk|Rockies|Canada\b|Alberta\b", "Canada"),
+    (r"\bYosemite|Sierra|California\b|Tahoe\b", "USA"),
+    (r"\bKrabi|Thailand|Asia\b", "Asia"),
+    (r"\bCordillera\s+Blanca|Peru\b|Bolivia|Andes\b", "South America"),
+    (r"\bArapiles|Grampians|Australia\b|Moonarie|Buffalo\b", "Australia"),
+    (r"\bMachu\s+Picchu|Mexico|Hokkaido|Japan\b", "Overseas"),
+    # South Island
+    (r"\bFiordland|Darran|Milford|Marian|Christina|Talbot|Sabre\b", "Fiordland"),
+    (r"\bMt\.?\s+Cook|Aoraki|Tasman\s+Glacier|Hochstetter|Haast|Lendenfeld\b", "Mount Cook"),
+    (r"\bMount\s+Cook|Mueller|Hooker|Grand\s+Plateau|Ball\s+Pass\b", "Mount Cook"),
+    (r"\bArrowsmith|Castle\s+Hill|Arthur.s\s+Pass|Franklin|Phills\b", "Canterbury"),
+    (r"\bGirdlestone|Taranaki|Egmont\b", "Taranaki"),
+    (r"\bNelson\s+Lakes|Hopeless|Murchison|D.Urville|St\.\s+Arnaud\b", "Nelson Lakes"),
+    (r"\bAspiring|Matukituki|Rob\s+Roy|Waipara|Bonar\b", "Mount Aspiring"),
+    (r"\bArrowsmiths\b", "Canterbury"),
+    (r"\bWanaka|Queenstown|Remarkables\b", "Queenstown / Wanaka"),
+    (r"\bColin\s+Todd|Murchison\s+Glacier|Tukino\b", "Mount Cook"),
+    (r"\bGarden\s+of\s+Eden|Cross\s+Ball\s+Pass|Browning|Lewis\b", "Canterbury"),
+    (r"\bKaikoura|Tapuae|Pollux|Betsy|Awful|Crucible\b", "Kaikoura / Inland Kaikōura"),
+    (r"\bDouglas|Sefton|Copland\b", "Westland"),
+    (r"\bPinnacles|Coromandel\b", "Coromandel"),
+    # North Island
+    (r"\bRuapehu|Tukino|Tahurangi|Girdlestone\b", "Ruapehu"),
+    (r"\bTararua|Mitre\s+Peak\b", "Tararua"),
+    (r"\bWharepapa|Waikato\b", "Waikato"),
+    (r"\bWhanganui\s+Bay|Kawakawa\b", "Lake Taupo"),
+    (r"\bTitahi\s+Bay|Wellington\b", "Wellington"),
+    (r"\bPayne.s\s+Ford|Golden\s+Bay\b", "Golden Bay"),
+    (r"\bParetetaitonga|Cathedral\s+Rocks|Dome\b", "Ruapehu"),
+    (r"\bEden|Hamilton\s+the\s+mountain\b", "Auckland"),
+    # Generic overseas check (Europe, Middle East etc.)
+    (r"\bMiddle\s+East|Israel|Jordan|Turkey|Egypt\b", "Middle East"),
+    (r"\bScotland|UK\b|England\b", "UK"),
+    (r"\bAntarctica\b", "Antarctica"),
+    # Wellington local
+    (r"\bBaring\s+Head|Red\s+Rocks|Makara\b", "Wellington"),
+    (r"\bGarden\s+of\s+Eden|Browning\s+Pass\b", "Canterbury"),
+]
+
+# Activity tags inferred from keywords in title+body
+_TAG_RULES = [
+    (r"\bski\s+tour(?:ing)?|ski\s+mountain|skinning|backcountry\s+ski|telemark\b", "Ski Touring"),
+    (r"\bice\s+climb|crampon|neve|crevasse|glacier\s+travel|seracs?\b", "Alpine"),
+    (r"\balpine|mountaineer(?:ing)?|bivouac|high\s+camp|base\s+camp\b", "Alpine"),
+    (r"\brock\s+climb|crag|trad\s+climb|sport\s+climb|bouldering|top\s+rope|lead\s+climb\b", "Rock Climbing"),
+    (r"\brock\s+hop|Arapiles|Wharepapa|Paynes?\s+Ford|Kawakawa\b", "Rock Climbing"),
+    (r"\btramping|hut\s+bag|bush\s+bash\b", "Tramping"),
+    (r"\bski\s+field|ski\s+hill|piste\b", "Ski"),
+]
+
+
+def _infer_location(text):
+    """Return a canonical location string or empty string."""
+    for pattern, location in _LOCATION_RULES:
+        if re.search(pattern, text, re.I):
+            return location
+    return ""
+
+
+def _infer_tags(text):
+    """Return list of activity tag strings."""
+    seen = set()
+    tags = []
+    for pattern, tag in _TAG_RULES:
+        if tag not in seen and re.search(pattern, text, re.I):
+            tags.append(tag)
+            seen.add(tag)
+    return tags
+
+
+def _extract_author(heading, lines):
+    """Try to find an author name from heading or body lines."""
+    # "Words by Kathleen Logan" or "By Kevin Patterson" at start of body
+    if lines:
+        first = lines[0].strip()
+        m = re.match(r"^(?:[Ww]ords?\s+by|[Bb]y)\s+([A-Z][A-Za-z']+(?:\s+[A-Z][A-Za-z']+){1,2})", first)
+        if m:
+            return m.group(1), 1
+        # "From Kevin Patterson:" as the first line
+        m = re.match(r"^[Ff]rom\s+([A-Z][A-Za-z']+(?:\s+[A-Z][A-Za-z']+){1,2})\s*[:,]", first)
+        if m:
+            return m.group(1), 0   # keep the line, just extract the name
+
+    # Look for "Words by X" or "X and Y" near end of body (last 3 lines)
+    for line in reversed(lines[-3:] if len(lines) >= 3 else lines):
+        m = re.search(r"[Ww]ords?\s+by\s+([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+){1,2})", line)
+        if m:
+            return m.group(1), 0
+        # Standalone "Firstname Lastname" at end
+        m = re.match(r"^\s*([A-Z][a-z]+\s+[A-Z][a-z]+)\s*$", line)
+        if m and len(m.group(1).split()) == 2:
+            return m.group(1), 0
+
+    # "Heading – date (Author)" or "by Author" in heading itself
+    m = re.search(r"[Bb]y\s+([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+){1,2})", heading)
+    if m:
+        return m.group(1), 0
+
+    return "", 0
+
+
 def parse_section(section, pdf_path, page_images):
     heading = section["heading"]
     lines   = section["body"]
 
-    # Extract author from first line
-    author = ""
-    body_start = 0
-    if lines:
+    # Extract author
+    author, body_start = _extract_author(heading, lines)
+
+    # Fallback: old first-line check
+    if not author and lines:
         first = lines[0].strip()
         if re.match(r"^[Bb]y\s+", first):
             author = re.sub(r"^[Bb]y\s+", "", first).strip()
@@ -731,6 +843,13 @@ def parse_section(section, pdf_path, page_images):
     if not date_iso:
         date_iso = _date_from_filename(pdf_path)
 
+    # Location and tags — infer from heading + full body text
+    full_text = heading + " " + body_md
+    location = _infer_location(full_text)
+    tags = _infer_tags(full_text)
+    if not tags:
+        tags = ["Alpine"]  # default for mountaineering newsletters
+
     # Newsletter issue from filename
     issue = pdf_path.stem  # e.g. Vertigo_201302_Feb
 
@@ -738,6 +857,8 @@ def parse_section(section, pdf_path, page_images):
         "title":    heading,
         "date":     date_iso,
         "author":   author,
+        "location": location,
+        "tags":     tags,
         "body_md":  body_md,
         "source":   f"Vertigo Newsletter — {issue.replace('_', ' ')}",
         "pdf_stem": pdf_path.stem,
@@ -801,8 +922,14 @@ def to_hugo_markdown(post):
     lines.append(f'title: "{q(post["title"])}"')
     if post["date"]:
         lines.append(f'date: {post["date"]}')
-    if post["author"]:
+    if post.get("author"):
         lines.append(f'author: "{q(post["author"])}"')
+    if post.get("location"):
+        lines.append(f'location: "{q(post["location"])}"')
+        lines.append(f'locations: ["{q(post["location"])}"]')
+    if post.get("tags"):
+        tag_list = ", ".join(f'"{t}"' for t in post["tags"])
+        lines.append(f'tags: [{tag_list}]')
     lines.append(f'source: "{q(post["source"])}"')
     lines.append("draft: false")
     lines.append("---")

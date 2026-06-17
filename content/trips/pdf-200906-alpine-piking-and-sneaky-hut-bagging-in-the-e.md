@@ -1,6 +1,10 @@
 ---
 title: "Alpine Piking and Sneaky Hut Bagging in the Easter Break"
 date: 2009-06-01
+author: "Lorraine Johns"
+location: "Mount Cook"
+locations: ["Mount Cook"]
+tags: ["Alpine", "Rock Climbing", "Tramping"]
 source: "Vertigo Newsletter — Vertigo 200906 Jun"
 draft: false
 ---

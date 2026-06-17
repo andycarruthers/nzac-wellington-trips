@@ -1,6 +1,9 @@
 ---
 title: "Same old same old"
 date: 2007-06-01
+location: "Australia"
+locations: ["Australia"]
+tags: ["Alpine", "Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 200706 Jun"
 draft: false
 ---

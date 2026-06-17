@@ -1,6 +1,9 @@
 ---
 title: "RUAPEHU ALPINE STYLE"
 date: 2003-11-01
+location: "Taranaki"
+locations: ["Taranaki"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200311 Nov"
 draft: false
 ---

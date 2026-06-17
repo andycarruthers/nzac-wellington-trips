@@ -1,6 +1,10 @@
 ---
 title: "Mt Cook over Easter"
 date: 2009-06-01
+author: "Don French"
+location: "Mount Cook"
+locations: ["Mount Cook"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200906 Jun"
 draft: false
 ---

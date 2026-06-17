@@ -1,6 +1,10 @@
 ---
 title: "Middle East Backdown"
 date: 2009-02-01
+author: "John Nankervis"
+location: "Overseas"
+locations: ["Overseas"]
+tags: ["Ski Touring", "Alpine"]
 source: "Vertigo Newsletter — Vertigo 200902 Feb"
 draft: false
 ---

@@ -1,6 +1,7 @@
 ---
 title: "SKI MOUNTAINEERING IN THE AXIS OF GOOD"
 date: 2007-06-01
+tags: ["Ski Touring", "Alpine", "Ski"]
 source: "Vertigo Newsletter — Vertigo 200706 Jun"
 draft: false
 ---

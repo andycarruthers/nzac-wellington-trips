@@ -1,6 +1,10 @@
 ---
 title: "Ski Touring at Aoraki Mt Cook"
 date: 2004-12-01
+author: "Mike Peat"
+location: "Mount Cook"
+locations: ["Mount Cook"]
+tags: ["Ski Touring"]
 source: "Vertigo Newsletter — Vertigo 200412 Dec"
 draft: false
 ---

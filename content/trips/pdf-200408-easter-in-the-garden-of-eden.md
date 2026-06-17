@@ -1,6 +1,9 @@
 ---
 title: "Easter in the Garden of Eden"
 date: 2004-08-01
+location: "Mount Cook"
+locations: ["Mount Cook"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200408 Aug"
 draft: false
 ---

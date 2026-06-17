@@ -1,6 +1,9 @@
 ---
 title: "L’alpinisme au Presidente"
 date: 2004-10-01
+location: "European Alps"
+locations: ["European Alps"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200410 Oct"
 draft: false
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Wellingtons Waterfront"
 date: 2003-09-01
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200309 Sep"
 draft: false
 ---

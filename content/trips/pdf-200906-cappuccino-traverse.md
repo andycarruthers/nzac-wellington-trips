@@ -1,6 +1,9 @@
 ---
 title: "Cappuccino Traverse"
 date: 2009-06-01
+location: "European Alps"
+locations: ["European Alps"]
+tags: ["Alpine", "Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 200906 Jun"
 draft: false
 ---

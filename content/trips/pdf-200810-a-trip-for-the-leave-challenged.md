@@ -1,6 +1,9 @@
 ---
 title: "A Trip for the 'Leave Challenged'"
 date: 2008-10-01
+location: "Canterbury"
+locations: ["Canterbury"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200810 Oct"
 draft: false
 ---

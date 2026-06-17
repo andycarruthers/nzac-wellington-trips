@@ -1,6 +1,10 @@
 ---
 title: "A France contribution…."
 date: 2005-02-01
+author: "Stephen France"
+location: "European Alps"
+locations: ["European Alps"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200502 Feb"
 draft: false
 ---

@@ -1,6 +1,9 @@
 ---
 title: "Last but not least – Taranaki rock (Paul Grimwood)"
 date: 2008-03-01
+location: "Australia"
+locations: ["Australia"]
+tags: ["Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 200803 Mar"
 draft: false
 ---

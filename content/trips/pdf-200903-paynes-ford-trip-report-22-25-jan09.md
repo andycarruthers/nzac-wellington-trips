@@ -1,6 +1,9 @@
 ---
 title: "Payne’s Ford Trip Report - 22-25 Jan09"
 date: 2009-03-01
+location: "Wellington"
+locations: ["Wellington"]
+tags: ["Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 200903 Mar"
 draft: false
 ---

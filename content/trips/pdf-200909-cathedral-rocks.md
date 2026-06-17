@@ -1,6 +1,9 @@
 ---
 title: "Cathedral Rocks"
 date: 2009-09-01
+location: "Ruapehu"
+locations: ["Ruapehu"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200909 Sep"
 draft: false
 ---

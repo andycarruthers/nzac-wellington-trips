@@ -1,6 +1,9 @@
 ---
 title: "Scottie freezes his piglets…"
 date: 2007-10-01
+location: "Mount Cook"
+locations: ["Mount Cook"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200710 Oct"
 draft: false
 ---

@@ -1,6 +1,9 @@
 ---
 title: "Arthurs Pass – Franklin and Phills"
 date: 2008-03-01
+location: "Canterbury"
+locations: ["Canterbury"]
+tags: ["Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 200803 Mar"
 draft: false
 ---

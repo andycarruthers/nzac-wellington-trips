@@ -1,6 +1,10 @@
 ---
 title: "THE PINNACLES IN SUMMER"
 date: 2007-05-01
+author: "Tom Wilson"
+location: "Coromandel"
+locations: ["Coromandel"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200705 May"
 draft: false
 ---

@@ -1,6 +1,10 @@
 ---
 title: "And more Easter Bunnies"
 date: 2004-05-01
+author: "Mike Peat"
+location: "Ruapehu"
+locations: ["Ruapehu"]
+tags: ["Alpine", "Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 200405 May"
 draft: false
 ---

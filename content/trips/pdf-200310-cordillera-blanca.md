@@ -1,6 +1,9 @@
 ---
 title: "Cordillera Blanca"
 date: 2003-10-01
+location: "South America"
+locations: ["South America"]
+tags: ["Alpine", "Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 200310 Oct"
 draft: false
 ---

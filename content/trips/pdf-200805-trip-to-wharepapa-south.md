@@ -1,6 +1,9 @@
 ---
 title: "Trip to Wharepapa South"
 date: 2008-05-01
+location: "Waikato"
+locations: ["Waikato"]
+tags: ["Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 200805 May"
 draft: false
 ---

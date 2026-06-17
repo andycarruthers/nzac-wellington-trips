@@ -1,6 +1,10 @@
 ---
 title: "Garden of Eden – November 2008"
 date: 2008-11-01
+author: "Hayden Cox"
+location: "Canterbury"
+locations: ["Canterbury"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200902 Feb"
 draft: false
 ---

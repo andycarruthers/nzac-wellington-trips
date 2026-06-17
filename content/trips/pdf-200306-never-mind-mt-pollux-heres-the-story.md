@@ -1,6 +1,9 @@
 ---
 title: "Never mind Mt Pollux, here’s the story"
 date: 2003-06-01
+location: "Kaikoura / Inland Kaikōura"
+locations: ["Kaikoura / Inland Kaikōura"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200306 Jun"
 draft: false
 ---

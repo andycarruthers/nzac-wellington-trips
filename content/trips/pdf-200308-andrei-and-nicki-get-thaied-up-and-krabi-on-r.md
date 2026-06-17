@@ -1,6 +1,9 @@
 ---
 title: "Andrei and Nicki get Thai’ed up and Krabi on rock holiday"
 date: 2003-08-01
+location: "Asia"
+locations: ["Asia"]
+tags: ["Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 200308 Aug"
 draft: false
 ---

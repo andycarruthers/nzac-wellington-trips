@@ -1,6 +1,9 @@
 ---
 title: "And a French contribution…."
 date: 2005-02-01
+location: "Wellington"
+locations: ["Wellington"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200502 Feb"
 draft: false
 ---

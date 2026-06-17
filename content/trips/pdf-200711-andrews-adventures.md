@@ -1,6 +1,9 @@
 ---
 title: "Andrew’s Adventures"
 date: 2007-11-01
+location: "Himalaya"
+locations: ["Himalaya"]
+tags: ["Alpine", "Tramping"]
 source: "Vertigo Newsletter — Vertigo 200711 Nov"
 draft: false
 ---

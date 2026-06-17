@@ -1,6 +1,10 @@
 ---
 title: "Tearing Up the Tasman"
 date: 2006-04-01
+author: "Mike Peat"
+location: "Mount Cook"
+locations: ["Mount Cook"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200604 Apr"
 draft: false
 ---

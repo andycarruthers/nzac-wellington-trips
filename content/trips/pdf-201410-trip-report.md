@@ -2,6 +2,9 @@
 title: "Trip Report"
 date: 2014-10-01
 author: "Mt Tasman"
+location: "Mount Cook"
+locations: ["Mount Cook"]
+tags: ["Alpine", "Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 201410 Oct"
 draft: false
 ---

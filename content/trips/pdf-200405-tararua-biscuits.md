@@ -1,6 +1,10 @@
 ---
 title: "Tararua Biscuits"
 date: 2004-05-01
+author: "Our Website"
+location: "Himalaya"
+locations: ["Himalaya"]
+tags: ["Alpine", "Tramping"]
 source: "Vertigo Newsletter — Vertigo 200405 May"
 draft: false
 ---

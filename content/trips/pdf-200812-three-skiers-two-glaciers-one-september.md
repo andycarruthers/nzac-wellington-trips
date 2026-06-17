@@ -1,6 +1,9 @@
 ---
 title: "Three skiers, two glaciers, one September"
 date: 2008-12-01
+location: "Mount Cook"
+locations: ["Mount Cook"]
+tags: ["Ski Touring", "Alpine"]
 source: "Vertigo Newsletter — Vertigo 200812 Dec"
 draft: false
 ---

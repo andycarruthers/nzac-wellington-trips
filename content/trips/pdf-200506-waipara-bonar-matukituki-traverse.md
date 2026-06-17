@@ -1,6 +1,9 @@
 ---
 title: "Waipara, Bonar, Matukituki Traverse"
 date: 2005-06-01
+location: "Mount Cook"
+locations: ["Mount Cook"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200506 Jun"
 draft: false
 ---

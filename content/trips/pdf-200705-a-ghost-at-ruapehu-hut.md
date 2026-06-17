@@ -1,6 +1,9 @@
 ---
 title: "A GHOST AT RUAPEHU HUT?"
 date: 2007-05-01
+location: "Ruapehu"
+locations: ["Ruapehu"]
+tags: ["Alpine", "Tramping"]
 source: "Vertigo Newsletter — Vertigo 200705 May"
 draft: false
 ---

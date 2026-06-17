@@ -1,6 +1,9 @@
 ---
 title: "Mt Aspiring – January 2010"
 date: 2010-01-01
+location: "Mount Cook"
+locations: ["Mount Cook"]
+tags: ["Alpine", "Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 201002 Feb"
 draft: false
 ---

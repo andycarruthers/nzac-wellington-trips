@@ -1,6 +1,9 @@
 ---
 title: "Re. Peat, Pinnacle performance"
 date: 2003-09-01
+location: "Coromandel"
+locations: ["Coromandel"]
+tags: ["Alpine", "Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 200309 Sep"
 draft: false
 ---

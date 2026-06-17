@@ -2,6 +2,9 @@
 title: "Mount Arrowsmith – November 2011"
 date: 2011-11-01
 author: "Kevin Patterson"
+location: "Canterbury"
+locations: ["Canterbury"]
+tags: ["Alpine", "Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 201203 March"
 draft: false
 ---

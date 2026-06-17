@@ -1,6 +1,7 @@
 ---
 title: "The Importance of Not Being Ernest!"
 date: 2005-02-01
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200502 Feb"
 draft: false
 ---

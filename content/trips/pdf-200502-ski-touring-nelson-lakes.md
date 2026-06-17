@@ -1,6 +1,10 @@
 ---
 title: "Ski Touring - Nelson Lakes"
 date: 2005-02-01
+author: "John Nankervis"
+location: "Fiordland"
+locations: ["Fiordland"]
+tags: ["Ski Touring"]
 source: "Vertigo Newsletter — Vertigo 200502 Feb"
 draft: false
 ---

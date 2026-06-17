@@ -1,6 +1,10 @@
 ---
 title: "Centennial beckoned last week…"
 date: 2007-12-01
+author: "Trip Participants"
+location: "European Alps"
+locations: ["European Alps"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200712 Dec"
 draft: false
 ---

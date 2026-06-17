@@ -1,6 +1,9 @@
 ---
 title: "Mt Ruapehu South Girdlestone and Tahurangi, 3rd – 5th July"
 date: 2009-08-01
+location: "Taranaki"
+locations: ["Taranaki"]
+tags: ["Alpine", "Rock Climbing", "Ski"]
 source: "Vertigo Newsletter — Vertigo 200908 Aug"
 draft: false
 ---

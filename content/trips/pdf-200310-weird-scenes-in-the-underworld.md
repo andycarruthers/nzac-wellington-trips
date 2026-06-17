@@ -1,6 +1,10 @@
 ---
 title: "Weird scenes in the underworld"
 date: 2003-10-01
+author: "Mike Peat"
+location: "Wellington"
+locations: ["Wellington"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200310 Oct"
 draft: false
 ---

@@ -1,6 +1,10 @@
 ---
 title: "EVER WONDER WHERE MEREWYN WENT?"
 date: 2007-05-01
+author: "Merewyn Ellis"
+location: "Canada"
+locations: ["Canada"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200705 May"
 draft: false
 ---

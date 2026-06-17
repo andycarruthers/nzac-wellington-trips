@@ -1,6 +1,10 @@
 ---
 title: "A Garden of Eden Crossing"
 date: 2008-05-01
+author: "Terry Crippen"
+location: "Canterbury"
+locations: ["Canterbury"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200805 May"
 draft: false
 ---

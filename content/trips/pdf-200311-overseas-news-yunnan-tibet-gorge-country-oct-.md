@@ -1,6 +1,10 @@
 ---
 title: "OVERSEAS NEWS! Yunnan-Tibet Gorge Country (Oct/Nov 2003)"
 date: 2003-11-01
+author: "John Nank"
+location: "Himalaya"
+locations: ["Himalaya"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200402 Feb"
 draft: false
 ---

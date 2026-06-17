@@ -1,6 +1,9 @@
 ---
 title: "Grands Cojones in the Bugaboos"
 date: 2007-10-01
+location: "Canada"
+locations: ["Canada"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200710 Oct"
 draft: false
 ---

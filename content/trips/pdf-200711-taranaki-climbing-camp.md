@@ -1,6 +1,9 @@
 ---
 title: "Taranaki Climbing Camp"
 date: 2007-11-01
+location: "Taranaki"
+locations: ["Taranaki"]
+tags: ["Alpine", "Rock Climbing", "Tramping"]
 source: "Vertigo Newsletter — Vertigo 200711 Nov"
 draft: false
 ---

@@ -1,6 +1,10 @@
 ---
 title: "Crumbs from the Summer"
 date: 2008-07-01
+author: "John Nankervis"
+location: "Fiordland"
+locations: ["Fiordland"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200807 Jul"
 draft: false
 ---

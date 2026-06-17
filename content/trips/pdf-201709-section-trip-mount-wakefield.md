@@ -1,6 +1,9 @@
 ---
 title: "Section trip, Mount Wakefield"
 date: 2017-09-01
+location: "Nelson Lakes"
+locations: ["Nelson Lakes"]
+tags: ["Ski Touring", "Alpine", "Rock Climbing", "Ski"]
 source: "Vertigo Newsletter — NZAC Vertigo 2017 09"
 draft: false
 ---

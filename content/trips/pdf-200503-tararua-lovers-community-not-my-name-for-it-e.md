@@ -1,6 +1,9 @@
 ---
 title: "Tararua Lovers Community (?? Not my name for it – Ed.)"
 date: 2005-03-01
+location: "Mount Cook"
+locations: ["Mount Cook"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200503 Mar"
 draft: false
 ---

@@ -1,6 +1,10 @@
 ---
 title: "TEN DAYS IN FIORDLAND"
 date: 2007-05-01
+author: "Kevin Patterson"
+location: "Fiordland"
+locations: ["Fiordland"]
+tags: ["Tramping"]
 source: "Vertigo Newsletter — Vertigo 200705 May"
 draft: false
 ---

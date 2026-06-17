@@ -1,6 +1,9 @@
 ---
 title: "MORE FROM MIKE! Mt Buffalo"
 date: 2007-07-01
+location: "Australia"
+locations: ["Australia"]
+tags: ["Alpine", "Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 200707 Jul"
 draft: false
 ---

@@ -1,6 +1,9 @@
 ---
 title: "From Mike O’Brien (sounds like NZ this summer)"
 date: 2008-03-01
+location: "Himalaya"
+locations: ["Himalaya"]
+tags: ["Alpine", "Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 200803 Mar"
 draft: false
 ---

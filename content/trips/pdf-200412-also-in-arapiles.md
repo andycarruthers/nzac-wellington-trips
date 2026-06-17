@@ -1,6 +1,9 @@
 ---
 title: "Also in Arapiles!"
 date: 2004-12-01
+location: "Australia"
+locations: ["Australia"]
+tags: ["Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 200412 Dec"
 draft: false
 ---

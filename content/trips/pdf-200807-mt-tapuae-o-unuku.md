@@ -1,6 +1,10 @@
 ---
 title: "Mt Tapuae-o-unuku"
 date: 2008-07-01
+author: "Bill Fry"
+location: "Kaikoura / Inland Kaikōura"
+locations: ["Kaikoura / Inland Kaikōura"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200807 Jul"
 draft: false
 ---

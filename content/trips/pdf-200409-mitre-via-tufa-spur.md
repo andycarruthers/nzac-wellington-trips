@@ -1,6 +1,10 @@
 ---
 title: "Mitre via Tufa Spur"
 date: 2004-09-01
+author: "Caroline Duggan"
+location: "Taranaki"
+locations: ["Taranaki"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200409 Sep"
 draft: false
 ---

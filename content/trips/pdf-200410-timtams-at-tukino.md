@@ -1,6 +1,10 @@
 ---
 title: "TimTams at Tukino"
 date: 2004-10-01
+author: "Mike Peat"
+location: "Mount Cook"
+locations: ["Mount Cook"]
+tags: ["Alpine", "Ski"]
 source: "Vertigo Newsletter — Vertigo 200410 Oct"
 draft: false
 ---

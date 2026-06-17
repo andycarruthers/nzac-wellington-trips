@@ -1,6 +1,10 @@
 ---
 title: "Ski Touring on Ruapehu"
 date: 2009-02-01
+author: "John Nankervis"
+location: "Ruapehu"
+locations: ["Ruapehu"]
+tags: ["Ski Touring", "Ski"]
 source: "Vertigo Newsletter — Vertigo 200902 Feb"
 draft: false
 ---

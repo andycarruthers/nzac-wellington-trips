@@ -1,6 +1,10 @@
 ---
 title: "Sefton from the Douglas"
 date: 2005-03-01
+author: "John Nankervis"
+location: "Westland"
+locations: ["Westland"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200503 Mar"
 draft: false
 ---

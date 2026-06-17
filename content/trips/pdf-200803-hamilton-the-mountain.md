@@ -1,6 +1,9 @@
 ---
 title: "Hamilton (the mountain…)"
 date: 2008-03-01
+location: "Coromandel"
+locations: ["Coromandel"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200803 Mar"
 draft: false
 ---

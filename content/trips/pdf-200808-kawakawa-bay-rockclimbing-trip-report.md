@@ -1,6 +1,10 @@
 ---
 title: "Kawakawa Bay Rockclimbing Trip Report"
 date: 2008-08-01
+author: "Shichang Hou"
+location: "Lake Taupo"
+locations: ["Lake Taupo"]
+tags: ["Alpine", "Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 200808 Aug"
 draft: false
 ---

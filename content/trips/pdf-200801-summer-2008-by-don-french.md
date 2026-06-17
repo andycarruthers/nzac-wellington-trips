@@ -1,6 +1,10 @@
 ---
 title: "Summer 2008 by Don French"
 date: 2008-01-01
+author: "Don French"
+location: "Fiordland"
+locations: ["Fiordland"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200806 Jun"
 draft: false
 ---

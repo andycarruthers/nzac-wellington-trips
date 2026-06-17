@@ -1,6 +1,10 @@
 ---
 title: "Combine Harvesting"
 date: 2009-02-01
+author: "John Nankervis"
+location: "Ruapehu"
+locations: ["Ruapehu"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200902 Feb"
 draft: false
 ---

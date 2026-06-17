@@ -1,6 +1,9 @@
 ---
 title: "Successful NZAC CLIMBING CAMP!"
 date: 2004-02-01
+location: "European Alps"
+locations: ["European Alps"]
+tags: ["Rock Climbing", "Tramping"]
 source: "Vertigo Newsletter — Vertigo 200402 Feb"
 draft: false
 ---

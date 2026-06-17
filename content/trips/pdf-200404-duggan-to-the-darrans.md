@@ -1,6 +1,10 @@
 ---
 title: "Duggan to the Darrans"
 date: 2004-04-01
+author: "Eric Duggan"
+location: "European Alps"
+locations: ["European Alps"]
+tags: ["Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 200404 Apr"
 draft: false
 ---

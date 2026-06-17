@@ -2,6 +2,9 @@
 title: "Mount Hopeless, Nelson Lakes, 19-21 January 2013"
 date: 2013-01-21
 author: "Dan Pringle"
+location: "Mount Cook"
+locations: ["Mount Cook"]
+tags: ["Alpine", "Tramping"]
 source: "Vertigo Newsletter — Vertigo 201302 Feb"
 draft: false
 ---

@@ -1,6 +1,9 @@
 ---
 title: "HIMALAYAN EXPEDITION: MANASLU 2007"
 date: 2007-01-01
+location: "Himalaya"
+locations: ["Himalaya"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200705 May"
 draft: false
 ---

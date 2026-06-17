@@ -1,6 +1,9 @@
 ---
 title: "From Richard Davies…"
 date: 2008-03-01
+location: "Fiordland"
+locations: ["Fiordland"]
+tags: ["Tramping"]
 source: "Vertigo Newsletter — Vertigo 200803 Mar"
 draft: false
 ---

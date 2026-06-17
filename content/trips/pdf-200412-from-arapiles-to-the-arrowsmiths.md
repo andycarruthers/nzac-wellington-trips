@@ -1,6 +1,10 @@
 ---
 title: "From Arapiles to the Arrowsmiths"
 date: 2004-12-01
+author: "Eric Duggan"
+location: "Australia"
+locations: ["Australia"]
+tags: ["Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 200412 Dec"
 draft: false
 ---

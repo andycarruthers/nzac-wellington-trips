@@ -1,6 +1,10 @@
 ---
 title: "CLIMBING IN PARADISE?"
 date: 2007-05-01
+author: "Simone Chiaretta"
+location: "Asia"
+locations: ["Asia"]
+tags: ["Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 200705 May"
 draft: false
 ---

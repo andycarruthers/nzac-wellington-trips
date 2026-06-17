@@ -1,6 +1,9 @@
 ---
 title: "Pete de Joux from Antarctica"
 date: 2004-12-01
+location: "Antarctica"
+locations: ["Antarctica"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200412 Dec"
 draft: false
 ---

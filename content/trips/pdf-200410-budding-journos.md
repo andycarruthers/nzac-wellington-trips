@@ -1,6 +1,9 @@
 ---
 title: "Budding Journo’s!"
 date: 2004-10-01
+location: "Ruapehu"
+locations: ["Ruapehu"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200410 Oct"
 draft: false
 ---

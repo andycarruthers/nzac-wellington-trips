@@ -1,6 +1,10 @@
 ---
 title: "The French invade Murchison"
 date: 2003-12-01
+author: "Don French"
+location: "Mount Cook"
+locations: ["Mount Cook"]
+tags: ["Alpine"]
 source: "Vertigo Newsletter — Vertigo 200312 Dec"
 draft: false
 ---

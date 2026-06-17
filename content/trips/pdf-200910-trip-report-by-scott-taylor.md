@@ -1,6 +1,10 @@
 ---
 title: "Trip report by Scott Taylor"
 date: 2009-10-01
+author: "Scott Taylor"
+location: "European Alps"
+locations: ["European Alps"]
+tags: ["Ski Touring", "Tramping"]
 source: "Vertigo Newsletter — Vertigo 200910 Oct"
 draft: false
 ---

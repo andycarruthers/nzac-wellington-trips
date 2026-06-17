@@ -1,6 +1,9 @@
 ---
 title: "More Crumbs from Nank"
 date: 2004-04-01
+location: "Himalaya"
+locations: ["Himalaya"]
+tags: ["Ski Touring", "Alpine", "Tramping"]
 source: "Vertigo Newsletter — Vertigo 200404 Apr"
 draft: false
 ---

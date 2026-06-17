@@ -1,6 +1,10 @@
 ---
 title: "Latest from Mike O’Brien: Moonarie"
 date: 2007-08-01
+author: "National Administrator"
+location: "Australia"
+locations: ["Australia"]
+tags: ["Alpine", "Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 200708 Aug"
 draft: false
 ---

@@ -1,6 +1,9 @@
 ---
 title: "Baring Head Rock Hop"
 date: 2005-02-01
+location: "Wellington"
+locations: ["Wellington"]
+tags: ["Alpine", "Rock Climbing"]
 source: "Vertigo Newsletter — Vertigo 200502 Feb"
 draft: false
 ---
