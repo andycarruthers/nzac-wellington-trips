@@ -526,7 +526,8 @@ def extract_images_by_page(pdf_path):
                 if len(data) < 8000:   # skip tiny icons/decorations
                     continue
                 ext   = base["ext"]
-                fname = OUT_IMAGES / f"{pdf_path.stem}-p{page_num+1}-x{xref}.{ext}"
+                stem_slug = re.sub(r"[^a-z0-9]+", "-", pdf_path.stem.lower()).strip("-")
+                fname = OUT_IMAGES / f"{stem_slug}-p{page_num+1}-x{xref}.{ext}"
                 fname.write_bytes(data)
                 imgs.append(fname)
             except Exception:
