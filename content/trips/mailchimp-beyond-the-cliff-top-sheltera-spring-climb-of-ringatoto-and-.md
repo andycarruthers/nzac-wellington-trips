@@ -7,6 +7,7 @@ tags: ["Alpine"]
 source_url: "https://us17.campaign-archive.com/?u=a8e8f7d42fa80601c5eed2fbb&id=b3d76dbc0f"
 source: "Vertigo Newsletter (Mailchimp archive)"
 draft: false
+cover: "/images/trips/mailchimp-beyond-cliff-top-ringatoto.jpg"
 ---
 
 | 
