@@ -24,4 +24,8 @@ The weather was amazing: got to experience a full palette without any unpleasant
 
 The whole trip was absolutely banger but the highlight for me was that feeling when my borrowed crampons from the Apline Club (the ones with ice cream containers on the bottom) stuck, and knew I wasn’t gonna slip down a slope in whiteout conditions and plummit to my doom. That was a good feeling. Jacob
 
-Route Flyover
+{{< youtube NluWGqTYBds >}}
+
+{{< videopress QGhotTKX >}}
+
+[Read the full story on tararuask.com](https://tararuask.com/2021/10/03/angelus-snow-trip/)

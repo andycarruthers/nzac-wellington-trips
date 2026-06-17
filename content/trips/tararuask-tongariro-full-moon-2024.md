@@ -3,7 +3,7 @@ title: "Tongariro Full Moon"
 date: 2024-12-09
 author: "Andy Carruthers"
 authors: ["Andy Carruthers"]
-cover: "/images/trips/tongariro-full-moon-2024.jpg"
+cover: "/images/trips/p1022892.jpg"
 location: "Tongariro"
 locations: ["Tongariro"]
 tags: ["Tramping", "Alpine"]
@@ -22,4 +22,24 @@ We got a bit lost on the tops in the cloud but found our way on to the central c
 
 By 9am we were back at the hut for a well deserved sleep.
 
-Route Flyover
+![Tongariro Full Moon](/images/trips/p1022892.jpg)
+
+![Tongariro Full Moon](/images/trips/p1022889.jpg)
+
+![Tongariro Full Moon](/images/trips/p1022886.jpg)
+
+![Tongariro Full Moon](/images/trips/p1022884.jpg)
+
+![Tongariro Full Moon](/images/trips/p1022875.jpg)
+
+![Tongariro Full Moon](/images/trips/p1022869.jpg)
+
+![Tongariro Full Moon](/images/trips/p1022833.jpg)
+
+![Tongariro Full Moon](/images/trips/p1022787.jpg)
+
+![Route flyover](/images/trips/wp-17336933348041928122014073177455.png)
+
+{{< videopress 1GgaFpXM >}}
+
+[Read the full story on tararuask.com](https://tararuask.com/2024/12/09/tongariro-full-moon/)
