@@ -4,7 +4,7 @@ date: 2021-05-28
 location: "Nelson Lakes"
 locations: ["Nelson Lakes"]
 tags: ["Alpine", "Tramping"]
-cover: "/images/trips/20180216-202402-1024x576-jpeg"
+cover: "/images/trips/fastpacking-kaimanawa-kaweka-traverse.jpg"
 source_url: "https://us17.campaign-archive.com/?u=a8e8f7d42fa80601c5eed2fbb&id=70c182ac10"
 source: "Vertigo Newsletter (Mailchimp archive)"
 draft: false
