@@ -1,5 +1,6 @@
 ---
 title: "Taranaki 21-23 September 07"
+cover: "/images/trips/Vertigo_200711_Nov-p5-x13.jpeg"
 date: 2007-11-01
 location: "Taranaki"
 locations: ["Taranaki"]

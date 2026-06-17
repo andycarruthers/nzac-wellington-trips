@@ -1,5 +1,6 @@
 ---
 title: "Mt Aspiring – January 2010"
+cover: "/images/trips/Vertigo_201002_Feb-p5-x55.jpeg"
 date: 2010-01-01
 location: "Mount Cook"
 locations: ["Mount Cook"]

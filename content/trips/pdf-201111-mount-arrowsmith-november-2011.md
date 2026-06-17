@@ -1,5 +1,6 @@
 ---
 title: "Mount Arrowsmith – November 2011"
+cover: "/images/trips/Vertigo_201203_March-p6-x27.jpeg"
 date: 2011-11-01
 author: "Kevin Patterson"
 location: "Canterbury"

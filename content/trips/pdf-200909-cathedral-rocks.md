@@ -1,5 +1,6 @@
 ---
 title: "Cathedral Rocks"
+cover: "/images/trips/Vertigo_200909_Sep-p8-x78.jpeg"
 date: 2009-09-01
 location: "Ruapehu"
 locations: ["Ruapehu"]

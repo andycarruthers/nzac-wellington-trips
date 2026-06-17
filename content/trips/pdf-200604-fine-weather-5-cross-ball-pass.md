@@ -1,5 +1,6 @@
 ---
 title: "Fine Weather 5 Cross Ball Pass"
+cover: "/images/trips/Vertigo_200604_Apr-p4-x11.jpeg"
 date: 2006-04-01
 location: "Mount Cook"
 locations: ["Mount Cook"]

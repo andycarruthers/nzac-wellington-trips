@@ -1,5 +1,6 @@
 ---
 title: "Hamilton (the mountain…)"
+cover: "/images/trips/Vertigo_200803_Mar-p5-x15.jpeg"
 date: 2008-03-01
 location: "Coromandel"
 locations: ["Coromandel"]

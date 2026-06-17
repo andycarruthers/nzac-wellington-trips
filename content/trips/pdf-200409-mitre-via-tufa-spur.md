@@ -1,5 +1,6 @@
 ---
 title: "Mitre via Tufa Spur"
+cover: "/images/trips/Vertigo_200409_Sep-p5-x15.jpeg"
 date: 2004-09-01
 author: "Caroline Duggan"
 location: "Taranaki"

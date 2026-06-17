@@ -1,5 +1,6 @@
 ---
 title: "Arthurs Pass – Franklin and Phills"
+cover: "/images/trips/Vertigo_200803_Mar-p5-x15.jpeg"
 date: 2008-03-01
 location: "Canterbury"
 locations: ["Canterbury"]

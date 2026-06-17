@@ -1,5 +1,6 @@
 ---
 title: "Upper Tasman Glacier"
+cover: "/images/trips/Vertigo_200902_Feb-p4-x51.jpeg"
 date: 2009-02-01
 author: "Mark Yeo"
 location: "Mount Cook"

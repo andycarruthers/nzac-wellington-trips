@@ -1,5 +1,6 @@
 ---
 title: "Trip Report"
+cover: "/images/trips/Vertigo_201410_Oct-p5-x15.jpeg"
 date: 2014-10-01
 author: "Mt Tasman"
 location: "Mount Cook"

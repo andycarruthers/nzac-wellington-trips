@@ -1,5 +1,6 @@
 ---
 title: "Latest from Mike O’Brien: Moonarie"
+cover: "/images/trips/Vertigo_200708_Aug-p4-x39.jpeg"
 date: 2007-08-01
 author: "National Administrator"
 location: "Australia"

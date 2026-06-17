@@ -1,5 +1,6 @@
 ---
 title: "Mount Hopeless, Nelson Lakes, 19-21 January 2013"
+cover: "/images/trips/Vertigo_201302_Feb-p6-x15.jpeg"
 date: 2013-01-21
 author: "Dan Pringle"
 location: "Mount Cook"

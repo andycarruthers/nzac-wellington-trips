@@ -1,5 +1,6 @@
 ---
 title: "Section trip, Mount Wakefield"
+cover: "/images/trips/NZAC Vertigo 2017_09-p6-x107.jpeg"
 date: 2017-09-01
 location: "Nelson Lakes"
 locations: ["Nelson Lakes"]

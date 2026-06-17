@@ -1,5 +1,6 @@
 ---
 title: "Successful NZAC CLIMBING CAMP!"
+cover: "/images/trips/Vertigo_200402_Feb-p8-x25.png"
 date: 2004-02-01
 location: "European Alps"
 locations: ["European Alps"]

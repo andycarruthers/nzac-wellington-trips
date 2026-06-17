@@ -1,5 +1,6 @@
 ---
 title: "Cappuccino Traverse"
+cover: "/images/trips/Vertigo_200906_Jun-p3-x16.jpeg"
 date: 2009-06-01
 location: "European Alps"
 locations: ["European Alps"]

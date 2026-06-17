@@ -1,5 +1,6 @@
 ---
 title: "POTATOES, SMALL MEN AND IGNIMBRITE"
+cover: "/images/trips/Vertigo_200312_Dec-p6-x19.png"
 date: 2003-12-01
 location: "Waikato"
 locations: ["Waikato"]

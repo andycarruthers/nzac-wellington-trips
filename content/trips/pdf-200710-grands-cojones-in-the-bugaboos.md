@@ -1,5 +1,6 @@
 ---
 title: "Grands Cojones in the Bugaboos"
+cover: "/images/trips/Vertigo_200710_Oct-p5-x45.jpeg"
 date: 2007-10-01
 location: "Canada"
 locations: ["Canada"]

@@ -1,5 +1,6 @@
 ---
 title: "A GHOST AT RUAPEHU HUT?"
+cover: "/images/trips/Vertigo_200705_May-p12-x38.jpeg"
 date: 2007-05-01
 location: "Ruapehu"
 locations: ["Ruapehu"]

@@ -1,5 +1,6 @@
 ---
 title: "Paretetaitonga, Dome, Cathedral Rocks, Te Heu Heu (South Face)"
+cover: "/images/trips/Vertigo_200909_Sep-p9-x85.jpeg"
 date: 2009-09-01
 location: "Taranaki"
 locations: ["Taranaki"]

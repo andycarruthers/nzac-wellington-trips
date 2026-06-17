@@ -1,5 +1,6 @@
 ---
 title: "Mt Cook over Easter"
+cover: "/images/trips/Vertigo_200906_Jun-p9-x34.jpeg"
 date: 2009-06-01
 author: "Don French"
 location: "Mount Cook"

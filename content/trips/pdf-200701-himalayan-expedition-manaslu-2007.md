@@ -1,5 +1,6 @@
 ---
 title: "HIMALAYAN EXPEDITION: MANASLU 2007"
+cover: "/images/trips/Vertigo_200705_May-p15-x126.png"
 date: 2007-01-01
 location: "Himalaya"
 locations: ["Himalaya"]

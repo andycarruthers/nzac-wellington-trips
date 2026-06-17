@@ -1,5 +1,6 @@
 ---
 title: "More Crumbs from Nank"
+cover: "/images/trips/Vertigo_200404_Apr-p5-x18.png"
 date: 2004-04-01
 location: "Himalaya"
 locations: ["Himalaya"]

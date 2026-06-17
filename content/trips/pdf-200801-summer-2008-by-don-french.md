@@ -1,5 +1,6 @@
 ---
 title: "Summer 2008 by Don French"
+cover: "/images/trips/Vertigo_200806_Jun-p3-x21.jpeg"
 date: 2008-01-01
 author: "Don French"
 location: "Fiordland"

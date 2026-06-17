@@ -1,5 +1,6 @@
 ---
 title: "Ten take on Tapi"
+cover: "/images/trips/Vertigo_200412_Dec-p4-x11.png"
 date: 2004-12-01
 location: "Himalaya"
 locations: ["Himalaya"]

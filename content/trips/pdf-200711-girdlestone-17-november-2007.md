@@ -1,5 +1,6 @@
 ---
 title: "Girdlestone 17 November 2007"
+cover: "/images/trips/Vertigo_200712_Dec-p7-x21.jpeg"
 date: 2007-11-17
 location: "Fiordland"
 locations: ["Fiordland"]

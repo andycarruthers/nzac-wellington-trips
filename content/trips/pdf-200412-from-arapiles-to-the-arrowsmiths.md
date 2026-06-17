@@ -1,5 +1,6 @@
 ---
 title: "From Arapiles to the Arrowsmiths"
+cover: "/images/trips/Vertigo_200412_Dec-p4-x11.png"
 date: 2004-12-01
 author: "Eric Duggan"
 location: "Australia"

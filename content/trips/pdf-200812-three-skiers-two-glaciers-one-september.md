@@ -1,5 +1,6 @@
 ---
 title: "Three skiers, two glaciers, one September"
+cover: "/images/trips/Vertigo_200812_Dec-p3-x9.jpeg"
 date: 2008-12-01
 location: "Mount Cook"
 locations: ["Mount Cook"]

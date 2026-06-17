@@ -1,5 +1,6 @@
 ---
 title: "TEN DAYS IN FIORDLAND"
+cover: "/images/trips/Vertigo_200705_May-p6-x18.jpeg"
 date: 2007-05-01
 author: "Kevin Patterson"
 location: "Fiordland"

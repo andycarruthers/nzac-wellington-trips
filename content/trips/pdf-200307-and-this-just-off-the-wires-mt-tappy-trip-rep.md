@@ -1,5 +1,6 @@
 ---
 title: "And this just off the wires… Mt Tappy Trip report – Her Majesty’s Birthday"
+cover: "/images/trips/Vertigo_200307_Jul-p3-x13.png"
 date: 2003-07-01
 location: "Wellington"
 locations: ["Wellington"]

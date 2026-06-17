@@ -1,5 +1,6 @@
 ---
 title: "Taranaki Climbing Camp"
+cover: "/images/trips/Vertigo_200711_Nov-p8-x20.jpeg"
 date: 2007-11-01
 location: "Taranaki"
 locations: ["Taranaki"]

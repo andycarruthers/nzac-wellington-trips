@@ -1,5 +1,6 @@
 ---
 title: "Re. Peat, Pinnacle performance"
+cover: "/images/trips/Vertigo_200309_Sep-p3-x8.png"
 date: 2003-09-01
 location: "Coromandel"
 locations: ["Coromandel"]
