@@ -2,7 +2,7 @@
 <div class="container submit-page">
   <header class="submit-header">
     <h1>Submit a Trip Report</h1>
-    <p>Share your adventure with the Wellington Section. Fill in the details below — we'll review and publish it to the site. Email photos to <a href="mailto:andy@hardbasket.com">andy@hardbasket.com</a> with your trip title in the subject.</p>
+    <p>Share your adventure with the Wellington Section. Fill in the details below and attach your photos — we'll review and publish it to the site.</p>
   </header>
 
   {{ if (strings.HasSuffix .RelPermalink "?success") }}
@@ -13,7 +13,7 @@
     <a href="/trips/" class="btn btn--outline">&larr; Back to Trip Reports</a>
   </div>
   {{ else }}
-  <form name="trip-report" method="POST" action="/submit/?success" data-netlify="true" netlify-honeypot="bot-field" class="submit-form">
+  <form name="trip-report" method="POST" action="/submit/?success" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" class="submit-form">
     <input type="hidden" name="form-name" value="trip-report">
     <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
 
@@ -68,6 +68,15 @@
       <div class="form-group">
         <label for="report">Trip Report <span class="required">*</span></label>
         <textarea id="report" name="report" required rows="12" placeholder="Tell us about your trip — what happened, highlights, conditions, anything useful for others..."></textarea>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h2>Photos</h2>
+      <div class="form-group">
+        <label for="photos">Attach Photos <span class="optional">(optional)</span></label>
+        <input type="file" id="photos" name="photos" accept="image/*" multiple>
+        <p class="field-hint">JPG or PNG. The first photo will be used as the cover image.</p>
       </div>
     </div>
 
