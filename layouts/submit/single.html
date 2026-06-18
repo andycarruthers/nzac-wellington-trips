@@ -5,18 +5,7 @@
     <p>Share your adventure with the Wellington Section. Fill in the details below — we'll review and publish it to the site.</p>
   </header>
 
-  {{ if (strings.HasSuffix .RelPermalink "?success") }}
-  <div class="submit-success">
-    <div class="success-icon">&#9651;</div>
-    <h2>Thanks — report received!</h2>
-    <p>We'll review it and get it published shortly.</p>
-    <a href="/trips/" class="btn btn--outline">&larr; Back to Trip Reports</a>
-  </div>
-  {{ else }}
-  <form name="trip-report" method="POST" action="/submit/?success" data-netlify="true" netlify-honeypot="bot-field" class="submit-form">
-    <input type="hidden" name="form-name" value="trip-report">
-    <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
-
+  <form id="trip-form" class="submit-form">
     <div class="form-section">
       <h2>Your Details</h2>
       <div class="form-group">
@@ -80,10 +69,67 @@
       </div>
     </div>
 
+    <div id="form-error" class="form-error" style="display:none">
+      Something went wrong — please try again or email your report to <a href="mailto:andy@hardbasket.com">andy@hardbasket.com</a>.
+    </div>
+
     <div class="form-actions">
-      <button type="submit" class="btn btn--submit">Submit Trip Report</button>
+      <button type="submit" class="btn btn--submit" id="submit-btn">Submit Trip Report</button>
     </div>
   </form>
-  {{ end }}
+
+  <div class="submit-success" id="success-message" style="display:none">
+    <div class="success-icon">&#9651;</div>
+    <h2>Thanks — report received!</h2>
+    <p>We'll review it and get it published shortly.</p>
+    <a href="/trips/" class="btn btn--outline">&larr; Back to Trip Reports</a>
+  </div>
 </div>
+
+<script>
+document.getElementById('trip-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+
+  const btn = document.getElementById('submit-btn');
+  const errorEl = document.getElementById('form-error');
+  btn.textContent = 'Submitting…';
+  btn.disabled = true;
+  errorEl.style.display = 'none';
+
+  const tags = Array.from(document.querySelectorAll('input[name="tags"]:checked'))
+    .map(el => el.value);
+
+  const data = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    title: document.getElementById('title').value,
+    date: document.getElementById('date').value,
+    location: document.getElementById('location').value,
+    participants: document.getElementById('participants').value,
+    tags: tags,
+    report: document.getElementById('report').value,
+    photos_link: document.getElementById('photos_link').value,
+  };
+
+  try {
+    const res = await fetch('/.netlify/functions/submit-trip', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+
+    if (res.ok) {
+      document.getElementById('trip-form').style.display = 'none';
+      document.getElementById('success-message').style.display = 'block';
+    } else {
+      throw new Error('Server error ' + res.status);
+    }
+  } catch (err) {
+    console.error(err);
+    errorEl.style.display = 'block';
+    btn.textContent = 'Submit Trip Report';
+    btn.disabled = false;
+  }
+});
+</script>
 {{ end }}
