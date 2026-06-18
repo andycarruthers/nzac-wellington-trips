@@ -2,10 +2,18 @@
 <div class="container submit-page">
   <header class="submit-header">
     <h1>Submit a Trip Report</h1>
-    <p>Share your adventure with the Wellington Section. Fill in the details below and attach any photos — we'll review and publish it to the site.</p>
+    <p>Share your adventure with the Wellington Section. Fill in the details below — we'll review and publish it to the site. Email photos to <a href="mailto:andy@hardbasket.com">andy@hardbasket.com</a> with your trip title in the subject.</p>
   </header>
 
-  <form name="trip-report" method="POST" netlify data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" class="submit-form">
+  {{ if (strings.HasSuffix .RelPermalink "?success") }}
+  <div class="submit-success">
+    <div class="success-icon">&#9651;</div>
+    <h2>Thanks — report received!</h2>
+    <p>We'll review it and get it published shortly. Send any photos to <a href="mailto:andy@hardbasket.com">andy@hardbasket.com</a>.</p>
+    <a href="/trips/" class="btn btn--outline">&larr; Back to Trip Reports</a>
+  </div>
+  {{ else }}
+  <form name="trip-report" method="POST" action="/submit/?success" data-netlify="true" netlify-honeypot="bot-field" class="submit-form">
     <input type="hidden" name="form-name" value="trip-report">
     <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
 
@@ -42,7 +50,7 @@
         <input type="text" id="participants" name="participants" placeholder="Names of people on the trip">
       </div>
       <div class="form-group">
-        <label for="tags">Trip Type</label>
+        <label>Trip Type</label>
         <div class="checkbox-group">
           <label class="checkbox-label"><input type="checkbox" name="tags" value="Alpine"> Alpine</label>
           <label class="checkbox-label"><input type="checkbox" name="tags" value="Tramping"> Tramping</label>
@@ -63,39 +71,10 @@
       </div>
     </div>
 
-    <div class="form-section">
-      <h2>Photos</h2>
-      <div class="form-group">
-        <label for="photos">Attach Photos <span class="optional">(optional, up to 10 files)</span></label>
-        <input type="file" id="photos" name="photos" accept="image/*" multiple>
-        <p class="field-hint">JPG or PNG. The first photo will be used as the cover image.</p>
-      </div>
-    </div>
-
     <div class="form-actions">
       <button type="submit" class="btn btn--submit">Submit Trip Report</button>
     </div>
   </form>
-
-  <div class="submit-success" id="success-message" style="display:none">
-    <div class="success-icon">&#9651;</div>
-    <h2>Thanks — report received!</h2>
-    <p>We'll review it and get it published shortly.</p>
-    <a href="/trips/" class="btn btn--outline">&larr; Back to Trip Reports</a>
-  </div>
+  {{ end }}
 </div>
-
-<script>
-  // Show success message if redirected back with ?success
-  if (window.location.search.includes('success')) {
-    document.querySelector('.submit-form').style.display = 'none';
-    document.getElementById('success-message').style.display = 'block';
-  }
-
-  // After submit redirect to same page with ?success
-  document.querySelector('.submit-form').addEventListener('submit', function(e) {
-    var action = window.location.pathname + '?success';
-    this.setAttribute('action', action);
-  });
-</script>
 {{ end }}
