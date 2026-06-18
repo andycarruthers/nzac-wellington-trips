@@ -3,7 +3,7 @@
 <head><title>Netlify form detection</title></head>
 <body>
 <!-- Hidden form for Netlify detection — actual form is at /submit/ -->
-<form name="trip-report" netlify netlify-honeypot="bot-field" enctype="multipart/form-data" hidden>
+<form name="trip-report" netlify netlify-honeypot="bot-field" hidden>
   <input type="hidden" name="form-name" value="trip-report">
   <input name="bot-field">
   <input name="name">
@@ -14,7 +14,7 @@
   <input name="participants">
   <input name="tags">
   <textarea name="report"></textarea>
-  <input type="file" name="photos">
+  <input name="photos_link">
 </form>
 </body>
 </html>
