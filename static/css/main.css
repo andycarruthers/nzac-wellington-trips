@@ -149,6 +149,8 @@ input[type="file"] { font-family: var(--font-ui); font-size: 0.88rem; color: var
 .checkbox-group { display: flex; flex-wrap: wrap; gap: 0.5rem 1.2rem; margin-top: 0.25rem; }
 .checkbox-label { font-family: var(--font-ui); font-size: 0.88rem; font-weight: 400; display: flex; align-items: center; gap: 0.4rem; cursor: pointer; }
 .hidden { display: none; }
+.photo-previews { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
+.photo-previews img { width: 80px; height: 80px; object-fit: cover; border-radius: var(--radius); border: 1px solid var(--c-border); }
 .form-error { background: #fdf0f0; border: 1px solid #e0b4b4; color: #8b1a1a; font-family: var(--font-ui); font-size: 0.9rem; padding: 0.75rem 1rem; border-radius: var(--radius); margin-bottom: 1rem; }
 .form-actions { display: flex; justify-content: flex-end; }
 .btn--submit { border: none; cursor: pointer; font-size: 1rem; padding: 0.8rem 2rem; }

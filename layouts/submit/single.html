@@ -63,9 +63,10 @@
     <div class="form-section">
       <h2>Photos</h2>
       <div class="form-group">
-        <label for="photos_link">Photo Link <span class="optional">(optional)</span></label>
-        <input type="url" id="photos_link" name="photos_link" placeholder="e.g. https://drive.google.com/drive/folders/...">
-        <p class="field-hint">Share a Google Drive, Dropbox, or iCloud link. Make sure it's set to "Anyone with the link can view".</p>
+        <label for="photos">Attach Photos <span class="optional">(optional, up to 5)</span></label>
+        <input type="file" id="photos" name="photos" accept="image/*" multiple>
+        <p class="field-hint">JPG or PNG. Photos will be compressed automatically. The first photo will be used as the cover image.</p>
+        <div id="photo-previews" class="photo-previews"></div>
       </div>
     </div>
 
@@ -87,17 +88,63 @@
 </div>
 
 <script>
+// Compress and convert an image file to base64 at max 1600px
+function compressImage(file) {
+  return new Promise((resolve) => {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      const img = new Image();
+      img.onload = function() {
+        const MAX = 1600;
+        let w = img.width, h = img.height;
+        if (w > MAX || h > MAX) {
+          if (w > h) { h = Math.round(h * MAX / w); w = MAX; }
+          else { w = Math.round(w * MAX / h); h = MAX; }
+        }
+        const canvas = document.createElement('canvas');
+        canvas.width = w; canvas.height = h;
+        canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+        const base64 = canvas.toDataURL('image/jpeg', 0.82).split(',')[1];
+        resolve({ name: file.name.replace(/\.[^.]+$/, '.jpg'), data: base64 });
+      };
+      img.src = e.target.result;
+    };
+    reader.readAsDataURL(file);
+  });
+}
+
+// Show thumbnail previews when files are selected
+document.getElementById('photos').addEventListener('change', function() {
+  const preview = document.getElementById('photo-previews');
+  preview.innerHTML = '';
+  const files = Array.from(this.files).slice(0, 5);
+  files.forEach(file => {
+    const url = URL.createObjectURL(file);
+    const img = document.createElement('img');
+    img.src = url;
+    preview.appendChild(img);
+  });
+});
+
 document.getElementById('trip-form').addEventListener('submit', async function(e) {
   e.preventDefault();
 
   const btn = document.getElementById('submit-btn');
   const errorEl = document.getElementById('form-error');
-  btn.textContent = 'Submitting…';
   btn.disabled = true;
   errorEl.style.display = 'none';
 
   const tags = Array.from(document.querySelectorAll('input[name="tags"]:checked'))
     .map(el => el.value);
+
+  // Compress photos
+  const photoFiles = Array.from(document.getElementById('photos').files).slice(0, 5);
+  let photos = [];
+  if (photoFiles.length) {
+    btn.textContent = 'Uploading photos…';
+    photos = await Promise.all(photoFiles.map(compressImage));
+  }
+  btn.textContent = 'Submitting…';
 
   const data = {
     name: document.getElementById('name').value,
@@ -108,7 +155,7 @@ document.getElementById('trip-form').addEventListener('submit', async function(e
     participants: document.getElementById('participants').value,
     tags: tags,
     report: document.getElementById('report').value,
-    photos_link: document.getElementById('photos_link').value,
+    photos: photos,
   };
 
   try {

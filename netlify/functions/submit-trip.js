@@ -19,7 +19,6 @@ exports.handler = async function (event) {
   const participants = data.participants || "";
   const tags = Array.isArray(data.tags) ? data.tags : data.tags ? [data.tags] : [];
   const report = data.report || "";
-  const photosLink = data.photos_link || "";
 
   const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
   const REPO = "andycarruthers/nzac-wellington-trips";
@@ -33,6 +32,46 @@ exports.handler = async function (event) {
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "")}`;
 
+  const photos = Array.isArray(data.photos) ? data.photos : [];
+
+  // Commit each photo to GitHub
+  const photoLines = [];
+  let coverPath = "";
+
+  for (let i = 0; i < photos.length; i++) {
+    const photo = photos[i];
+    const ext = (photo.name || "photo.jpg").split(".").pop().toLowerCase();
+    const imgName = `${slug}-photo-${i + 1}.${ext}`;
+    const imgPath = `static/images/trips/${imgName}`;
+
+    const imgRes = await fetch(
+      `https://api.github.com/repos/${REPO}/contents/${imgPath}`,
+      {
+        method: "PUT",
+        headers: {
+          Authorization: `Bearer ${GITHUB_TOKEN}`,
+          "Content-Type": "application/json",
+          Accept: "application/vnd.github+json",
+          "X-GitHub-Api-Version": "2022-11-28",
+        },
+        body: JSON.stringify({
+          message: `Photo for draft: ${title}`,
+          content: photo.data,
+          branch: "main",
+        }),
+      }
+    );
+
+    if (imgRes.ok) {
+      const publicPath = `/images/trips/${imgName}`;
+      if (i === 0) coverPath = publicPath;
+      photoLines.push(`![Photo](${publicPath})`);
+      console.log(`Committed photo: ${imgPath}`);
+    } else {
+      console.error(`Failed to commit photo ${i + 1}:`, await imgRes.text());
+    }
+  }
+
   const tagsList = tags.length
     ? `\ntags: [${tags.map((t) => `"${t}"`).join(", ")}]` : "";
   const locationsList = location ? `\nlocations: ["${location}"]` : "";
@@ -40,19 +79,19 @@ exports.handler = async function (event) {
     ? participants.split(",").map((p) => p.trim()) : [];
   const participantsList = participantsParsed.length
     ? `\nparticipants: [${participantsParsed.map((p) => `"${p}"`).join(", ")}]` : "";
-  const photosNote = photosLink
-    ? `\n\n---\n*Photos: [View submitted photos](${photosLink})*` : "";
+  const coverLine = coverPath ? `\ncover: "${coverPath}"` : "";
+  const photosBlock = photoLines.length ? `\n\n${photoLines.join("\n\n")}` : "";
 
   const fileContent = `---
 title: "${title.replace(/"/g, '\\"')}"
 date: ${date}
 author: "${author}"
 authors: ["${author}"]
-location: "${location}"${locationsList}${tagsList}${participantsList}
+location: "${location}"${locationsList}${tagsList}${participantsList}${coverLine}
 draft: true
 ---
 
-${report}${photosNote}
+${report}${photosBlock}
 `;
 
   const filename = `content/trips/${slug}.md`;
