@@ -2,7 +2,7 @@
 <div class="container submit-page">
   <header class="submit-header">
     <h1>Submit a Trip Report</h1>
-    <p>Share your adventure with the Wellington Section. Fill in the details below and attach your photos — we'll review and publish it to the site.</p>
+    <p>Share your adventure with the Wellington Section. Fill in the details below — we'll review and publish it to the site.</p>
   </header>
 
   {{ if (strings.HasSuffix .RelPermalink "?success") }}
@@ -13,7 +13,7 @@
     <a href="/trips/" class="btn btn--outline">&larr; Back to Trip Reports</a>
   </div>
   {{ else }}
-  <form name="trip-report" method="POST" action="/submit/?success" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" class="submit-form">
+  <form name="trip-report" method="POST" action="/submit/?success" data-netlify="true" netlify-honeypot="bot-field" class="submit-form">
     <input type="hidden" name="form-name" value="trip-report">
     <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
 
@@ -74,9 +74,9 @@
     <div class="form-section">
       <h2>Photos</h2>
       <div class="form-group">
-        <label for="photos">Attach Photos <span class="optional">(optional)</span></label>
-        <input type="file" id="photos" name="photos" accept="image/*" multiple>
-        <p class="field-hint">JPG or PNG. The first photo will be used as the cover image.</p>
+        <label for="photos_link">Photo Link <span class="optional">(optional)</span></label>
+        <input type="url" id="photos_link" name="photos_link" placeholder="e.g. https://drive.google.com/drive/folders/...">
+        <p class="field-hint">Share a Google Drive, Dropbox, or iCloud link to your photos. Make sure it's set to "Anyone with the link can view".</p>
       </div>
     </div>
 
