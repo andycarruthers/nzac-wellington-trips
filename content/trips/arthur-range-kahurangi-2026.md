@@ -1,14 +1,20 @@
 ---
-title: "Arthur Range — Kahurangi"
+participants:
+  - Andy Carruthers
+  - Marta
+title: Arthur Range — Kahurangi
 date: 2026-06-19
-draft: false
-author: "Andy Carruthers"
-authors: ["Andy Carruthers"]
-location: "Kahurangi"
-locations: ["Kahurangi"]
-tags: ["Tramping", "Alpine"]
-participants: ["Andy Carruthers", "Marta"]
-cover: "/images/trips/2026-06-19-z-photo-1.jpg"
+draft: true
+author: Andy Carruthers
+authors:
+  - Andy Carruthers
+location: Kahurangi
+locations:
+  - Kahurangi
+tags:
+  - Tramping
+  - Alpine
+cover: /images/trips/2026-06-19-z-photo-1.jpg
 ---
 
 Arthur Range, Kahurangi National Park
