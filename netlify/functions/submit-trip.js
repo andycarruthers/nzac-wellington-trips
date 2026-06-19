@@ -27,10 +27,10 @@ exports.handler = async function (event) {
     return { statusCode: 500, body: JSON.stringify({ error: "Server config error" }) };
   }
 
-  const slug = `${date}-${title
+  const slug = title
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "")}`;
+    .replace(/^-|-$/g, "");
 
   const photos = Array.isArray(data.photos) ? data.photos : [];
 
