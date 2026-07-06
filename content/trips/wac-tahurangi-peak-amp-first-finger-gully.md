@@ -1,4 +1,4 @@
----
+﻿---
 title: "Tahurangi Peak & First Finger Gully"
 date: 2007-08-25
 author: "Neville Palmer"
@@ -9,7 +9,10 @@ tags: [Alpine, Climbing]
 source_url: "https://www.wellingtonalpineclub.org.nz/trip-reports/tahurangi-peak-amp-first-finger-gully"
 source: "NZAC Wellington website"
 draft: false
+cover: "https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/04980a55-4f0f-4c44-9693-426741b1128d/Tahurangi-Crater-Face-2.jpg"
 ---
+
+![Tahurangi Crater Face](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/04980a55-4f0f-4c44-9693-426741b1128d/Tahurangi-Crater-Face-2.jpg)
 
 A team of seven climbers — Neville Palmer, Gavin Marshall, Jason Brown, Ali Bryant, Frances Woodhead, Mark Yeo, and Trey Guinn — ventured to Ruapehu during late August 2007. After favourable weather forecasts shifted to uncertainty, they discovered exceptional climbing conditions upon arrival.
 

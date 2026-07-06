@@ -1,4 +1,4 @@
----
+﻿---
 title: "The Paringa"
 date: 2008-02-01
 author: "Richard Davies"
@@ -9,7 +9,10 @@ tags: [Alpine, Tramping]
 source_url: "https://www.wellingtonalpineclub.org.nz/trip-reports/arthurs-pass-franklin-and-phills"
 source: "NZAC Wellington website"
 draft: false
+cover: "https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/4d1e95d8-33ac-4fbf-a7a8-1bcd92d4f9aa/277248818_10158800442081824_4134887425408589258_n.jpg"
 ---
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/4d1e95d8-33ac-4fbf-a7a8-1bcd92d4f9aa/277248818_10158800442081824_4134887425408589258_n.jpg)
 
 Just after Xmas, (Boxing Day even), Quentin Duthie and I from the section along with Jo Hoare and Bruce Galloway from the Canty/Westland section headed up the Paringa. After an easy evenings walk into the late Tony Condons hut we trudged up to Tunnel Ck in increasingly heavy rain. Noting that the Paringa bivy rock already had two in it we had the afternoon off and watched the Paringa rise, fall and rise.
 

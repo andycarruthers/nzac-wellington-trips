@@ -1,4 +1,4 @@
----
+﻿---
 title: "Mt Whitcombe - a Non-ascent"
 date: 2004-01-01
 author: "Pete McGregor"
@@ -9,7 +9,10 @@ tags: [Alpine, Tramping]
 source_url: "https://www.wellingtonalpineclub.org.nz/trip-reports/mt-whitcombe-a-non-ascent"
 source: "NZAC Wellington website"
 draft: false
+cover: "https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781139115390-WJHDK9734ODWRTIVLGJX/pete_mcgregor1.jpg"
 ---
+
+![Dan Peak](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781139115390-WJHDK9734ODWRTIVLGJX/pete_mcgregor1.jpg)
 
 In the second week of January, Wellington Section members Terry Crippen, Andrew Lynch and Pete McGregor teamed up with overseas (Bristol, UK) member Jonathan Astin for an attempt on Mt Whitcombe.
 
@@ -26,3 +29,9 @@ The walk downriver to Hunter's hut proved eventful when were negotiating the uns
 By now, any attempt to join Andrew on the far side would have been suicidal. We abandoned the idea, and instead climbed a more stable section of the face, negotiating a final, tricky lip to gain the bush on top of the terrace. We then bush-bashed around the top of the slip and down to rejoin Andrew (who by this time had lured immense squadrons of sandflies from the surrounding bush). Hunter's hut that evening seemed very tranquil.
 
 We walked out the next day, and drank beer and ate pizzas at the Harihari pub under the glaring, dusty eye of a stuffed ferret, snarling from the wall. Below it, on a badly hand-cut piece of paper, was the stencilled word, "FERRET". Just in case you didn't know. The perfect end to a memorable West Coast trip.
+
+![Evans River in flood](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781139115406-LS710R9O59G6YKHJCKLR/pete_mcgregor2.jpg)
+
+![Evans River in flood at swingbridge](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781139117079-IHRFNT1YFADC8GJ798HQ/pete_mcgregor3.jpg)
+
+![Campsite, Evans River](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781139117335-7VOD2WV21JD4D1UYYE8Z/pete_mcgregor4.jpg)

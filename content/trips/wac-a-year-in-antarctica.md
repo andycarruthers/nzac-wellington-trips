@@ -1,4 +1,4 @@
----
+﻿---
 title: "A Year in Antarctica"
 date: 2004-11-01
 author: "Pete de Joux"
@@ -9,7 +9,10 @@ tags: [Alpine, Climbing]
 source_url: "https://www.wellingtonalpineclub.org.nz/trip-reports/a-year-in-antarctica"
 source: "NZAC Wellington website"
 draft: false
+cover: "https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/77b9ce1b-9cce-4944-8029-5ea4d3fbd903/162850-max.jpeg"
 ---
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/77b9ce1b-9cce-4944-8029-5ea4d3fbd903/162850-max.jpeg)
 
 ## November 2004
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Mt Taranaki"
 date: 2007-09-21
 author: "Stéphan Willemse"
@@ -9,7 +9,10 @@ tags: [Alpine, Climbing]
 source_url: "https://www.wellingtonalpineclub.org.nz/trip-reports/mt-taranaki"
 source: "NZAC Wellington website"
 draft: false
+cover: "https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/682993d8-49a7-4c2d-bbcb-97c4b1b97795/Taranakirob07.jpg"
 ---
+
+![Robert with ski poles ascending](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/682993d8-49a7-4c2d-bbcb-97c4b1b97795/Taranakirob07.jpg)
 
 **21 - 23 September 07**
 

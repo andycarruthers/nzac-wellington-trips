@@ -1,4 +1,4 @@
----
+﻿---
 title: "Margaret River"
 date: 2005-06-15
 author: "Stéphan Willemse"
@@ -9,7 +9,10 @@ tags: [Rock Climbing]
 source_url: "https://www.wellingtonalpineclub.org.nz/trip-reports/margaret-river"
 source: "NZAC Wellington website"
 draft: false
+cover: "https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/980c7521-a521-46c4-91f4-cdcc1092fbb2/d0ff6852d88d2efcffe1a22dfb8b91913c3d3d69.webp"
 ---
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/980c7521-a521-46c4-91f4-cdcc1092fbb2/d0ff6852d88d2efcffe1a22dfb8b91913c3d3d69.webp)
 
 *Mike O'Brien writes:*
 

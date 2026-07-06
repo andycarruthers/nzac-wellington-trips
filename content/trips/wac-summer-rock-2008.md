@@ -1,4 +1,4 @@
----
+﻿---
 title: "Summer Rock 2008"
 date: 2008-02-01
 author: "Gill James"
@@ -9,7 +9,10 @@ tags: [Rock Climbing, Climbing]
 source_url: "https://www.wellingtonalpineclub.org.nz/trip-reports/summer-rock-2008"
 source: "NZAC Wellington website"
 draft: false
+cover: "https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781499531435-EERIMGR5IMSCMXWBC84B/IMGP0214.jpg"
 ---
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781499531435-EERIMGR5IMSCMXWBC84B/IMGP0214.jpg)
 
 It's a Tuesday night in early February and the first session of the Summer Rock course at Ferg's. There are 12 students – Melody, Clare, Catherine, Ralf, Neil, Dawn, Shichang, Gwen, Sarah, Kate, Lou and me (Gill) – most of whom have done a little climbing before. There is a sense of nervous anticipation as we sit around putting on shoes and harnesses and listening to Scott introduce the course and the instructors.
 
@@ -64,3 +67,17 @@ It's early evening as we wander back along the beach towards the camp and we can
 Next morning we march off to the Plateau to try some different climbs before we have to get back on the road south.
 
 Thanks to all the instructors for a great course and two wonderful weekends – Scott, Blair, Derek, Lou, Siobhan, Callum, Shane, Marcus, Emily and Matt (and to Reuben for his quiet supervision from below).
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781499531563-SBM2JM1AMX7KMLSCAFW9/IMGP0221.jpg)
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781499532954-4674XKMOEN127EA4JPVH/IMGP0224.jpg)
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781499533435-HJJCCK4F8TU7GHG1Z5PZ/IMGP0226.jpg)
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781499534985-3A45ED8XO0E4KE3ZZ8MQ/IMGP0232.jpg)
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781499535384-CAL8BLTG303OAUEF6C4N/IMGP0234.jpg)
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781499536431-SXKTCO6LNCB100DS4H3Z/IMGP0244.jpg)
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781499537737-KOLN5XGHE5N9EUQ8ARDQ/IMGP0245.jpg)

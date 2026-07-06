@@ -1,4 +1,4 @@
----
+﻿---
 title: "It's not all about NZ mountains…"
 date: 2007-11-01
 author: "Lou Thornley"
@@ -9,7 +9,10 @@ tags: [Alpine, Tramping]
 source_url: "https://www.wellingtonalpineclub.org.nz/trip-reports/its-not-all-about-nz-mountains"
 source: "NZAC Wellington website"
 draft: false
+cover: "https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/536c3be6-048f-46d3-b5b6-e6e9dbe9e347/Snowshoeing-Pyrenees-4.jpg"
 ---
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/536c3be6-048f-46d3-b5b6-e6e9dbe9e347/Snowshoeing-Pyrenees-4.jpg)
 
 **The glory without the sweat, blood or tears**
 

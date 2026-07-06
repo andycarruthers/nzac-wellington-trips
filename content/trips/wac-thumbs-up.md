@@ -1,4 +1,4 @@
----
+﻿---
 title: "Thumbs Up!"
 date: 2004-10-01
 author: "Stéphan Willemse"
@@ -9,7 +9,10 @@ tags: [Alpine, Climbing]
 source_url: "https://www.wellingtonalpineclub.org.nz/trip-reports/thumbs-up"
 source: "NZAC Wellington website"
 draft: false
+cover: "https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/b38a58e7-f41b-4843-b692-c41260da84ab/The+Thumbs.png"
 ---
+
+![The Thumbs](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/b38a58e7-f41b-4843-b692-c41260da84ab/The+Thumbs.png)
 
 A party of seven climbers chose the Two Thumbs Range as an alternative destination when Mt Cook's weather proved unfavorable during Labour weekend. The group assembled in Geraldine before heading to their objective.
 

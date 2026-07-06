@@ -1,4 +1,4 @@
----
+﻿---
 title: "Faerie Queene - Upon a great adventure he was bound"
 date: 2005-07-01
 author: "Kevin Patterson"
@@ -9,7 +9,10 @@ tags: [Alpine]
 source_url: "https://www.wellingtonalpineclub.org.nz/trip-reports/faerie-queene-upon-a-great-adventure-he-was-bound"
 source: "NZAC Wellington website"
 draft: false
+cover: "https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/a347b85c-9232-4820-9913-a8b61d2f4878/Faerie_Queene_NZ.jpg"
 ---
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/a347b85c-9232-4820-9913-a8b61d2f4878/Faerie_Queene_NZ.jpg)
 
 Tom Zink, Wanda Stratford, and Mike Peat joined me from Wellington. And we were joined by Tom Wilson who was on an extended South Island odyssey. I picked this mountain as being fairly technically easy for the early snows. As it turned out with a ferry crossing in mountainous seas, and nearly 2″ of snow on the Lewis Pass road the technical aspects were buried in the vehicular approach! After disembarking from our very cheap but reliable hire car (thanks Shoestring rentals!) we made rapid progress along the well graded but tedious St James Walkway through Cannibal Gorge arriving at Ada Pass Hut some four hours later.
 

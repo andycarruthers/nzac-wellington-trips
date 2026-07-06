@@ -1,4 +1,4 @@
----
+﻿---
 title: "Climax!"
 date: 2007-12-28
 author: "Stéphan Willemse"
@@ -9,7 +9,10 @@ tags: [Alpine, Tramping]
 source_url: "https://www.wellingtonalpineclub.org.nz/trip-reports/climax"
 source: "NZAC Wellington website"
 draft: false
+cover: "https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/6b66da03-55df-4ed9-96ab-a07ce036871b/images-8.jpeg"
 ---
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/6b66da03-55df-4ed9-96ab-a07ce036871b/images-8.jpeg)
 
 Paul Grimwood, Alison Stevenson, David Jewell and Sharron Came made a successful ascent of Climax on the Olivine Ice Plateau on 28th December 2007. The route taken was in via the Beans Burn, over Fohn Saddle to the Olivine Ledge, down to the Olivine-Forgotton confluence, and then up the Forgotton River. Up and down from the plateau via Forgotton Col. Out over 4 Brothers Pass to the Diorite, down to the Pyke, through the Black Swamp, and a 6 km wade along the shore of Lake Alabaster. And then after 11 days of no real track, a crowded motorway of the Hollyford track and the Routeburn (via Deadmans Track) back to Glenorchy. Total trip time 13 days with 1 bad weather day on the plateau, and 1 very short 2 hour day due to a very full Forgotton River.
 

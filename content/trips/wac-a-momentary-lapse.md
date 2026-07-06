@@ -1,4 +1,4 @@
----
+﻿---
 title: "A Momentary Lapse"
 date: 2005-08-19
 author: "Mike Peat"
@@ -9,7 +9,10 @@ tags: [Alpine, Skiing]
 source_url: "https://www.wellingtonalpineclub.org.nz/trip-reports/a-momentary-lapse"
 source: "NZAC Wellington website"
 draft: false
+cover: "https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/b478b3b6-a864-4d13-ad17-304f730cde23/Views-of-Mt-Ngauruhoe-Whakapapa-Ski-Area-Mt-Ruapehu-1024x683.jpg"
 ---
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/b478b3b6-a864-4d13-ad17-304f730cde23/Views-of-Mt-Ngauruhoe-Whakapapa-Ski-Area-Mt-Ruapehu-1024x683.jpg)
 
 Paul McCullagh and Mike Peat headed to Ruapehu for a weekend of climbing and skiing. They arrived on Friday 19th August and skinned up to Whakapapa Hut under a full moon.
 

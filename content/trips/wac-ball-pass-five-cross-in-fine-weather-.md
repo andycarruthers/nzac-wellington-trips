@@ -1,4 +1,4 @@
----
+﻿---
 title: "Ball Pass - Five cross in fine weather!"
 date: 2006-01-01
 author: "Stéphan Willemse"
@@ -9,7 +9,10 @@ tags: [Alpine, Tramping]
 source_url: "https://www.wellingtonalpineclub.org.nz/trip-reports/ball-pass-five-cross-in-fine-weather-"
 source: "NZAC Wellington website"
 draft: false
+cover: "https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/7152128e-e00d-4ddf-9d48-1b25d53b05ce/ballpass1.jpg"
 ---
+
+![Approaching Ball Pass from the Ball Ridge](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/7152128e-e00d-4ddf-9d48-1b25d53b05ce/ballpass1.jpg)
 
 January 2006 - Garth London, Craig Robinson, Cat Robinson, Mike Courtney, Rachael Schmidt, supported by Angie London
 
@@ -24,3 +27,5 @@ At four in the morning and we were up for another feed and on our way by 5:30. T
 After a leisurely 1 1/2 hour stop in hot sun watched by Kea, it was time to get cracking and so it was into the gut that drops to the Hooker moraine. The route is straight-forward but the 600m descent down boulders and scree sure takes its toll on the knees. Still much better to travel down this stuff than go up. A short stop at the bottom to fill up with water and it was off on the 2 ½ hour walk out down the moraine. We were at White Horse Hill by 4:00pm and off to Unwin to enjoy a well earned beer.
 
 The next day it bucketed down at Unwin.
+
+![Craig, Cat, Garth and Rachael looking back up the Tasman Valley](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/a28698e2-9065-4104-b498-4ba750540d99/ballpass2.jpg)

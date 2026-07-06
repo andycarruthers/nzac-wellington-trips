@@ -1,4 +1,4 @@
----
+﻿---
 title: "Scotties Freezes His Piglets"
 date: 2007-08-24
 author: "Tessa Bunny"
@@ -9,7 +9,10 @@ tags: [Alpine, Climbing]
 source_url: "https://www.wellingtonalpineclub.org.nz/trip-reports/scotties-freezes-his-piglets"
 source: "NZAC Wellington website"
 draft: false
+cover: "https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/6d3c66a8-2fef-48c6-bbad-9453fb48b2a7/Nun%27s+Veil+South.jpg"
 ---
+
+![Nuns Veil, Mount Cook National Park](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/6d3c66a8-2fef-48c6-bbad-9453fb48b2a7/Nun%27s+Veil+South.jpg)
 
 A group of five climbers — two from Wellington, two from Canterbury, and Tessa Bunny from Otago — met at Unwin Hut for a late-winter alpine adventure. They crossed the partially frozen Tasman River and ascended Gorilla Stream, noting the lower water levels and quicker pace compared to summer conditions. The southeastern slopes showed extensive avalanche debris.
 

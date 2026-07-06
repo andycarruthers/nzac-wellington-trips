@@ -1,4 +1,4 @@
----
+﻿---
 title: "Grand Cojones in the Bugaboos"
 date: 2007-09-01
 author: "Dave Henwood"
@@ -9,7 +9,10 @@ tags: [Alpine, Rock Climbing]
 source_url: "https://www.wellingtonalpineclub.org.nz/trip-reports/grands-cojones-in-the-bugaboos"
 source: "NZAC Wellington website"
 draft: false
+cover: "https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/08b5ed6a-700e-4512-8ec1-677c4c95c342/buggaboos.jpg"
 ---
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/08b5ed6a-700e-4512-8ec1-677c4c95c342/buggaboos.jpg)
 
 By Dave Henwood (former Wgtn section member)
 

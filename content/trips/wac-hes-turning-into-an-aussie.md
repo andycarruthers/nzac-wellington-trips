@@ -1,4 +1,4 @@
----
+﻿---
 title: "He's turning into an Aussie….!"
 date: 2007-09-01
 author: "Mike O'Brien (introduced by Stéphan Willemse)"
@@ -9,7 +9,10 @@ tags: [Rock Climbing]
 source_url: "https://www.wellingtonalpineclub.org.nz/trip-reports/hes-turning-into-an-aussie"
 source: "NZAC Wellington website"
 draft: false
+cover: "https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/65c259f1-28d7-45b4-bb21-6e7a821ad5e0/SCR-20250916-hzob.jpg.webp"
 ---
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/65c259f1-28d7-45b4-bb21-6e7a821ad5e0/SCR-20250916-hzob.jpg.webp)
 
 Mike O'Brien writes: "Hi Rach. Have got a job in Halls Creek for a while, so thought I'd tell you about the climbing up in Northern Australia, or "the Top End"…
 

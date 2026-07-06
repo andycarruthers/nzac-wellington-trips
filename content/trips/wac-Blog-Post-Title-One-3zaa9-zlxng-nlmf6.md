@@ -1,4 +1,4 @@
----
+﻿---
 title: "Of Mice and Mounts"
 date: 2024-09-29
 author: "Stéphan Willemse"
@@ -9,7 +9,10 @@ tags: [Alpine, Climbing]
 source_url: "https://www.wellingtonalpineclub.org.nz/trip-reports/Blog Post Title One-3zaa9-zlxng-nlmf6"
 source: "NZAC Wellington website"
 draft: false
+cover: "https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781133509675-50O9A70IWP81VLH1FBSX/DG68107-R1-006-1A.jpeg"
 ---
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781133509675-50O9A70IWP81VLH1FBSX/DG68107-R1-006-1A.jpeg)
 
 The road from Wellington stretched out beneath us, winding its way through the late afternoon light, the Outlander smelling new and humming steadily. We were bound for Mount Ruapehu, for a place where the world seemed quieter, larger, more indifferent to the small concerns of humanity. The drive was uneventful, but it was never about the road. It was always about what waited at the end.
 
@@ -34,3 +37,27 @@ We returned to find the lodge packed up, the work done by those who had stayed b
 By the time we reached Bulls, the mountain was behind us, but it stayed in our minds, as mountains tend to do. The kebab shop gave us one last meal together before we parted ways, back to the lives we'd left behind.
 
 The mountain didn't care that we'd come, didn't care that we'd stood on its peak or that we'd returned home. But we cared, and that was enough. And we knew, in time, we would return.
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781133508881-17WO2OY7WWERKYA1Q2VL/DG68107-R1-012-4A.jpeg)
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781133512058-BAATF34BH4UD5X84JHF2/DG68107-R1-014-5A.jpeg)
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781133516107-BHU6Q3HINPL1ZQJ8TX21/DG68107-R1-018-7A.jpeg)
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781133517544-VGOOTTXZDEZDGOFCZ7AE/DG68107-R1-020-8A.jpeg)
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781133539687-VP0LTS4ASBE3U4ORS9DF/IMG_3238.jpeg)
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781133540102-GNKC2B8ULMLFCPNB6NHN/IMG_3327.jpeg)
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781133552809-LEGPZY8FIHTHDNVG9AJS/IMG_3363.jpeg)
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781133550329-YBQU2KR3O7NZMEHWUMQ5/IMG_3400.jpeg)
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781133588206-EHKNFCTU674GLJZMJC3U/IMG_3415.jpeg)
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781133568812-XS7736QI35JE75XSX5S9/IMG_3423.jpeg)
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781133583221-9XA4CCZL2YXM6ZNCKAFX/IMG_3432.jpeg)
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/1781133592246-G0UETHFK183NSLE86JJ2/IMG_3440.jpeg)

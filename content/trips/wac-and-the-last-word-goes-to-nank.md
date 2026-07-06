@@ -1,4 +1,4 @@
----
+﻿---
 title: "And the last word goes to Nank…"
 date: 2006-06-13
 author: "Stéphan Willemse"
@@ -9,7 +9,10 @@ tags: [Alpine]
 source_url: "https://www.wellingtonalpineclub.org.nz/trip-reports/and-the-last-word-goes-to-nank"
 source: "NZAC Wellington website"
 draft: false
+cover: "https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/f04c2c17-4c34-44cb-9444-2d752d079bdf/lake-wakatipu-queenstown-winter.jpg"
 ---
+
+![](https://images.squarespace-cdn.com/content/v1/6a13cc650b69e307e1b6b87b/f04c2c17-4c34-44cb-9444-2d752d079bdf/lake-wakatipu-queenstown-winter.jpg)
 
 At Queens Birthday weekend John Cocks, Paul Denys, Graeme Morrison and token northerner, John Nankervis, walked up 2 Mile Creek from Lake Wakatipu and crossed Skingut Pass in deep snow to one of the bivvy rocks in South Wye Creek.
 
