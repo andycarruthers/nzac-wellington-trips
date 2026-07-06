@@ -6,6 +6,7 @@ locations: ["Arthur's Pass"]
 tags: ["Alpine", "Ski Touring", "Climbing"]
 source_url: "https://us17.campaign-archive.com/?u=a8e8f7d42fa80601c5eed2fbb&id=43e09a5445"
 source: "Vertigo Newsletter (Mailchimp archive)"
+cover: "https://mcusercontent.com/a8e8f7d42fa80601c5eed2fbb/images/31b210ae-0531-5b6d-a557-f974f0f4734d.gif"
 draft: false
 ---
 
@@ -18,3 +19,4 @@ The week produced a range of adventures across the Temple Basin area. Parties ex
 Full photos from the trip: [Google Photos album](https://photos.app.goo.gl/JXeBkQmU5qUpDLYf9)
 
 *Contributors: Andy, Stephen, Brandon, Matt, Jon, Luke, Giuls, Tom, Owen and others.*
+

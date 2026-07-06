@@ -9,6 +9,7 @@ tags: ["Alpine", "Tramping"]
 participants: ["Peter Laurenson", "Shaun Barnett"]
 source_url: "https://us17.campaign-archive.com/?u=a8e8f7d42fa80601c5eed2fbb&id=70c182ac10"
 source: "Vertigo Newsletter (Mailchimp archive)"
+cover: "https://mcusercontent.com/a8e8f7d42fa80601c5eed2fbb/images/6ab23ef3-edb0-0f65-7820-62180d120398.jpg"
 draft: false
 ---
 
@@ -27,3 +28,4 @@ Shaun felt unwell the next morning after sleeping without a ground mat. Peter co
 They descended via Mangahuia to Rangiwahia Hut, where more beautiful dusk and dawn light played on the intricately folded landscape. The final descent featured a gracefully arched bridge high above an un-named river.
 
 *Peter Laurenson -- [www.occasionalclimber.co.nz](https://www.occasionalclimber.co.nz)*
+

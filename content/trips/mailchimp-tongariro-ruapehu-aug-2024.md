@@ -8,6 +8,7 @@ locations: ["Ruapehu", "Tongariro"]
 tags: ["Alpine", "Tramping"]
 source_url: "https://us17.campaign-archive.com/?u=a8e8f7d42fa80601c5eed2fbb&id=7dee60de2b"
 source: "Vertigo Newsletter (Mailchimp archive)"
+cover: "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcyiwsSj-riiIvxw70rhcticti9LRLIengf4EKGG1DZGViz727DfnYB-IKdFn5jcpIsiPhhynrVsv0wpjsPCZNQkRwqJIaa2FyUS7Ui0AGVBJCS7tiao1VSvgf5reLfyLDGq-VD9CH36nfUrVmYzrmwpxI?key=UHw6XzhyTGdCRDspU8CvTA"
 draft: false
 ---
 
@@ -28,3 +29,4 @@ Back at Mangatepopo, Emily treated the group to a fantastic meal, and everyone s
 Sunday morning at Whakapapa Ski Field base, the group strapped crampons on and zigzagged upward toward the knoll ridge cafe, moving through clouds.
 
 Big groups are slow and this was no exception. It was clear at the pace we were setting we were not going to make it to the plateau for our turnaround time, so the group split. Some participants pushed toward the plateau while others practiced avalanche rescue techniques nearby. Above the ski field, clouds broke revealing a beautiful inversion layer as the summit squad continued onward.
+

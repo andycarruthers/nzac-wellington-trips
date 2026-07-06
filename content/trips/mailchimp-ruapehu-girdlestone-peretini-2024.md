@@ -9,6 +9,7 @@ tags: ["Alpine", "Climbing"]
 participants: ["Tom Firth", "Tiffany Shih", "Dave Chowdhury", "Owen Lynch", "Stuart Meiklejohn", "Martin Sedy"]
 source_url: "https://us17.campaign-archive.com/?u=a8e8f7d42fa80601c5eed2fbb&id=7dee60de2b"
 source: "Vertigo Newsletter (Mailchimp archive)"
+cover: "https://mcusercontent.com/a8e8f7d42fa80601c5eed2fbb/_compresseds/dc0a50ca-410a-64c9-7181-d86f47ccb058.jpg"
 draft: false
 ---
 
@@ -23,3 +24,4 @@ Faced with challenging conditions and wind slab concerns, Martin, Owen, and Tom 
 Although not noted as a route, we figured that if we were to attempt Peretini, the safest and most interesting route was to follow the West Ridge underneath the buttresses and up to the summit. The route featured thick ice beneath a relatively thin layer of snow, requiring ice screws for belays. Two pitches were roped before reaching less steep terrain. Post-lunch climbing grew more challenging as terrain steepened, leading to a false summit and a final roped pitch.
 
 We didn't stick around and although the updated avalanche risk had been down-graded, we took a cautious and slow approach to getting down the western slopes and back across the glacier, making it back to the Giant Cafe to reunite with the other half of the group and back to the carpark well before sundown -- fairly exhausted.
+

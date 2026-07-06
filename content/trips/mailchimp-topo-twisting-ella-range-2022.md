@@ -1,4 +1,4 @@
----
+﻿---
 title: "Topo Twisting on the Ella Range"
 date: 2022-02-01
 author: "Peter Laurenson"
@@ -9,6 +9,7 @@ tags: ["Alpine", "Tramping"]
 participants: ["Peter Laurenson", "Shaun Barnett"]
 source_url: "https://vertigo_alpineclub.mailchimpsites.com/ella"
 source: "Vertigo — NZAC Wellington newsletter site"
+cover: "https://lh3.googleusercontent.com/fGtQJpAmBVzZucOjuVGa9wKM9Q8n9PNEvWu6iZ-SDk-xMLo3wZ6GGcXiVMNr6k8F2_velRR1cRDaeq1rEjPbqbSBzpcOVsTT1h8gZeqLI6ljkn2wtFUlhmGBqTeW9clWKr1Hcfv9o3mZSsEL3Q"
 draft: false
 ---
 
@@ -61,3 +62,4 @@ Late afternoon we set up camp on a soft grassy flat beside the Matakitaki, near 
 By 9am we were enjoying breakfast and a decent flat white at Rivers Café in Murchison, without a sandfly in sight.
 
 *Peter Laurenson — [www.occasionalclimber.co.nz](https://www.occasionalclimber.co.nz)*
+

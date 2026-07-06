@@ -1,4 +1,4 @@
----
+﻿---
 title: "Hopeless Isolation"
 date: 2020-05-26
 author: "Adam Power"
@@ -8,6 +8,7 @@ locations: ["Nelson Lakes"]
 tags: ["Alpine", "Solo"]
 source_url: "https://vertigo_alpineclub.mailchimpsites.com/#hope"
 source: "Vertigo — NZAC Wellington newsletter site"
+cover: "https://mcusercontent.com/a8e8f7d42fa80601c5eed2fbb/_compresseds/b60ebd85-7b54-4ae3-8859-57b79fa1cc1a.jpg"
 draft: false
 ---
 
@@ -42,3 +43,4 @@ As hoped the previous day, today presented the same conditions and I had unobstr
 The descent along the south west ridge is as described fairly involved at some spots so don't expect a massively rapid descent until lower on the ridge. That said, I made quick time on the descent, after reaching the Cupola Hut, a quick brew and biccy, I pressed on to John Tait.
 
 A colder but comfy night at John Tait, another brew and a biccy and a sunny meander on the fairly long walk back to the car park at the end of Lake Rotoiti was a lovely culmination of a great few days of total isolation, a lovey summit and a fitting way to remember Grandad.
+
