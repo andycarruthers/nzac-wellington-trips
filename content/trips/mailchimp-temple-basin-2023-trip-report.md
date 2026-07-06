@@ -6,13 +6,43 @@ authors: ["Andy Carruthers", "Stephen", "Brandon", "Matt", "Jon", "Luke", "Giuls
 location: "Arthur's Pass"
 locations: ["Arthur's Pass"]
 tags: ["Alpine", "Ski Touring", "Climbing"]
-source_url: "https://us17.campaign-archive.com/?u=a8e8f7d42fa80601c5eed2fbb&id=43e09a5445"
+source_url: "https://us17.campaign-archive.com/?u=a8e8f7d42fa80601c5eed2fbb&id=50af738583"
 source: "Vertigo Newsletter (Mailchimp archive)"
-cover: "https://mcusercontent.com/a8e8f7d42fa80601c5eed2fbb/images/31b210ae-0531-5b6d-a557-f974f0f4734d.gif"
+cover: "https://lh7-us.googleusercontent.com/Ek2vw4FBvy1nsb6w2MQJZPjyFgdEoRbBTOVwc0kOU81vM8-RviZSuRdKc72m55_Oa67T-pnM1Od_c9jDt5yTRgNBxsWtN-6PumSkPxKh0lqftfdf9FYypNqzw6kMSRW8_Q5akli9na-Vi0-ZwgqN9g"
 draft: false
 ---
 
 Nineteen club members spent a week at Temple Basin Ski Lodge exploring the surrounding peaks and basins. We had pretty average weather (significant precipitation and gale force winds) but the lodge facilities (cooked meals, hot showers and drying room) more than made up for it. We were a mix of novice and intermediate climbers with a few ski tourers and wise heads thrown in for good measure and teamed up in various groups to have some alpine fun.
+
+We arrived, survived and thrived:
+
+![Temple Basin 2023](https://lh7-us.googleusercontent.com/Ek2vw4FBvy1nsb6w2MQJZPjyFgdEoRbBTOVwc0kOU81vM8-RviZSuRdKc72m55_Oa67T-pnM1Od_c9jDt5yTRgNBxsWtN-6PumSkPxKh0lqftfdf9FYypNqzw6kMSRW8_Q5akli9na-Vi0-ZwgqN9g)
+
+![Temple Basin 2023](https://lh7-us.googleusercontent.com/n2VliEdsbr2RfEARMiL6Yeiy1MYLE3KpvzXUZX79hlcKibJEz1LVaxlpoQq7EXMpqcSh3zlPjBt-aIFbSV1-Pjf0YRJk2Cjzz7vKw4vkm_c8pTlMbwIF_7suM1Jjf4ysTRe4x2rO0Wd9L1LUGar1pg)
+
+![Temple Basin 2023](https://lh7-us.googleusercontent.com/Sbo1JiNHX9iyPEU82fxNEdWn5NaMqkKet1jpzIFjWei4EWsu-S89pICYwOYxs8SrzXkZh50rmfzcYa2M6nl0OOfHPS0dypqzXX7Fi5L08yNqaihOj9pEGxDzfSWscKy3u3y2UvFMZLN5m1Ys7Bfhw)
+
+![Temple Basin 2023](https://lh7-us.googleusercontent.com/k5Z7Uv5cf68FdLImHnXVsR4z1ucNk-giOoVOnegjHDHzDJFkyocLTL_SyjZZaC5K87_8c9ra36K23V811CedEJdiDSRXtIcXOnyuP_4L2RJqtGuWe78R1TSNgGwEnI-wYjDEh1ulUTdFvPpCxskiJA)
+
+![Temple Basin 2023](https://lh7-us.googleusercontent.com/D2IYC8LNq8JqS4YjAKLCerr1T2GcHFgTWJblQmcllMaG5WPFJFnXbZY3Pn7pyMoJV7yC3HB0fVzeHNHP8Uk1xznJ6GKlfqER1Espu6M2vbJvi_8wqvcfPgV_JIq6OTGq4CwEhkUbvQvK6ld1pMe5CLQ)
+
+![Temple Basin 2023](https://lh7-us.googleusercontent.com/EHiv0fuyfDs1A1LKcfS4ylbRZ64v8cUYRZ57whgizCiqLs9Ww1qcOheJ37LkPzLh0Cvug_JfKEQRbwWcUwgpRiKJMtjzCoX9FCg)
+
+![Temple Basin 2023](https://lh7-us.googleusercontent.com/m0UqoYCCXZgawXE4xuUxRfqM-YgyWF95bvNt3ASfb-ZbO2YcqRk1UHujXzMgcUAprzXUxkQznik8CoQLn42ZJfR9SeVZH5rM7Bmo1_juK5ViH6GGIbKv4rrhDo01_v4puMOXFB90gTtdbSUClc6AWA)
+
+![Temple Basin 2023](https://lh7-us.googleusercontent.com/cSI3DfzwJWT3OVEj-qa1OK1Gdm7i1A8KukSrELfzJe8LaySRKBzt69VZUzd27aPE2Lv5c20pTGeVQZpzFbarSoiR_b7EAvqAKAe9d-emt1_EsOKJxEXQeqjkODmNQ0aokpgEKsFc2_gav7OEhNoyTg)
+
+And we left the way we came, in the pouring rain:
+
+![Temple Basin — departure](https://lh7-us.googleusercontent.com/hUgtO_aUVjprm0XQle-tNEBN-5HqOMeVRdn5tf2aT3wXt2vNqcg1UrD7gt59Q5TcMAf9awu9k_g)
+
+![Temple Basin — departure](https://lh7-us.googleusercontent.com/tbpLwqYCylV8fBbrP6-VX6ybiJerGvVQInQF1a_HFa8kJBvOR9nIePkf_5A1sXfUFluUsOJ80YbOi9aUUhkyz2SJDv1ap4ril0a1GtiUUUvsElo2LS400a7al4jn6rLbslqnaPpoMJrIhYAenfREqQ)
+
+Our plans:
+
+![Trip planning](https://lh7-us.googleusercontent.com/EYKlikE5WuwnCE9KQ2xg9Oh3rTT-8ksQrDvS1WJedGaVGn0-ZxVOnDL3ZghNEbN1DcXEEAGvhDwwZsg-lgzzn8uMVbJoNG1sC8gL15L87E8iRfLVQssR-e_HiGm047RVooGjd9T1rM5Dprbk3fvz0Q)
+
+![Trip planning](https://lh7-us.googleusercontent.com/Rf26NaaoJEw0SOfyXoeRX54KsKiP-646xiZjGXtUfoBZ5GlS5hFJjHsEt_THfOieK1_BJGoE57vdzsypin-R1GExxhZXD5KnfxpLj7c2okb1fa4SsqIUcHQWfdM3DcZqNbsapbKcmeIkGM-dP8rZAg)
 
 ## Andy's Story
 
