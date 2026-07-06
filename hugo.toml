@@ -1,6 +1,7 @@
-baseURL = "/"
+baseURL = "https://trip-reports.wellingtonalpineclub.org.nz/"
 languageCode = "en-nz"
 title = "NZAC Wellington — Trip Reports"
+enableRobotsTXT = true
 
 [params]
   description = "Trip reports from the Wellington Section of the New Zealand Alpine Club"
@@ -15,7 +16,7 @@ title = "NZAC Wellington — Trip Reports"
   unsafe = true
 
 [outputs]
-  home = ["HTML"]
-  section = ["HTML"]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
   taxonomy = ["HTML"]
   term = ["HTML"]
