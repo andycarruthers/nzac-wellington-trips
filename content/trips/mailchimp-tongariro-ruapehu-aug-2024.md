@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Mount Ruapehu and Tongariro: Snowcraft to Summit"
 date: 2024-08-09
 author: "Emily Shrosbree"
@@ -12,11 +12,11 @@ cover: "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcyiwsSj-riiIvxw70rhctic
 draft: false
 ---
 
-*9-11 August 2024. Eleven participants, just two weeks after completing Snowcraft 1.*
+*9–11 August 2024. Eleven participants, just two weeks after completing Snowcraft 1.*
 
-Eleven participants drove to Tongariro Friday evening, just two weeks after completing Snowcraft 1. Original plans for an overnight hike from Mangatepopo Hut over Mount Tongariro via Hardmans Ridge to Oturere Hut changed when suitable snow conditions for practicing cramponing skills proved unavailable.
+Eager and ready, and just two weeks after completing Snowcraft 1, eleven participants began the Friday night ritual of piling into cars and driving up to Tongariro. Original plans for an overnight hike from Mangatepopo Hut over Mount Tongariro via Hardmans Ridge to Oturere Hut changed when suitable snow conditions for practising cramponing skills proved unavailable.
 
-**Saturday**
+## Saturday
 
 With a promise of great weather we made our way up to Hardmans Ridge, sheltering behind rocks every now and then for some respite from the brisk wind. Mount Tongariro and Ngauruhoe were hiding in cloud cover above us.
 
@@ -24,9 +24,6 @@ After extended hiking up rocky slopes without significant ice, crampons finally 
 
 Back at Mangatepopo, Emily treated the group to a fantastic meal, and everyone shared stories from the day.
 
-**Sunday**
+## Sunday
 
-Sunday morning at Whakapapa Ski Field base, the group strapped crampons on and zigzagged upward toward the knoll ridge cafe, moving through clouds.
-
-Big groups are slow and this was no exception. It was clear at the pace we were setting we were not going to make it to the plateau for our turnaround time, so the group split. Some participants pushed toward the plateau while others practiced avalanche rescue techniques nearby. Above the ski field, clouds broke revealing a beautiful inversion layer as the summit squad continued onward.
-
+Sunday morning at Whakapapa Ski Field base, the group strapped crampons on and zigzagged upward toward the knoll ridge café, moving through clouds. Big groups are slow and this was no exception. It was clear at the pace we were setting we were not going to make it to the plateau for our turnaround time, so the group split. Some participants pushed toward the plateau while others practised avalanche rescue techniques nearby. Above the ski field, clouds broke revealing a beautiful inversion layer as the summit squad continued onward.
