@@ -27,7 +27,8 @@
         </div>
         <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
         {{ with .Params.author }}<p class="card-author">by {{ . }}</p>{{ end }}
-        <p class="card-excerpt">{{ .Summary | truncate 120 }}</p>
+        <p class="card-excerpt">{{ .Summary | truncate 140 }}</p>
+        <a href="{{ .RelPermalink }}" class="read-more-link">Read More</a>
       </div>
     </article>
     {{ end }}

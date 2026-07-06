@@ -1,28 +1,27 @@
 {{ define "main" }}
-<article class="trip-report container">
-  <header class="report-header">
-    {{ if .Params.cover }}
-    <div class="report-cover">
-      <img src="{{ .Params.cover }}" alt="{{ .Title }}">
-    </div>
-    {{ end }}
-    <div class="report-meta">
-      <time>{{ .Date.Format "2 January 2006" }}</time>
-      {{ with .Params.region }}
-      <a href="/locations/{{ . | urlize }}/" class="region-tag">{{ . }}</a>
-      {{ end }}
-    </div>
+<div class="report-hero">
+  <div class="container">
+    <p class="report-hero-meta">
+      {{ .Date.Format "January 2006" }}
+      {{ with .Params.location }} &middot; {{ . }}{{ end }}
+    </p>
     <h1>{{ .Title }}</h1>
-    {{ with .Params.author }}
-    <p class="report-author">Written by <a href="/authors/{{ . | urlize }}/">{{ . }}</a></p>
-    {{ end }}
-    {{ with .Params.participants }}
-    <div class="participants">
-      <strong>Trip participants:</strong> {{ delimit . ", " }}
-    </div>
-    {{ end }}
-  </header>
+    <p class="report-hero-byline">
+      {{ with .Params.author }}By <a href="/authors/{{ . | urlize }}/">{{ . }}</a>{{ end }}
+      {{ with .Params.participants }}
+        &nbsp;&middot;&nbsp; with {{ delimit . ", " }}
+      {{ end }}
+    </p>
+  </div>
+</div>
 
+{{ if .Params.cover }}
+<div class="report-cover-full">
+  <img src="{{ .Params.cover }}" alt="{{ .Title }}">
+</div>
+{{ end }}
+
+<article class="trip-report container">
   <div class="report-body">
     {{ .Content }}
   </div>
