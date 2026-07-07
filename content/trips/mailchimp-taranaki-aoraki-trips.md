@@ -9,7 +9,7 @@ tags: ["Alpine", "Climbing"]
 source_url: "https://us17.campaign-archive.com/?u=a8e8f7d42fa80601c5eed2fbb&id=353fa0115b"
 source: "Vertigo Newsletter (Mailchimp archive)"
 draft: false
-cover: "/images/trips/taranaki-aoraki-2022-p03.jpg"
+cover: "/images/trips/taranaki-aoraki-2022-p07.png"
 ---
 
 ## Mt Taranaki — East Ridge & Shark's Tooth
@@ -24,19 +24,19 @@ cover: "/images/trips/taranaki-aoraki-2022-p03.jpg"
 
 **Grade:** 2+
 
-![Taranaki East Ridge](/images/trips/taranaki-aoraki-2022-p03.jpg)
+![Taranaki topo map showing East Ridge and Shark's Tooth ascent route, North Ridge descent](/images/trips/taranaki-aoraki-2022-p03.png)
 
-![Taranaki East Ridge](/images/trips/taranaki-aoraki-2022-p04.jpg)
+![East Ridge of Taranaki with route line marked in red](/images/trips/taranaki-aoraki-2022-p04.png)
 
-![Taranaki East Ridge](/images/trips/taranaki-aoraki-2022-p05.jpg)
+![Manganui Lodge with the upper mountain and approach slopes above](/images/trips/taranaki-aoraki-2022-p05.png)
 
-![Taranaki East Ridge](/images/trips/taranaki-aoraki-2022-p06.jpg)
+![Climbing the steep snow face of the East Ridge; roping up at the summit with panoramic views](/images/trips/taranaki-aoraki-2022-p06.png)
 
-![Taranaki East Ridge](/images/trips/taranaki-aoraki-2022-p07.jpg)
+![Spectacular golden sunset from the Taranaki summit, two climbers on rope above the cloud sea](/images/trips/taranaki-aoraki-2022-p07.png)
 
-![Taranaki East Ridge](/images/trips/taranaki-aoraki-2022-p08.jpg)
+![Purple dawn at the Taranaki summit with city lights visible below; night climbing with headtorches](/images/trips/taranaki-aoraki-2022-p08.png)
 
-![Taranaki East Ridge](/images/trips/taranaki-aoraki-2022-p09.jpg)
+![Team photo at the base — Sam Brown, Dan Waterston, Eric Buscaro and James Johnson, Taranaki behind](/images/trips/taranaki-aoraki-2022-p09.png)
 
 ---
 
@@ -56,28 +56,28 @@ cover: "/images/trips/taranaki-aoraki-2022-p03.jpg"
 
 **Aborted climbs:** Elie De Beaumont, Mt Annan, Mt Sealy
 
-![Upper Tasman Glacier](/images/trips/taranaki-aoraki-2022-p11.jpg)
+![Topo map of the Upper Tasman Glacier showing routes on Hochstetter Dome, Mt Kain and Mt Abel](/images/trips/taranaki-aoraki-2022-p11.png)
 
-![Upper Tasman Glacier](/images/trips/taranaki-aoraki-2022-p12.jpg)
+![Wide panoramic view from the summit; climber ascending a snow ridge above cloud-filled valleys](/images/trips/taranaki-aoraki-2022-p12.png)
 
-![Upper Tasman Glacier](/images/trips/taranaki-aoraki-2022-p13.jpg)
+![Dramatic view of a high alpine peak — Hochstetter Dome — with two climbers tiny below](/images/trips/taranaki-aoraki-2022-p13.png)
 
-![Upper Tasman Glacier](/images/trips/taranaki-aoraki-2022-p14.jpg)
+![Climber on steep snow with ice axe; alpenglow at dawn on the peaks; wind-swept plateau approaching summit](/images/trips/taranaki-aoraki-2022-p14.png)
 
-![Upper Tasman Glacier](/images/trips/taranaki-aoraki-2022-p15.jpg)
+![Climber ascending a snow ridge at golden sunset, peaks and glaciers stretching to the horizon](/images/trips/taranaki-aoraki-2022-p15.png)
 
-![Upper Tasman Glacier](/images/trips/taranaki-aoraki-2022-p16.jpg)
+![Inside Kelman Hut — two team members at the table, gear spread through the cosy mountain hut](/images/trips/taranaki-aoraki-2022-p16.png)
 
-![Upper Tasman Glacier](/images/trips/taranaki-aoraki-2022-p17.jpg)
+![Tasman Saddle Hut perched on rock above the glacier; silhouette at hut window as the sun sets](/images/trips/taranaki-aoraki-2022-p17.png)
 
-![Upper Tasman Glacier](/images/trips/taranaki-aoraki-2022-p18.jpg)
+![A deep crevasse moulin dropping into blue ice; exploring a narrow crevasse passage on the Tasman Glacier](/images/trips/taranaki-aoraki-2022-p18.png)
 
-![Upper Tasman Glacier](/images/trips/taranaki-aoraki-2022-p19.jpg)
+![Aerial view of a ski plane on the vast expanse of the Tasman Glacier with seracs alongside](/images/trips/taranaki-aoraki-2022-p19.png)
 
-![Upper Tasman Glacier](/images/trips/taranaki-aoraki-2022-p20.jpg)
+![Ice climbing in a steep couloir; climber front-pointing up a narrow icy gully between rock walls](/images/trips/taranaki-aoraki-2022-p20.png)
 
-![Upper Tasman Glacier](/images/trips/taranaki-aoraki-2022-p21.jpg)
+![Rope team climbing the final ridge to a summit on a clear blue sky day](/images/trips/taranaki-aoraki-2022-p21.png)
 
-![Upper Tasman Glacier](/images/trips/taranaki-aoraki-2022-p22.jpg)
+![Summit celebrations — team members raising ice axes on the Tasman peaks](/images/trips/taranaki-aoraki-2022-p22.png)
 
-![Upper Tasman Glacier](/images/trips/taranaki-aoraki-2022-p23.jpg)
+![Climber on a summit with a rocky peak rising behind, surveying the Southern Alps](/images/trips/taranaki-aoraki-2022-p23.png)

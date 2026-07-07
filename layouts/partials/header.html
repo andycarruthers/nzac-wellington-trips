@@ -11,5 +11,29 @@
       <a href="/tags/">Tags</a>
       <a href="/submit/" class="nav-submit">Submit a Report</a>
     </nav>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="/trips/">Trip Reports</a>
+    <a href="/locations/">Locations</a>
+    <a href="/authors/">Authors</a>
+    <a href="/tags/">Tags</a>
+    <a href="/submit/" class="nav-submit">Submit a Report</a>
   </div>
 </header>
+<script>
+(function(){
+  var btn = document.querySelector('.nav-hamburger');
+  var menu = document.getElementById('mobile-menu');
+  if (!btn || !menu) return;
+  btn.addEventListener('click', function(){
+    var open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', !open);
+    menu.setAttribute('aria-hidden', open);
+    menu.classList.toggle('is-open', !open);
+    btn.classList.toggle('is-open', !open);
+  });
+})();
+</script>
