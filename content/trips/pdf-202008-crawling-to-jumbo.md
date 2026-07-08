@@ -11,25 +11,40 @@ author: "Peter Laurenson"
 authors: ["Peter Laurenson"]
 ---
 
-A Tararua photo essay by Peter Laurenson, July 2020 It was Level One. Shaun Barnett and I had to get out and do SOMETHING. The forecast was for horizontal snowing, followed by a post-southerly window next day. So we plugged up through deep snow (from just 800 metres - this picture is at about 1,000 metres on Rainguage Spur) to Jumbo Hut, managed to get the fire going, and enjoyed a surprisingly cosy night listening to the rattle of snow on the hut exterior. Next morning dawned blue-bird. Above: Looking over Jumbo Hut, east to the Wairarapa Below: Jumbo directly ahead of Shaun. At right, Angle Knob, McGregor, the Broken Axe Pinnacles and Three Kings. At left, the ridge leading to Holdsworth Above: Shaun, staunch in shorts, as we reach Jumbo Hut Below: Now putting his snowshoes to work. They kept him on the surface about half the time. Normally to reach Jumbo from the hut takes 20-30 mins. It took us 2 hours. In crampons, at times I resorted to hands and knees! Above: Jumbo Hut at dawn For more captioned Tararua images - www.occasionalclimber.co.nz Below: The sign that normally indicates the way to Angle Knob, Holdsworth and Jumbo Hut Powered by volunteers We’re always thankful for volunteers and members stepping forward to help the section run smoothly. A lot goes on to keep our club going, virtually all powered by volunteers. On the back page is our ‘Club on a page’ summary. It gives an at a glance description of all the things we do, how and why. Feel free to print a copy and pass it on to anyone who might be interested in becoming a member or volunteer. And if you’d like to learn more about how you could get involved, please email us at wellington@alpineclub.org.nz. Role Name
+A Tararua photo essay by Peter Laurenson, July 2020.
 
-![Trip photo](/images/trips/nzac-vertigo-2020-08-p10-x166.jpeg)
+It was Level One. Shaun Barnett and I had to get out and do SOMETHING. The forecast was for horizontal snowing, followed by a post-southerly window next day. So we plugged up through deep snow (from just 800 metres) to Jumbo Hut, managed to get the fire going, and enjoyed a surprisingly cosy night listening to the rattle of snow on the hut exterior. Next morning dawned blue-bird.
 
-![Trip photo](/images/trips/nzac-vertigo-2020-08-p11-x174.jpeg)
+![this picture is at about 1,000 metres on Rainguage Spur](/images/trips/nzac-vertigo-2020-08-p10-x166.jpeg)
+*this picture is at about 1,000 metres on Rainguage Spur*
 
-![Trip photo](/images/trips/nzac-vertigo-2020-08-p11-x176.jpeg)
+![Looking over Jumbo Hut, east to the Wairarapa](/images/trips/nzac-vertigo-2020-08-p11-x174.jpeg)
+*Looking over Jumbo Hut, east to the Wairarapa*
 
-![Trip photo](/images/trips/nzac-vertigo-2020-08-p12-x185.jpeg)
+![Jumbo directly ahead of Shaun. At right, Angle Knob, McGregor, the Broken Axe Pinnacles and Three Kings. At left, the ridge leading to Holdsworth](/images/trips/nzac-vertigo-2020-08-p11-x176.jpeg)
+*Jumbo directly ahead of Shaun. At right, Angle Knob, McGregor, the Broken Axe Pinnacles and Three Kings. At left, the ridge leading to Holdsworth*
 
-![Trip photo](/images/trips/nzac-vertigo-2020-08-p12-x187.jpeg)
+![Shaun, staunch in shorts, as we reach Jumbo Hut](/images/trips/nzac-vertigo-2020-08-p12-x185.jpeg)
+*Shaun, staunch in shorts, as we reach Jumbo Hut*
 
-![Trip photo](/images/trips/nzac-vertigo-2020-08-p12-x189.jpeg)
+![Now putting his snowshoes to work. They kept him on the surface about half the time.](/images/trips/nzac-vertigo-2020-08-p12-x187.jpeg)
+*Now putting his snowshoes to work. They kept him on the surface about half the time.*
 
-![Trip photo](/images/trips/nzac-vertigo-2020-08-p12-x191.jpeg)
+Normally to reach Jumbo from the hut takes 20-30 mins. It took us 2 hours. In crampons, at times I resorted to hands and knees!
+
+![Jumbo Hut at dawn](/images/trips/nzac-vertigo-2020-08-p12-x189.jpeg)
+*Jumbo Hut at dawn*
+
+For more captioned Tararua images - www.occasionalclimber.co.nz
+
+![The sign that normally indicates the way to Angle Knob, Holdsworth and Jumbo Hut](/images/trips/nzac-vertigo-2020-08-p12-x191.jpeg)
+*The sign that normally indicates the way to Angle Knob, Holdsworth and Jumbo Hut*
 
 ![Trip photo](/images/trips/nzac-vertigo-2020-08-p13-x234.jpeg)
 
 ![Trip photo](/images/trips/nzac-vertigo-2020-08-p13-x236.jpeg)
+
+Powered by volunteers. We’re always thankful for volunteers and members stepping forward to help the section run smoothly. A lot goes on to keep our club going, virtually all powered by volunteers. On the back page is our ‘Club on a page’ summary. It gives an at a glance description of all the things we do, how and why. Feel free to print a copy and pass it on to anyone who might be interested in becoming a member or volunteer. And if you’d like to learn more about how you could get involved, please email us at wellington@alpineclub.org.nz.
 
 ![Trip photo](/images/trips/nzac-vertigo-2020-08-p13-x238.jpeg)
 
