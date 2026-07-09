@@ -1,17 +1,19 @@
-﻿---
-title: "Femmes and Thems 2025"
-date: 2025-11-07
-author: "Jennifer Craig"
-authors: ["Jennifer Craig"]
-location: "Ruapehu"
-locations: ["Ruapehu"]
-tags: ["Alpine"]
-cover: "https://mcusercontent.com/a8e8f7d42fa80601c5eed2fbb/images/3b266b8c-2f6a-91e4-00d9-e0471bcc813d.jpg"
-source_url: "https://us17.campaign-archive.com/?u=a8e8f7d42fa80601c5eed2fbb&id=e2581cbf4c"
-source: "Vertigo Newsletter (Mailchimp archive)"
-draft: false
 ---
-
+title: Femmes and Thems 2025
+date: 2025-11-07
+draft: false
+author: Jennifer Craig
+authors:
+  - Jennifer Craig
+location: Ruapehu
+locations:
+  - Ruapehu
+tags:
+  - Alpine
+cover: /images/trips/img_7524.jpeg
+source_url: https://us17.campaign-archive.com/?u=a8e8f7d42fa80601c5eed2fbb&id=e2581cbf4c
+source: Gracie Scott
+---
 *7-9 November 2025. A summit trip on Ruapehu that turned into a night evacuation during a forest fire.*
 
 The Femmes and Thems trip started as per any Ruapehu trip, with a drive up to the maunga from Wellington on Friday evening after everyone finished work. Eight people packed into two cars, we set off with a great forecast and low avalanche risk. Excited, ready for the roadie and at least one of the cars set-up for a Brittney Spears sing-a-long.
@@ -20,7 +22,7 @@ On Saturday morning we set a group objective based on how everyone was feeling, 
 
 The weather stayed clear, with some clag moving through near the top. The group reached the summit plateau, and after enjoying the views and getting some great snaps, turned around with plenty of time to get back to the lodge.
 
-![On the slopes](https://mcusercontent.com/a8e8f7d42fa80601c5eed2fbb/images/947acb50-9c57-9c92-4573-f83acb05f4f1.jpg)
+![The group stopping for a lunch break on the slopes](/images/trips/img_7520.jpeg)
 
 It was on the descent that the group noticed smoke rising in the Mangatepopo valley. At a small enough size to assume it was either a steam vent or a controlled fire, the group didn't think much of it.
 
@@ -38,4 +40,4 @@ So at roughly 11pm, we set off again. In a surreal moment of tired adrenaline, g
 
 The group continued the efforts together as one, navigating our way down in the dark and doubling back when we took a wrong turn. We found our way onto the stony ski field and the path was easy from there. We made it down to the cars and drove to Ohakune where the motel stood ready for our very late check-in. The view of the fire as we drove past was like a weird dream. We could see the whole thing covering the valley, flames close to the road in the other direction. It was hard to believe it was happening.
 
-*Photos by Gracie Scott.*
+*Photos by Gracie Scott and Jennifer Craig*.
