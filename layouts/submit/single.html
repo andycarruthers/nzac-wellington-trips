@@ -5,7 +5,9 @@
     <p>Share your adventure with the Wellington Section. Fill in the details below — we'll review and publish it to the site.</p>
   </header>
 
-  <form id="trip-form" class="submit-form">
+  <form id="trip-form" class="submit-form" name="trip-report" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="trip-report">
+    <p class="visually-hidden"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
     <div class="form-section">
       <h2>Your Details</h2>
       <div class="form-group">
@@ -165,12 +167,37 @@ document.getElementById('trip-form').addEventListener('submit', async function(e
       body: JSON.stringify(data),
     });
 
-    if (res.ok) {
-      document.getElementById('trip-form').style.display = 'none';
-      document.getElementById('success-message').style.display = 'block';
-    } else {
+    if (!res.ok) {
       throw new Error('Server error ' + res.status);
     }
+
+    // Also submit to Netlify's native Forms endpoint so the site's
+    // configured email notification fires (see Site configuration > Forms).
+    const formBody = new URLSearchParams({
+      'form-name': 'trip-report',
+      name: data.name,
+      email: data.email,
+      title: data.title,
+      date: data.date,
+      location: data.location,
+      participants: data.participants,
+      tags: tags.join(', '),
+      report: data.report,
+    }).toString();
+
+    try {
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: formBody,
+      });
+    } catch (notifyErr) {
+      // Non-fatal: the draft was already created via the function above.
+      console.error('Netlify form notification failed:', notifyErr);
+    }
+
+    document.getElementById('trip-form').style.display = 'none';
+    document.getElementById('success-message').style.display = 'block';
   } catch (err) {
     console.error(err);
     errorEl.style.display = 'block';
