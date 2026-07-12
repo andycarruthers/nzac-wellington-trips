@@ -6,6 +6,7 @@ enableRobotsTXT = true
 [params]
   description = "Trip reports from the Wellington Section of the New Zealand Alpine Club"
   siteName = "NZAC Wellington"
+  googleAnalyticsID = "G-WYTLFR0ZXC"
 
 [taxonomies]
   tag = "tags"
