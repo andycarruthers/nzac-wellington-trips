@@ -12,6 +12,17 @@ collections:
     create: true
     slug: "{{slug}}"
     preview_path: trips/{{slug}}
+    sortable_fields: [title, date, draft]
+    view_filters:
+      - label: "Drafts only"
+        field: draft
+        pattern: true
+      - label: "Published only"
+        field: draft
+        pattern: false
+    view_groups:
+      - label: "Draft status"
+        field: draft
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Date, name: date, widget: datetime, format: YYYY-MM-DD, date_format: DD/MM/YYYY, time_format: false }
