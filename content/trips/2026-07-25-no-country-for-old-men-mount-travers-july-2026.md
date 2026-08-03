@@ -1,13 +1,18 @@
 ---
-title: "No Country For Old Men - Mount Travers July 2026"
+participants:
+  - Owen Lynch
+  - Tom Firth
+title: No Country For Old Men - Mount Travers July 2026
 date: 2026-07-25
-author: "Owen Lynch"
-authors: ["Owen Lynch"]
-location: "Nelson Lakes"
-locations: ["Nelson Lakes"]
-tags: ["Alpine"]
-participants: ["Owen Lynch", "Tom Firth"]
-draft: true
+draft: false
+author: Owen Lynch
+authors:
+  - Owen Lynch
+location: Nelson Lakes
+locations:
+  - Nelson Lakes
+tags:
+  - Alpine
 ---
 
 The forecast wasn't great but our flights were booked. We were going.
