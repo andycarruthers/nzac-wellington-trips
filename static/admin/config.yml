@@ -16,11 +16,11 @@ collections:
     view_filters:
       - label: "Drafts only"
         field: draft
-        pattern: true
+        pattern: "true"
         default: true
       - label: "Published only"
         field: draft
-        pattern: false
+        pattern: "false"
     view_groups:
       - label: "Draft status"
         field: draft
