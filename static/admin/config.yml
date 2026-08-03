@@ -12,15 +12,12 @@ collections:
     create: true
     slug: "{{slug}}"
     preview_path: trips/{{slug}}
-    sortable_fields:
-      fields: [title, date, draft]
-      default:
-        field: draft
-        direction: descending
+    sortable_fields: [title, date, draft]
     view_filters:
       - label: "Drafts only"
         field: draft
         pattern: true
+        default: true
       - label: "Published only"
         field: draft
         pattern: false
