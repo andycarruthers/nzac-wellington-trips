@@ -4,7 +4,7 @@ participants:
   - Tom Firth
 title: No Country For Old Men - Mount Travers July 2026
 date: 2026-07-25
-draft: false
+draft: true
 author: Owen Lynch
 authors:
   - Owen Lynch
