@@ -1,14 +1,25 @@
 ---
-title: "A taste of Tahurangi (formerly the Whakepapa-Tūroa Traverse)"
+participants:
+  - Emily Shrosbree and Tiffany Shih (leaders); Megan Sety (co-leader); Tayla
+    Jane
+  - Bogdan State
+  - James Johnson
+  - Aimee Paterson
+  - Elizabeth Kim
+  - Jake McLaren
+  - Lachlan McKenze
+  - Dylan Hoefsloot.
+title: A taste of Tahurangi (formerly the Whakepapa-Tūroa Traverse)
 date: 2026-08-08
-author: "Lachlan McKenzie"
-authors: ["Lachlan McKenzie"]
-location: "Ruapehu"
-locations: ["Ruapehu"]
-tags: ["Alpine"]
-participants: ["Emily Shrosbree and Tiffany Shih (leaders); Megan Sety (co-leader); Tayla Jane", "Bogdan State", "James Johnson", "Aimee Paterson", "Elizabeth Kim", "Jake McLaren", "Lachlan McKenze", "Dylan Hoefsloot."]
-cover: "/images/trips/a-taste-of-tahurangi-formerly-the-whakepapa-t-roa-traverse-photo-1.jpg"
-draft: true
+draft: false
+author: Lachlan McKenzie
+authors:
+  - Lachlan McKenzie
+location: Ruapehu
+locations:
+  - Ruapehu
+tags: null
+cover: /images/trips/a-taste-of-tahurangi-formerly-the-whakepapa-t-roa-traverse-photo-1.jpg
 ---
 
 It was daybreak at Tūroa Base and we were surrounded by cloud. Dolly Parton’s peppy “Nine-to-five” as it pumped through the sound system, amping us for our expedition. 
