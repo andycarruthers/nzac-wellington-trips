@@ -9,7 +9,7 @@ participants:
   - Jake McLaren
   - Lachlan McKenze
   - Dylan Hoefsloot.
-title: A taste of Tahurangi (formerly the Whakepapa-Tūroa Traverse)
+title: A taste of Tahurangi (formerly the Whakapapa-Tūroa Traverse)
 date: 2026-08-08
 draft: false
 author: Lachlan McKenzie
