@@ -1,14 +1,24 @@
 ---
-title: "Tongariro Alp Zero"
+participants:
+  - Megan Sety
+  - Paul McCredie (leaders); Aimee Paterson
+  - Bogdan State
+  - Jordan Webber
+  - Braden Holgate
+  - Joe Lindsay
+  - Lachlan McKenzie
+title: Tongariro Alp Zero
 date: 2026-08-22
-author: "Lachlan McKenzie"
-authors: ["Lachlan McKenzie"]
-location: "Tongariro"
-locations: ["Tongariro"]
-tags: ["Alpine"]
-participants: ["Megan Sety", "Paul McCredie (leaders); Aimee Paterson", "Bogdan State", "Jordan Webber", "Braden Holgate", "Joe Lindsay", "Lachlan McKenzie"]
-cover: "/images/trips/tongariro-alp-zero-photo-1.jpg"
-draft: true
+draft: false
+author: Lachlan McKenzie
+authors:
+  - Lachlan McKenzie
+location: Tongariro
+locations:
+  - Tongariro
+tags:
+  - Alpine
+cover: /images/trips/tongariro-alp-zero-photo-1.jpg
 ---
 
 Mount Tongariro was the objective, our preferred approach being that up the ridge that descends like a finger to the South Cirque (South Crater) entrance on the Tongariro Alpine Crossing. From there, we’d have various options to return—via Central Crater, Blue Lake and the Crossing; west down Hardman’s Ridge; or back the same way.
