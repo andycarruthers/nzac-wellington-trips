@@ -1,14 +1,18 @@
 ---
-title: "No Place like Dome"
+participants:
+  - Wellington Snowcraft 1 Participants & Instructors
+title: No Place like Dome
 date: 2026-08-14
-author: "Cherry Chu"
-authors: ["Cherry Chu"]
-location: "Ruapehu"
-locations: ["Ruapehu"]
-tags: ["Alpine"]
-participants: ["Wellington Snowcraft 1 Participants & Instructors"]
-cover: "/images/trips/no-place-like-dome-photo-1.jpg"
-draft: true
+draft: false
+author: Cherry Chu
+authors:
+  - Cherry Chu
+location: Ruapehu
+locations:
+  - Ruapehu
+tags:
+  - Alpine
+cover: /images/trips/no-place-like-dome-photo-1.jpg
 ---
 
 The night of August 14th 2026, a fresh cohort of budding mountaineers arrived at the isolated Manawatu Lodge, on the outskirts of the Whakapapa hut cluster. We attempted to get as much rest as we could for that night, focused for our first objective on a mountain!
