@@ -1,14 +1,27 @@
 ---
+participants:
+  - Andy
+  - Tayla
+  - Leon
+  - Will
+  - Anya
+  - Julia
+  - Bogdan
+  - Hayden
+  - Jordan
+  - Rueben
 title: "Tongariro Full Moon "
 date: 2026-08-29
-author: "Andy Carruthers"
-authors: ["Andy Carruthers"]
+draft: false
+author: Andy Carruthers
+authors:
+  - Andy Carruthers
 location: "Tongariro "
-locations: ["Tongariro "]
-tags: ["Alpine"]
-participants: ["Andy", "Tayla", "Leon", "Will", "Anya", "Julia", "Bogdan", "Hayden", "Jordan", "Rueben"]
-cover: "/images/trips/tongariro-full-moon-photo-1.jpg"
-draft: true
+locations:
+  - "Tongariro "
+tags:
+  - Alpine
+cover: /images/trips/tongariro-full-moon-photo-1.jpg
 ---
 
 The Tongariro Alpine Crossing is a classic day walk. Over the last few years I've had the opportunity to walk it under the full moon.
