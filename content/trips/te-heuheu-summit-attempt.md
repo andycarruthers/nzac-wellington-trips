@@ -1,14 +1,21 @@
 ---
-title: "Te Heuheu summit attempt"
+participants:
+  - Patrick Lam
+  - Bogdan State
+  - Lachlan McKenzie
+  - Michael Pohl
+title: Te Heuheu summit attempt
 date: 2026-09-05
-author: "Michael Pohl"
-authors: ["Michael Pohl"]
-location: "Ruapehu"
-locations: ["Ruapehu"]
-tags: ["Alpine"]
-participants: ["Patrick Lam", "Bogdan State", "Lachlan McKenzie", "Michael Pohl"]
-cover: "/images/trips/te-heuheu-summit-attempt-photo-1.jpg"
-draft: true
+draft: false
+author: Michael Pohl
+authors:
+  - Michael Pohl
+location: Ruapehu
+locations:
+  - Ruapehu
+tags:
+  - Alpine
+cover: /images/trips/te-heuheu-summit-attempt-photo-1.jpg
 ---
 
 It was with a less than ideal forecast that four of us left Wellington on Friday 4 September, 2026, with the goal of climbing Te Heuheu on Ruapehu maunga. We were three developing alpinists, all with fewer than ten trips under our belt, in Michael, Lachlan, and Bogdan, and one experienced and patient leader, Patrick. After some car troubles along the way and what some participants described as the crux of the whole trip (a wet, sleety, snowy, and windy walk in the dark with heavy Day 1 packs and all the luxuries needed for a weekend up the mountain) we arrived at Pinnacles Lodge, our base for the weekend.
