@@ -1,14 +1,45 @@
 ---
-title: "Temple Basin 2026"
+participants:
+  - Cherry C.
+  - Curdin K.
+  - Gracie S.
+  - James J.
+  - Jim
+  - Jon K.
+  - Moss H.
+  - Nathan E.
+  - Rueben S.
+  - Stephen H.
+  - Sophie B.
+  - Stéphan W.
+  - Tayla J.
+  - Will S.
+  - Louis C.
+  - Michael P.
+  - James D.
+  - Josh K.
+  - Ellen D.
+  - Aidan W-K.
+  - Jayson
+  - Dylan H.
+  - Emma C.
+  - James C.
+  - Jennifer C.
+title: Temple Basin 2026
 date: 2026-09-17
-author: "Jennifer Craig"
-authors: ["Jennifer Craig"]
-location: "Temple Basin, Arthur's Pass"
-locations: ["Temple Basin, Arthur's Pass"]
-tags: ["Alpine", "Skiing", "Climbing", "Rock Climbing"]
-participants: ["Cherry C.", "Curdin K.", "Gracie S.", "James J.", "Jim", "Jon K.", "Moss H.", "Nathan E.", "Rueben S.", "Stephen H.", "Sophie B.", "Stéphan W.", "Tayla J.", "Will S.", "Louis C.", "Michael P.", "James D.", "Josh K.", "Ellen D.", "Aidan W-K.", "Jayson", "Dylan H.", "Emma C.", "James C.", "Jennifer C."]
-cover: "/images/trips/temple-basin-2026-photo-1.jpg"
-draft: true
+draft: false
+author: Jennifer Craig
+authors:
+  - Jennifer Craig
+location: Temple Basin, Arthur's Pass
+locations:
+  - Temple Basin, Arthur's Pass
+tags:
+  - Alpine
+  - Skiing
+  - Climbing
+  - Rock Climbing
+cover: /images/trips/temple-basin-2026-photo-1.jpg
 ---
 
 The practical bits 
