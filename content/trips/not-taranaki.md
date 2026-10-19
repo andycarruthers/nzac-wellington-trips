@@ -6,7 +6,7 @@ participants:
   - Jason and Aimee
 title: Not Taranaki
 date: 2026-10-18
-draft: false
+draft: true
 author: Aimee
 authors:
   - Aimee
@@ -17,16 +17,19 @@ tags:
   - Alpine
 cover: /images/trips/not-taranaki-photo-1.jpg
 ---
-
 Title Photo: Points of interest. Photo credit Jessie.
 
 By Wednesday, with an ill leader and a middling forecast, Plan A (an attempt at Mount Taranaki staying at Syme) seemed unlikely. But thanks to Nathan‘s flexibility and Jason stepping up as a co leader, Plan B (a day trip up to Te Heu Heu on Ruapehu) made an excellent replacement. 
+
+![](/images/trips/photo-1.jpg)
 
 Photo 1: Flexible leader Nathan. Photo credit Jen.
 
 We had Manawatu Tramping and Skiing Club Lodge to ourselves on Friday night. We spread out occupying a bunk room each. Saturday dawned bright and clear, and having dumped gear back at the car, we were moving up the mountain by 7am. 
 
 A wee bit of “technical” practice was provided on a steep section of the ski road covered by an icy patch. Nathan kindly kicked us some steps, so I did not have to engage in any technicalities! Around the corner the snow on the ski road became more continuous, so we were able to don crampons. The snow line was high, so we stuck to the snow covered ski road until cover increased before Knoll Ridge Cafe.
+
+![](/images/trips/photo-2.jpg)
 
 Photo 2: Early lunch on Te Heu Heu Ridge. Photo credit: Aimee
 
@@ -36,7 +39,11 @@ Photo 3: Team dominating the awkward steps on Te Heu Heu Ridge. Photo credit: Ai
 
 Conditions on the Ridge were good - much less ice and softer snow than I had encountered a month earlier. However, less snow made for a couple of awkward and “exposed feeling” steps near the top of the rocky bit of the ridgeline. The last section was a straight forward climb up through slowly melting rime ice “sea foam” formations. We arrived at Te Heu Heu bang on 12pm and soaked up the views. While cloud had started drifting across the ridge while we were ascending, my fear of low visibility never became a problem. 
 
+![](/images/trips/photo-4.jpg)
+
 Photo 4: Snow foam near the summit. Photo credit: Jessie
+
+![](/images/trips/photo-5.jpg)
 
 Photo 5: Summit selfie. Photo credit: Aimee
 
