@@ -1,14 +1,21 @@
 ---
-title: "Not Taranaki"
+participants:
+  - Nathan
+  - Jen
+  - Jessie
+  - Jason and Aimee
+title: Not Taranaki
 date: 2026-10-18
-author: "Aimee"
-authors: ["Aimee"]
-location: "Te Heu Heu, Ruapehu"
-locations: ["Te Heu Heu, Ruapehu"]
-tags: ["Alpine"]
-participants: ["Nathan", "Jen", "Jessie", "Jason and Aimee"]
-cover: "/images/trips/not-taranaki-photo-1.jpg"
-draft: true
+draft: false
+author: Aimee
+authors:
+  - Aimee
+location: Te Heu Heu, Ruapehu
+locations:
+  - Te Heu Heu, Ruapehu
+tags:
+  - Alpine
+cover: /images/trips/not-taranaki-photo-1.jpg
 ---
 
 Title Photo: Points of interest. Photo credit Jessie.
