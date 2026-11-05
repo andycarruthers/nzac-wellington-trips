@@ -60,6 +60,7 @@ Whether a report came in through the submission form or was started in `/admin`,
 
 - Photos live in `static/images/trips/`
 - The **first photo** listed in a report typically becomes its **cover image** (shown on the homepage/trip listing cards) — set via the `cover:` field in the front matter
+- **Photo titles/captions:** members can add a title to each photo on the submit form. In Markdown it's the quoted text after the path: `![](/images/trips/x.jpg "Caption here")` — it displays under the photo. Photos without a title show no caption.
 - The admin editor has an image picker/uploader built in — no need to touch files directly
 - Recommended: keep photos under ~2MB each; the submission form auto-compresses to a reasonable size, but photos added via `/admin` are not compressed automatically
 

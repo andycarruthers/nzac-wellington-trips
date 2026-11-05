@@ -67,7 +67,7 @@
       <div class="form-group">
         <label for="photos">Attach Photos <span class="optional">(optional, up to 5)</span></label>
         <input type="file" id="photos" name="photos" accept="image/*" multiple>
-        <p class="field-hint">JPG or PNG. Photos will be compressed automatically. The first photo will be used as the cover image.</p>
+        <p class="field-hint">JPG or PNG. Photos will be compressed automatically. The first photo will be used as the cover image. Add a title under each photo to show it as a caption.</p>
         <div id="photo-previews" class="photo-previews"></div>
       </div>
     </div>
@@ -121,10 +121,18 @@ document.getElementById('photos').addEventListener('change', function() {
   preview.innerHTML = '';
   const files = Array.from(this.files).slice(0, 5);
   files.forEach(file => {
-    const url = URL.createObjectURL(file);
+    const item = document.createElement('div');
+    item.className = 'photo-preview-item';
     const img = document.createElement('img');
-    img.src = url;
-    preview.appendChild(img);
+    img.src = URL.createObjectURL(file);
+    const cap = document.createElement('input');
+    cap.type = 'text';
+    cap.className = 'photo-title';
+    cap.placeholder = 'Photo title (optional)';
+    cap.maxLength = 200;
+    item.appendChild(img);
+    item.appendChild(cap);
+    preview.appendChild(item);
   });
 });
 
@@ -145,6 +153,8 @@ document.getElementById('trip-form').addEventListener('submit', async function(e
   if (photoFiles.length) {
     btn.textContent = 'Uploading photos…';
     photos = await Promise.all(photoFiles.map(compressImage));
+    const titles = Array.from(document.querySelectorAll('.photo-title')).map(el => el.value.trim());
+    photos.forEach((p, i) => { p.title = titles[i] || ''; });
   }
   btn.textContent = 'Submitting…';
 

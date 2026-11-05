@@ -1,0 +1,6 @@
+{{- $caption := .Title -}}
+{{- if $caption -}}
+<figure class="report-figure"><img src="{{ .Destination | safeURL }}" alt="{{ .Text | default $caption }}" loading="lazy"><figcaption>{{ $caption | markdownify }}</figcaption></figure>
+{{- else -}}
+<img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" loading="lazy">
+{{- end -}}

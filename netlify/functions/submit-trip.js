@@ -65,7 +65,17 @@ exports.handler = async function (event) {
     if (imgRes.ok) {
       const publicPath = `/images/trips/${imgName}`;
       if (i === 0) coverPath = publicPath;
-      photoLines.push(`![Photo](${publicPath})`);
+      const photoTitle = String(photo.title || "")
+        .replace(/[\r\n]+/g, " ")
+        .replace(/"/g, "'")
+        .replace(/[\[\]]/g, "")
+        .trim()
+        .slice(0, 200);
+      photoLines.push(
+        photoTitle
+          ? `![${photoTitle}](${publicPath} "${photoTitle}")`
+          : `![Photo](${publicPath})`
+      );
       console.log(`Committed photo: ${imgPath}`);
     } else {
       console.error(`Failed to commit photo ${i + 1}:`, await imgRes.text());
