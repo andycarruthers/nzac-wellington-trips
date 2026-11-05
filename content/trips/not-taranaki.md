@@ -6,7 +6,7 @@ participants:
   - Jason and Aimee
 title: Not Taranaki
 date: 2026-10-18
-draft: true
+draft: false
 author: Aimee
 authors:
   - Aimee
