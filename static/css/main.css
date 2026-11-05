@@ -108,6 +108,9 @@ a:hover { text-decoration: underline; }
 .report-body h2 { margin: 2em 0 0.6em; font-weight: 700; font-size: 1.25rem; }
 .report-body h3 { margin: 1.8em 0 0.5em; font-weight: 600; font-size: 1.1rem; }
 .report-body img { max-width: 100%; height: auto; border-radius: 2px; margin: 1.5rem 0; display: block; }
+.report-figure { margin: 1.5rem 0; }
+.report-figure img { margin: 0 0 0.5rem; }
+.report-figure figcaption { font-size: 0.9rem; color: var(--c-muted); font-style: italic; }
 .report-body blockquote { border-left: 2px solid rgba(255,255,255,.25); padding-left: 1.2rem; color: var(--c-muted); margin: 1.5rem 0; font-style: italic; }
 
 .report-footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--c-border); display: flex; flex-direction: column; gap: 1rem; align-items: flex-start; }
@@ -177,6 +180,9 @@ input[type="file"] { font-size: 0.88rem; color: var(--c-muted); }
 .checkbox-label { font-size: 0.88rem; font-weight: 400; display: flex; align-items: center; gap: 0.4rem; cursor: pointer; color: rgba(255,255,255,.8); }
 .hidden { display: none; }
 .photo-previews { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
+.photo-preview-item { display: flex; flex-direction: column; gap: 0.3rem; width: 120px; }
+.photo-preview-item img { width: 120px; height: 80px; }
+.photo-preview-item input { width: 100%; font-size: 0.8rem; padding: 0.3rem; }
 .photo-previews img { width: 80px; height: 80px; object-fit: cover; border-radius: var(--radius); border: 1px solid var(--c-border); }
 .form-error { background: rgba(180,40,40,.2); border: 1px solid rgba(255,100,100,.3); color: rgba(255,180,180,1); font-size: 0.9rem; padding: 0.75rem 1rem; border-radius: var(--radius); margin-bottom: 1rem; }
 .form-actions { display: flex; justify-content: flex-end; }
