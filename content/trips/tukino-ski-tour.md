@@ -26,6 +26,10 @@ The trip highlight, aside from the great snow conditions, had to be a fine selec
 The afternoon continued with a second summit climb, and third runs for half the party before climbing down the exposed rocky section for beers on the deck and dinner.   Sunday provided similar conditions but was windier than expected so we decided not to climb the final 300m to the summit – the winds were unpleasant and a battle.   Instead, we found some beautiful sections of steep spring corn and continued our ski touring adventures in the sun. 
 Overall, this was a great trip. The wind and the mountain sun left us feeling somewhat sunburned, with mountain memories filled with spring turns and donuts at the top. 
 
-`<iframe width="560" height="315" src="https://www.youtube.com/embed/0z3PENsaWl4?si=XvMLxKzG1LzxmC8N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+```
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0z3PENsaWl4?si=XvMLxKzG1LzxmC8N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
+``
 
 ![Happy dayz](/images/trips/tukino-ski-tour-photo-1.jpg "Happy dayz")
