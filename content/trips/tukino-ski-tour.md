@@ -38,10 +38,4 @@ The afternoon continued with a second summit climb, and third runs for half the 
 
 Overall, this was a great trip. The wind and the mountain sun left us feeling somewhat sunburned, with mountain memories filled with spring turns and donuts at the top. 
 
-```
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0z3PENsaWl4?si=XvMLxKzG1LzxmC8N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-```
-
-``
-
-![Happy dayz](/images/trips/tukino-ski-tour-photo-1.jpg "Happy dayz")
+{{< youtube 0z3PENsaWl4 >}}
