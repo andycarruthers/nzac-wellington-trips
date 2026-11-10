@@ -1,16 +1,22 @@
 ---
-title: "Tukino Ski Tour"
+participants:
+  - Andy
+  - Patrick
+  - Simon
+  - Jake
+title: Tukino Ski Tour
 date: 2026-10-31
-author: "Jake"
-authors: ["Jake"]
-location: "Tukino, Ruapehu"
-locations: ["Tukino, Ruapehu"]
-tags: ["Skiing"]
-participants: ["Andy", "Patrick", "Simon", "Jake"]
-cover: "/images/trips/tukino-ski-tour-photo-1.jpg"
 draft: true
+author: Jake
+authors:
+  - Jake
+location: Tukino, Ruapehu
+locations:
+  - Tukino, Ruapehu
+tags:
+  - Skiing
+cover: /images/trips/tukino-ski-tour-photo-1.jpg
 ---
-
 mmm Summit Donuts!!
 
 Skiing in November is a sweet deal - you have the mountain to yourselves, and the snow can be excellent. This was at trip that didn’t disappoint in both regards - we had the luck of scoring the timing perfectly.  Snow conditions were excellent all weekend after a fresh dump of 20-30cm on Friday. 
@@ -19,5 +25,7 @@ We were mindful of the fresh snow brought heightened avalanche risk, so took car
 The trip highlight, aside from the great snow conditions, had to be a fine selection of fresh donuts. These treats materialised from Andy’s pack like magic on reaching the summit plateaux – an inspired shopping choice!  Donuts were perfect for refuelling before a fantastic run down with beautiful smooth turns, no ice, just smiles all round! 
 The afternoon continued with a second summit climb, and third runs for half the party before climbing down the exposed rocky section for beers on the deck and dinner.   Sunday provided similar conditions but was windier than expected so we decided not to climb the final 300m to the summit – the winds were unpleasant and a battle.   Instead, we found some beautiful sections of steep spring corn and continued our ski touring adventures in the sun. 
 Overall, this was a great trip. The wind and the mountain sun left us feeling somewhat sunburned, with mountain memories filled with spring turns and donuts at the top. 
+
+`<iframe width="560" height="315" src="https://www.youtube.com/embed/0z3PENsaWl4?si=XvMLxKzG1LzxmC8N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 
 ![Happy dayz](/images/trips/tukino-ski-tour-photo-1.jpg "Happy dayz")
